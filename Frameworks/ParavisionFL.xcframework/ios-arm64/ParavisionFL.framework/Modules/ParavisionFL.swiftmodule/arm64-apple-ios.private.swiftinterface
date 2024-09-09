@@ -1,0 +1,83 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-module-flags: -target arm64-apple-ios14.5 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ParavisionFL
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import CoreGraphics
+import CoreMedia
+import Foundation
+import Swift
+import UIKit
+import VideoToolbox
+import _Concurrency
+import _StringProcessing
+public struct PNLiveness {
+  public let livenessProbability: Swift.Float
+  public let fakenessProbability: Swift.Float
+}
+@_hasMissingDesignatedInitializers public class PNLivenessEstimator {
+  convenience public init?()
+  public static let livenessModelVersion: Swift.String
+  public func checkValidness(image: UIKit.UIImage? = nil, buffer: CoreMedia.CMSampleBuffer? = nil, data: Foundation.Data? = nil, settings: ParavisionFL.PNLivenessValidnessSettings? = nil, boundingBoxes: [CoreFoundation.CGRect]? = nil, qualityAndAcceptability: [(Swift.Float, Swift.Float)]? = nil, landmarks: [([CoreFoundation.CGPoint], Swift.Double)]? = nil) throws -> [ParavisionFL.PNLivenessValidness]
+  public func getLiveness(image: UIKit.UIImage? = nil, buffer: CoreMedia.CMSampleBuffer? = nil, data: Foundation.Data? = nil, boundingBoxes: [CoreFoundation.CGRect]? = nil) throws -> [ParavisionFL.PNLiveness]
+  public var timeLoggerListener: (any ParavisionFL.FLTimeLoggerListener)? {
+    get
+    set
+  }
+  @objc deinit
+}
+public struct PNLivenessValidnessSettings {
+  public init(minFaceQuality: Swift.Float = 0.70, minFaceAcceptability: Swift.Float = 0.15, minFaceFrontality: Swift.Int = 90, maxFaceMaskProb: Swift.Float = 0.5, imageIlluminationControl: Swift.Int = 50, minFaceHeightPct: Swift.Float = 0.50, imageBoundaryWidthPct: Swift.Float = 0.8, imageBoundaryHeightPct: Swift.Float = 0.8, minSharpness: Swift.Float = 1.7, failFast: Swift.Bool = true)
+  public let minFaceQuality: Swift.Float
+  public let minFaceAcceptability: Swift.Float
+  public let minFaceFrontality: Swift.Int
+  public let maxFaceMaskProb: Swift.Float
+  public let imageIlluminationControl: Swift.Int
+  public let minFaceHeightPct: Swift.Float
+  public let imageBoundaryWidthPct: Swift.Float
+  public let imageBoundaryHeightPct: Swift.Float
+  public let minSharpness: Swift.Float
+  public let failFast: Swift.Bool
+}
+@_hasMissingDesignatedInitializers final public class FLTimeLogger {
+  @objc deinit
+}
+public protocol FLTimeLoggerListener {
+  func onFLExecutionFinished(stepsTimes: [Swift.String : Foundation.TimeInterval])
+}
+public enum PNLivenessValidnessFeedback : Swift.Int {
+  case UNKNOWN
+  case FACE_QUALITY_POOR
+  case FACE_ACCEPTABILITY_POOR
+  case IMG_LIGHTING_DARK
+  case IMG_LIGHTING_BRIGHT
+  case FACE_SIZE_SMALL
+  case FACE_SIZE_LARGE
+  case FACE_POS_LEFT
+  case FACE_POS_RIGHT
+  case FACE_POS_HIGH
+  case FACE_POS_LOW
+  case FACE_MASK_FOUND
+  case FACE_FRONTALITY_POOR
+  case FACE_SHARPNESS_POOR
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct PNLivenessValidness {
+  public let faceQuality: Swift.Float
+  public let faceAcceptability: Swift.Float
+  public let faceFrontality: Swift.Float
+  public let imageAveragePixelValue: Swift.Int
+  public let imageBrightPixelPct: Swift.Int
+  public let imageDarkPixelPct: Swift.Int
+  public let faceMaskProb: Swift.Float
+  public let faceSharpness: Swift.Float
+  public let isValid: Swift.Bool
+  public let feedbacks: [ParavisionFL.PNLivenessValidnessFeedback]
+}
+extension ParavisionFL.PNLivenessValidnessFeedback : Swift.Equatable {}
+extension ParavisionFL.PNLivenessValidnessFeedback : Swift.Hashable {}
+extension ParavisionFL.PNLivenessValidnessFeedback : Swift.RawRepresentable {}

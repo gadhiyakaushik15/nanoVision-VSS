@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="DeviceStatusCell" rowHeight="134" id="KGk-i7-Jjw" customClass="DeviceStatusTableViewCell" customModule="nanoVision" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="647" height="123"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="647" height="123"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="-" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTG-1P-rzb">
+                        <rect key="frame" x="130" y="25" width="322" height="31.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                        <color key="textColor" name="blueLabelColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="-" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGy-JQ-6Ta">
+                        <rect key="frame" x="130" y="63.5" width="322" height="26.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                        <color key="textColor" name="lightBlueLabelColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                        </variation>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jnp-Zd-oEl">
+                        <rect key="frame" x="467" y="36.5" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="5G1-mX-bej"/>
+                            <constraint firstAttribute="height" constant="30" id="GFo-Sr-47b"/>
+                            <constraint firstAttribute="height" constant="50" id="b4p-1e-4k1"/>
+                            <constraint firstAttribute="width" constant="50" id="nyv-6p-hQy"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5G1-mX-bej"/>
+                                <exclude reference="nyv-6p-hQy"/>
+                                <exclude reference="GFo-Sr-47b"/>
+                                <exclude reference="b4p-1e-4k1"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="5G1-mX-bej"/>
+                                <include reference="GFo-Sr-47b"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="nyv-6p-hQy"/>
+                                <include reference="b4p-1e-4k1"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="jnp-Zd-oEl" secondAttribute="trailing" constant="130" id="2rJ-7s-nP5"/>
+                    <constraint firstAttribute="bottom" secondItem="tGy-JQ-6Ta" secondAttribute="bottom" constant="15" id="4G8-t6-RLX"/>
+                    <constraint firstItem="oTG-1P-rzb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="130" id="4ol-fT-JS1"/>
+                    <constraint firstItem="tGy-JQ-6Ta" firstAttribute="leading" secondItem="oTG-1P-rzb" secondAttribute="leading" id="6Z9-cQ-1WK"/>
+                    <constraint firstItem="jnp-Zd-oEl" firstAttribute="leading" secondItem="oTG-1P-rzb" secondAttribute="trailing" constant="10" id="9nw-IG-jSl"/>
+                    <constraint firstItem="tGy-JQ-6Ta" firstAttribute="top" secondItem="oTG-1P-rzb" secondAttribute="bottom" constant="7" id="A4A-3V-kY9"/>
+                    <constraint firstItem="jnp-Zd-oEl" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="BRK-3E-0Pm"/>
+                    <constraint firstItem="oTG-1P-rzb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="E4b-zd-V52"/>
+                    <constraint firstItem="tGy-JQ-6Ta" firstAttribute="trailing" secondItem="oTG-1P-rzb" secondAttribute="trailing" id="Fty-X5-BEy"/>
+                    <constraint firstItem="oTG-1P-rzb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="Jgc-Bs-TkD"/>
+                    <constraint firstItem="tGy-JQ-6Ta" firstAttribute="trailing" secondItem="oTG-1P-rzb" secondAttribute="trailing" id="TSG-5Q-fBp"/>
+                    <constraint firstAttribute="bottom" secondItem="tGy-JQ-6Ta" secondAttribute="bottom" constant="25" id="Uzd-NJ-oiO"/>
+                    <constraint firstItem="tGy-JQ-6Ta" firstAttribute="leading" secondItem="oTG-1P-rzb" secondAttribute="leading" id="WkE-IQ-diJ"/>
+                    <constraint firstItem="oTG-1P-rzb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="50" id="hQT-IG-KlF"/>
+                    <constraint firstItem="jnp-Zd-oEl" firstAttribute="leading" secondItem="oTG-1P-rzb" secondAttribute="trailing" constant="15" id="hYw-bS-ywb"/>
+                    <constraint firstItem="jnp-Zd-oEl" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="qI4-xO-Guw"/>
+                    <constraint firstAttribute="trailing" secondItem="jnp-Zd-oEl" secondAttribute="trailing" constant="50" id="wGg-j7-aiw"/>
+                    <constraint firstItem="tGy-JQ-6Ta" firstAttribute="top" secondItem="oTG-1P-rzb" secondAttribute="bottom" constant="5" id="xjN-y3-k7i"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="4ol-fT-JS1"/>
+                        <exclude reference="hQT-IG-KlF"/>
+                        <exclude reference="E4b-zd-V52"/>
+                        <exclude reference="Jgc-Bs-TkD"/>
+                        <exclude reference="4G8-t6-RLX"/>
+                        <exclude reference="Fty-X5-BEy"/>
+                        <exclude reference="TSG-5Q-fBp"/>
+                        <exclude reference="6Z9-cQ-1WK"/>
+                        <exclude reference="WkE-IQ-diJ"/>
+                        <exclude reference="A4A-3V-kY9"/>
+                        <exclude reference="xjN-y3-k7i"/>
+                        <exclude reference="Uzd-NJ-oiO"/>
+                        <exclude reference="BRK-3E-0Pm"/>
+                        <exclude reference="qI4-xO-Guw"/>
+                        <exclude reference="2rJ-7s-nP5"/>
+                        <exclude reference="wGg-j7-aiw"/>
+                        <exclude reference="9nw-IG-jSl"/>
+                        <exclude reference="hYw-bS-ywb"/>
+                    </mask>
+                </variation>
+                <variation key="heightClass=regular-widthClass=compact">
+                    <mask key="constraints">
+                        <include reference="hQT-IG-KlF"/>
+                        <include reference="Jgc-Bs-TkD"/>
+                        <include reference="4G8-t6-RLX"/>
+                        <include reference="Fty-X5-BEy"/>
+                        <include reference="6Z9-cQ-1WK"/>
+                        <include reference="xjN-y3-k7i"/>
+                        <include reference="BRK-3E-0Pm"/>
+                        <include reference="wGg-j7-aiw"/>
+                        <include reference="9nw-IG-jSl"/>
+                    </mask>
+                </variation>
+                <variation key="heightClass=regular-widthClass=regular">
+                    <mask key="constraints">
+                        <include reference="4ol-fT-JS1"/>
+                        <include reference="E4b-zd-V52"/>
+                        <include reference="TSG-5Q-fBp"/>
+                        <include reference="WkE-IQ-diJ"/>
+                        <include reference="A4A-3V-kY9"/>
+                        <include reference="Uzd-NJ-oiO"/>
+                        <include reference="qI4-xO-Guw"/>
+                        <include reference="2rJ-7s-nP5"/>
+                        <include reference="hYw-bS-ywb"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="statusImageView" destination="jnp-Zd-oEl" id="hvM-O1-hff"/>
+                <outlet property="statusLabel" destination="tGy-JQ-6Ta" id="21A-3N-GEV"/>
+                <outlet property="titleLabel" destination="oTG-1P-rzb" id="P7f-mf-rM9"/>
+            </connections>
+            <point key="canvasLocation" x="-164.35546875" y="22.620790629575399"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="blueLabelColor">
+            <color red="0.12200000137090683" green="0.30199998617172241" blue="0.55299997329711914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lightBlueLabelColor">
+            <color red="0.37999999523162842" green="0.71399998664855957" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

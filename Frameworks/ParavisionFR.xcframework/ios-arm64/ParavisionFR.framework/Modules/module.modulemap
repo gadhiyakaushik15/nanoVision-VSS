@@ -1,0 +1,4 @@
+framework module ParavisionFR {
+  header "ParavisionFR-Swift.h"
+  requires objc
+}

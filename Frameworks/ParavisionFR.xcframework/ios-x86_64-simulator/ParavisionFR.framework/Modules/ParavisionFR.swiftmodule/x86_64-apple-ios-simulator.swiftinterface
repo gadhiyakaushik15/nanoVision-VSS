@@ -1,0 +1,34 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-module-flags: -target x86_64-apple-ios14.5-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ParavisionFR
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import CoreGraphics
+import CoreMedia
+import Foundation
+import Swift
+import UIKit
+import VideoToolbox
+import _Concurrency
+import _StringProcessing
+public struct PNEmbeddings {
+  public init(vector: [Swift.Float])
+  public let vector: [Swift.Float]
+  public func getSimilarity(_ anotherEmbeddings: ParavisionFR.PNEmbeddings) -> Swift.Float
+  public func getMatchScore(_ anotherEmbeddings: ParavisionFR.PNEmbeddings) -> Swift.Int
+}
+@_hasMissingDesignatedInitializers final public class FRTimeLogger {
+  @objc deinit
+}
+public protocol FRTimeLoggerListener {
+  func onFRExecutionFinished(stepsTimes: [Swift.String : Foundation.TimeInterval])
+}
+@_hasMissingDesignatedInitializers public class PNEmbeddingEstimator {
+  convenience public init?()
+  public func getEmbeddings(image: UIKit.UIImage? = nil, buffer: CoreMedia.CMSampleBuffer? = nil, data: Foundation.Data? = nil, landmarks: [[CoreFoundation.CGPoint]]? = nil, boundingBoxes: [CoreFoundation.CGRect]? = nil) throws -> [ParavisionFR.PNEmbeddings]
+  public var timeLoggerListener: (any ParavisionFR.FRTimeLoggerListener)? {
+    get
+    set
+  }
+  @objc deinit
+}

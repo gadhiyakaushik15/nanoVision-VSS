@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22522" systemVersion="22G436" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Logs" representedClassName=".Logs" syncable="YES">
+        <attribute name="apiresponse" optional="YES" attributeType="String"/>
+        <attribute name="applogid" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="base64String" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
+        <attribute name="confidencescore" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createddate" optional="YES" attributeType="String"/>
+        <attribute name="deviceid" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="devicetype" optional="YES" attributeType="String"/>
+        <attribute name="eventid" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="eventname" optional="YES" attributeType="String"/>
+        <attribute name="iscreated" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="listid" optional="YES" attributeType="String"/>
+        <attribute name="logid" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="message" optional="YES" attributeType="String"/>
+        <attribute name="peopleid" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="peoplename" optional="YES" attributeType="String"/>
+        <attribute name="scantype" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="usertype" optional="YES" attributeType="String"/>
+    </entity>
+</model>

@@ -1,0 +1,1587 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PNEmbeddings",
+        "printedName": "PNEmbeddings",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(vector:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PNEmbeddings",
+                "printedName": "ParavisionFR.PNEmbeddings",
+                "usr": "s:12ParavisionFR12PNEmbeddingsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Float]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12ParavisionFR12PNEmbeddingsV6vectorACSaySfG_tcfc",
+            "mangledName": "$s12ParavisionFR12PNEmbeddingsV6vectorACSaySfG_tcfc",
+            "moduleName": "ParavisionFR",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "vector",
+            "printedName": "vector",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Float]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12ParavisionFR12PNEmbeddingsV6vectorSaySfGvp",
+            "mangledName": "$s12ParavisionFR12PNEmbeddingsV6vectorSaySfGvp",
+            "moduleName": "ParavisionFR",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Float]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12ParavisionFR12PNEmbeddingsV6vectorSaySfGvg",
+                "mangledName": "$s12ParavisionFR12PNEmbeddingsV6vectorSaySfGvg",
+                "moduleName": "ParavisionFR",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "getSimilarity",
+            "printedName": "getSimilarity(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PNEmbeddings",
+                "printedName": "ParavisionFR.PNEmbeddings",
+                "usr": "s:12ParavisionFR12PNEmbeddingsV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12ParavisionFR12PNEmbeddingsV13getSimilarityySfACF",
+            "mangledName": "$s12ParavisionFR12PNEmbeddingsV13getSimilarityySfACF",
+            "moduleName": "ParavisionFR",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getMatchScore",
+            "printedName": "getMatchScore(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PNEmbeddings",
+                "printedName": "ParavisionFR.PNEmbeddings",
+                "usr": "s:12ParavisionFR12PNEmbeddingsV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12ParavisionFR12PNEmbeddingsV13getMatchScoreySiACF",
+            "mangledName": "$s12ParavisionFR12PNEmbeddingsV13getMatchScoreySiACF",
+            "moduleName": "ParavisionFR",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12ParavisionFR12PNEmbeddingsV",
+        "mangledName": "$s12ParavisionFR12PNEmbeddingsV",
+        "moduleName": "ParavisionFR",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR"
+      },
+      {
+        "kind": "Import",
+        "name": "corefd",
+        "printedName": "corefd",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FRTimeLogger",
+        "printedName": "FRTimeLogger",
+        "declKind": "Class",
+        "usr": "s:12ParavisionFR12FRTimeLoggerC",
+        "mangledName": "$s12ParavisionFR12FRTimeLoggerC",
+        "moduleName": "ParavisionFR",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FRTimeLoggerListener",
+        "printedName": "FRTimeLoggerListener",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onFRExecutionFinished",
+            "printedName": "onFRExecutionFinished(stepsTimes:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.Double]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12ParavisionFR20FRTimeLoggerListenerP21onFRExecutionFinished10stepsTimesySDySSSdG_tF",
+            "mangledName": "$s12ParavisionFR20FRTimeLoggerListenerP21onFRExecutionFinished10stepsTimesySDySSSdG_tF",
+            "moduleName": "ParavisionFR",
+            "genericSig": "<τ_0_0 where τ_0_0 : ParavisionFR.FRTimeLoggerListener>",
+            "sugared_genericSig": "<Self where Self : ParavisionFR.FRTimeLoggerListener>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:12ParavisionFR20FRTimeLoggerListenerP",
+        "mangledName": "$s12ParavisionFR20FRTimeLoggerListenerP",
+        "moduleName": "ParavisionFR",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR"
+      },
+      {
+        "kind": "Import",
+        "name": "corefd",
+        "printedName": "corefd",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR"
+      },
+      {
+        "kind": "Import",
+        "name": "corefd",
+        "printedName": "corefd",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreMedia",
+        "printedName": "CoreMedia",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR"
+      },
+      {
+        "kind": "Import",
+        "name": "VideoToolbox",
+        "printedName": "VideoToolbox",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR"
+      },
+      {
+        "kind": "Import",
+        "name": "corefd",
+        "printedName": "corefd",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR"
+      },
+      {
+        "kind": "Import",
+        "name": "corefd",
+        "printedName": "corefd",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PNEmbeddingEstimator",
+        "printedName": "PNEmbeddingEstimator",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ParavisionFR.PNEmbeddingEstimator?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PNEmbeddingEstimator",
+                    "printedName": "ParavisionFR.PNEmbeddingEstimator",
+                    "usr": "s:12ParavisionFR20PNEmbeddingEstimatorC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12ParavisionFR20PNEmbeddingEstimatorCACSgycfc",
+            "mangledName": "$s12ParavisionFR20PNEmbeddingEstimatorCACSgycfc",
+            "moduleName": "ParavisionFR",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Function",
+            "name": "getEmbeddings",
+            "printedName": "getEmbeddings(image:buffer:data:landmarks:boundingBoxes:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[ParavisionFR.PNEmbeddings]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PNEmbeddings",
+                    "printedName": "ParavisionFR.PNEmbeddings",
+                    "usr": "s:12ParavisionFR12PNEmbeddingsV"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreMedia.CMSampleBuffer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CMSampleBuffer",
+                    "printedName": "CoreMedia.CMSampleBuffer",
+                    "usr": "c:@T@CMSampleBufferRef"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[[CoreFoundation.CGPoint]]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[[CoreFoundation.CGPoint]]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[CoreFoundation.CGPoint]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CGPoint",
+                            "printedName": "CoreFoundation.CGPoint",
+                            "usr": "c:@S@CGPoint"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[CoreFoundation.CGRect]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[CoreFoundation.CGRect]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGRect",
+                        "printedName": "CoreFoundation.CGRect",
+                        "usr": "c:@S@CGRect"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12ParavisionFR20PNEmbeddingEstimatorC13getEmbeddings5image6buffer4data9landmarks13boundingBoxesSayAA12PNEmbeddingsVGSo7UIImageCSg_So17CMSampleBufferRefaSg10Foundation4DataVSgSaySaySo7CGPointVGGSgSaySo6CGRectVGSgtKF",
+            "mangledName": "$s12ParavisionFR20PNEmbeddingEstimatorC13getEmbeddings5image6buffer4data9landmarks13boundingBoxesSayAA12PNEmbeddingsVGSo7UIImageCSg_So17CMSampleBufferRefaSg10Foundation4DataVSgSaySaySo7CGPointVGGSgSaySo6CGRectVGSgtKF",
+            "moduleName": "ParavisionFR",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "timeLoggerListener",
+            "printedName": "timeLoggerListener",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ParavisionFR.FRTimeLoggerListener?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FRTimeLoggerListener",
+                    "printedName": "ParavisionFR.FRTimeLoggerListener",
+                    "usr": "s:12ParavisionFR20FRTimeLoggerListenerP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12ParavisionFR20PNEmbeddingEstimatorC18timeLoggerListenerAA06FRTimefG0_pSgvp",
+            "mangledName": "$s12ParavisionFR20PNEmbeddingEstimatorC18timeLoggerListenerAA06FRTimefG0_pSgvp",
+            "moduleName": "ParavisionFR",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ParavisionFR.FRTimeLoggerListener?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FRTimeLoggerListener",
+                        "printedName": "ParavisionFR.FRTimeLoggerListener",
+                        "usr": "s:12ParavisionFR20FRTimeLoggerListenerP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12ParavisionFR20PNEmbeddingEstimatorC18timeLoggerListenerAA06FRTimefG0_pSgvg",
+                "mangledName": "$s12ParavisionFR20PNEmbeddingEstimatorC18timeLoggerListenerAA06FRTimefG0_pSgvg",
+                "moduleName": "ParavisionFR",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ParavisionFR.FRTimeLoggerListener?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FRTimeLoggerListener",
+                        "printedName": "ParavisionFR.FRTimeLoggerListener",
+                        "usr": "s:12ParavisionFR20FRTimeLoggerListenerP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12ParavisionFR20PNEmbeddingEstimatorC18timeLoggerListenerAA06FRTimefG0_pSgvs",
+                "mangledName": "$s12ParavisionFR20PNEmbeddingEstimatorC18timeLoggerListenerAA06FRTimefG0_pSgvs",
+                "moduleName": "ParavisionFR",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12ParavisionFR20PNEmbeddingEstimatorC18timeLoggerListenerAA06FRTimefG0_pSgvM",
+                "mangledName": "$s12ParavisionFR20PNEmbeddingEstimatorC18timeLoggerListenerAA06FRTimefG0_pSgvM",
+                "moduleName": "ParavisionFR",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:12ParavisionFR20PNEmbeddingEstimatorC",
+        "mangledName": "$s12ParavisionFR20PNEmbeddingEstimatorC",
+        "moduleName": "ParavisionFR",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "ParavisionFR"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Embeddings\/FREmbeddingPostprocess.swift",
+      "kind": "IntegerLiteral",
+      "offset": 317,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Embeddings\/FREmbeddingPostprocess.swift",
+      "kind": "FloatLiteral",
+      "offset": 322,
+      "length": 4,
+      "value": "0.01"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Embeddings\/FREmbeddingPostprocess.swift",
+      "kind": "IntegerLiteral",
+      "offset": 604,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Detection\/FRPNBoundingBoxDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 1125,
+      "length": 11,
+      "value": "\"Detection\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Detection\/FRPNBoundingBoxDetector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1349,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Detection\/FRPNBoundingBoxDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 1443,
+      "length": 5,
+      "value": "\"Pre\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Detection\/FRPNBoundingBoxDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 1563,
+      "length": 11,
+      "value": "\"Inference\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Detection\/FRPNBoundingBoxDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 1718,
+      "length": 6,
+      "value": "\"Post\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Detection\/FRPNBoundingBoxDetector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1906,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Detection\/FRPNBoundingBoxDetector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2060,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Detection\/FRPNBoundingBoxDetector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2122,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Detection\/FRPNBoundingBoxDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 2257,
+      "length": 3,
+      "value": "0.9"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Detection\/FRDetectionPreprocess.swift",
+      "kind": "BooleanLiteral",
+      "offset": 177,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Detection\/FRDetectionPreprocess.swift",
+      "kind": "StringLiteral",
+      "offset": 747,
+      "length": 23,
+      "value": "\"detection preperation\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Public\/Helpers\/FRTimeLogger.swift",
+      "kind": "BooleanLiteral",
+      "offset": 169,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Public\/Helpers\/FRTimeLogger.swift",
+      "kind": "Dictionary",
+      "offset": 512,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Public\/Helpers\/FRTimeLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 710,
+      "length": 82,
+      "value": "\"\n============================================================================\n\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Public\/Helpers\/FRTimeLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1266,
+      "length": 19,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Public\/Helpers\/FRTimeLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1276,
+      "length": 1,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Public\/Helpers\/FRTimeLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1284,
+      "length": 9,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Common\/Types\/FRPNResizingMode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 242,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Common\/Types\/FRPNResizingMode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 294,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Common\/Types\/FRPNResizingMode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 344,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Common\/Types\/FRPNResizingMode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 408,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Common\/Types\/FRPNResizingMode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 242,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Common\/Types\/FRPNResizingMode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 294,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Common\/Types\/FRPNResizingMode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 344,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Common\/Types\/FRPNResizingMode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 408,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Common\/Types\/FRPNResizingMode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 242,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Common\/Types\/FRPNResizingMode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 294,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Common\/Types\/FRPNResizingMode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 344,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Common\/Types\/FRPNResizingMode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 408,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Landmarks\/FRPNLandmarkDetector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1170,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Landmarks\/FRPNLandmarkDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 1284,
+      "length": 10,
+      "value": "\"Landmark\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Landmarks\/FRPNLandmarkDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 1651,
+      "length": 5,
+      "value": "\"Pre\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Landmarks\/FRPNLandmarkDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 1914,
+      "length": 11,
+      "value": "\"Inference\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Landmarks\/FRPNLandmarkDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 2291,
+      "length": 6,
+      "value": "\"Post\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Landmarks\/FRPNLandmarkDetector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2455,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Landmarks\/FRPNLandmarkDetector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2609,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Landmarks\/FRPNLandmarkDetector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2671,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Quality\/FRPNQualityEstimator.swift",
+      "kind": "StringLiteral",
+      "offset": 1325,
+      "length": 9,
+      "value": "\"Quality\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Quality\/FRPNQualityEstimator.swift",
+      "kind": "StringLiteral",
+      "offset": 1704,
+      "length": 5,
+      "value": "\"Pre\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Quality\/FRPNQualityEstimator.swift",
+      "kind": "StringLiteral",
+      "offset": 1928,
+      "length": 11,
+      "value": "\"Inference\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Quality\/FRPNQualityEstimator.swift",
+      "kind": "StringLiteral",
+      "offset": 2207,
+      "length": 6,
+      "value": "\"Post\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Quality\/FRPNQualityEstimator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2421,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Quality\/FRPNQualityEstimator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2575,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Quality\/FRPNQualityEstimator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2637,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Landmarks\/FRLandmarkPostprocess.swift",
+      "kind": "IntegerLiteral",
+      "offset": 461,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Landmarks\/FRLandmarkPostprocess.swift",
+      "kind": "IntegerLiteral",
+      "offset": 598,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Landmarks\/FRLandmarkPostprocess.swift",
+      "kind": "IntegerLiteral",
+      "offset": 665,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Landmarks\/FRLandmarkPostprocess.swift",
+      "kind": "IntegerLiteral",
+      "offset": 773,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Landmarks\/FRLandmarkPostprocess.swift",
+      "kind": "IntegerLiteral",
+      "offset": 840,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Landmarks\/FRLandmarkPostprocess.swift",
+      "kind": "IntegerLiteral",
+      "offset": 945,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Landmarks\/FRLandmarkPostprocess.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1012,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Landmarks\/FRLandmarkPostprocess.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1123,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Landmarks\/FRLandmarkPostprocess.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1190,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Landmarks\/FRLandmarkPostprocess.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1300,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Landmarks\/FRLandmarkPostprocess.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1367,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Detection\/FRDetectionPostprocess.swift",
+      "kind": "Array",
+      "offset": 311,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Detection\/FRDetectionPostprocess.swift",
+      "kind": "IntegerLiteral",
+      "offset": 529,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Detection\/FRDetectionPostprocess.swift",
+      "kind": "IntegerLiteral",
+      "offset": 599,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Detection\/FRDetectionPostprocess.swift",
+      "kind": "IntegerLiteral",
+      "offset": 673,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Detection\/FRDetectionPostprocess.swift",
+      "kind": "IntegerLiteral",
+      "offset": 747,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Common\/Types\/FRPNBoundingBox.swift",
+      "kind": "FloatLiteral",
+      "offset": 548,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Common\/Types\/FRPNBoundingBox.swift",
+      "kind": "FloatLiteral",
+      "offset": 1957,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Common\/Types\/FRPNBoundingBox.swift",
+      "kind": "FloatLiteral",
+      "offset": 2075,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Common\/FRPNImageProxy.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3176,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Common\/FRPNImageProxy.swift",
+      "kind": "Dictionary",
+      "offset": 3279,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Common\/FRPNImageProxy.swift",
+      "kind": "Dictionary",
+      "offset": 4305,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Common\/FRSimilarityCalculator.swift",
+      "kind": "FloatLiteral",
+      "offset": 207,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Common\/FRSimilarityCalculator.swift",
+      "kind": "FloatLiteral",
+      "offset": 262,
+      "length": 4,
+      "value": "-5.0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Common\/FRSimilarityCalculator.swift",
+      "kind": "FloatLiteral",
+      "offset": 310,
+      "length": 6,
+      "value": "1000.0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Common\/FRSimilarityCalculator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 841,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Common\/FRSimilarityCalculator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 865,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Common\/FRSimilarityCalculator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 893,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Common\/FRSimilarityCalculator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1076,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Common\/FRSimilarityCalculator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1128,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Common\/FRSimilarityCalculator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1147,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Common\/FRSimilarityCalculator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1397,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Common\/FRSimilarityCalculator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1402,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Public\/PNEmbeddingEstimator.swift",
+      "kind": "StringLiteral",
+      "offset": 539,
+      "length": 57,
+      "value": "\"face_recognition_research_torchscript_fast_v7_quant_arm\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Public\/PNEmbeddingEstimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 626,
+      "length": 3,
+      "value": "112"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Public\/PNEmbeddingEstimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 658,
+      "length": 3,
+      "value": "112"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Public\/PNEmbeddingEstimator.swift",
+      "kind": "StringLiteral",
+      "offset": 1895,
+      "length": 11,
+      "value": "\"Embedding\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Public\/PNEmbeddingEstimator.swift",
+      "kind": "Array",
+      "offset": 2440,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Public\/PNEmbeddingEstimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3090,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Public\/PNEmbeddingEstimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3105,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Public\/PNEmbeddingEstimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3117,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Public\/PNEmbeddingEstimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3135,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Public\/PNEmbeddingEstimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3152,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Public\/PNEmbeddingEstimator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3300,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Public\/PNEmbeddingEstimator.swift",
+      "kind": "StringLiteral",
+      "offset": 3630,
+      "length": 5,
+      "value": "\"Pre\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Public\/PNEmbeddingEstimator.swift",
+      "kind": "StringLiteral",
+      "offset": 3856,
+      "length": 11,
+      "value": "\"Inference\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Public\/PNEmbeddingEstimator.swift",
+      "kind": "StringLiteral",
+      "offset": 4175,
+      "length": 6,
+      "value": "\"Post\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Public\/PNEmbeddingEstimator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4334,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Public\/PNEmbeddingEstimator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4495,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Public\/PNEmbeddingEstimator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4557,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Common\/Types\/FRPNPoint.swift",
+      "kind": "IntegerLiteral",
+      "offset": 486,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fr-sdk\/fr-sdk\/Private\/Common\/Types\/FRPNPoint.swift",
+      "kind": "IntegerLiteral",
+      "offset": 492,
+      "length": 1,
+      "value": "0"
+    }
+  ]
+}

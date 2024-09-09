@@ -1,0 +1,60 @@
+PODS:
+  - Alamofire (5.8.1)
+  - BiometricAuthentication (3.1.3)
+  - CocoaMQTT (2.1.6):
+    - CocoaMQTT/Core (= 2.1.6)
+  - CocoaMQTT/Core (2.1.6):
+    - MqttCocoaAsyncSocket (~> 1.0.8)
+  - IQKeyboardManagerSwift (7.0.1)
+  - KeychainSwift (21.0.0)
+  - MKToolTip (1.0.6)
+  - MqttCocoaAsyncSocket (1.0.8)
+  - SideMenu (6.5.0)
+  - SSZipArchive (2.4.3)
+  - SVProgressHUD (2.3.1):
+    - SVProgressHUD/Core (= 2.3.1)
+  - SVProgressHUD/Core (2.3.1)
+  - TTTAttributedLabel (2.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - BiometricAuthentication
+  - CocoaMQTT
+  - IQKeyboardManagerSwift
+  - KeychainSwift
+  - MKToolTip
+  - SideMenu
+  - SSZipArchive
+  - SVProgressHUD
+  - TTTAttributedLabel
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - BiometricAuthentication
+    - CocoaMQTT
+    - IQKeyboardManagerSwift
+    - KeychainSwift
+    - MKToolTip
+    - MqttCocoaAsyncSocket
+    - SideMenu
+    - SSZipArchive
+    - SVProgressHUD
+    - TTTAttributedLabel
+
+SPEC CHECKSUMS:
+  Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
+  BiometricAuthentication: b63d51be9260ba94165e032829ae78f074b129df
+  CocoaMQTT: 1f206228b29318eabdacad0c2e4e88575922c27a
+  IQKeyboardManagerSwift: 7f6b1b1d1497855d2beea7f2f10ffcc6978525b1
+  KeychainSwift: 4a71a45c802fd9e73906457c2dcbdbdc06c9419d
+  MKToolTip: 69509b1cada10f96bd9f4ab559a768e7c6557933
+  MqttCocoaAsyncSocket: 77d3b74f76228dd5a05d1f9526eab101d415b30c
+  SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
+  SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
+  SVProgressHUD: 4837c74bdfe2e51e8821c397825996a8d7de6e22
+  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
+
+PODFILE CHECKSUM: 34ffb2291c5e6d8101f6ca2b20be8a3c7aee7a5c
+
+COCOAPODS: 1.14.3

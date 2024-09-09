@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SideMenuCell" rowHeight="75" id="KGk-i7-Jjw" customClass="SideMenuTableViewCell" customModule="nanoVision" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="WdA-1y-LQE">
+                        <rect key="frame" x="50" y="17" width="220" height="41"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qxM-Bm-6jA">
+                                <rect key="frame" x="0.0" y="3" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="a0f-5Q-aPL"/>
+                                    <constraint firstAttribute="width" constant="25" id="iOv-0z-ls6"/>
+                                    <constraint firstAttribute="width" constant="35" id="k1R-DP-Hcp"/>
+                                    <constraint firstAttribute="height" constant="25" id="kvN-hw-pmS"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="iOv-0z-ls6"/>
+                                        <exclude reference="k1R-DP-Hcp"/>
+                                        <exclude reference="a0f-5Q-aPL"/>
+                                        <exclude reference="kvN-hw-pmS"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="iOv-0z-ls6"/>
+                                        <include reference="kvN-hw-pmS"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="k1R-DP-Hcp"/>
+                                        <include reference="a0f-5Q-aPL"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzV-XF-Lnk">
+                                <rect key="frame" x="50" y="0.0" width="124" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="0DN-78-bfM"/>
+                                    <constraint firstAttribute="height" constant="31" id="oqg-Fi-EbO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                <color key="textColor" name="blueLabelColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0DN-78-bfM"/>
+                                        <exclude reference="oqg-Fi-EbO"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                    <mask key="constraints">
+                                        <include reference="oqg-Fi-EbO"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                    <mask key="constraints">
+                                        <include reference="0DN-78-bfM"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="rightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="Weu-ms-79f">
+                                <rect key="frame" x="189" y="5" width="31" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Ah5-eT-26O"/>
+                                    <constraint firstAttribute="width" constant="31" id="SlQ-W6-Y9T"/>
+                                    <constraint firstAttribute="height" constant="31" id="b3N-5H-pYh"/>
+                                    <constraint firstAttribute="width" constant="20" id="mlA-dP-Rc3"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="SlQ-W6-Y9T"/>
+                                        <exclude reference="mlA-dP-Rc3"/>
+                                        <exclude reference="Ah5-eT-26O"/>
+                                        <exclude reference="b3N-5H-pYh"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="mlA-dP-Rc3"/>
+                                        <include reference="Ah5-eT-26O"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="SlQ-W6-Y9T"/>
+                                        <include reference="b3N-5H-pYh"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="WdA-1y-LQE" secondAttribute="trailing" constant="50" id="7Nt-Dk-7FD"/>
+                    <constraint firstAttribute="bottom" secondItem="WdA-1y-LQE" secondAttribute="bottom" constant="12" id="W7c-b0-1KL"/>
+                    <constraint firstItem="WdA-1y-LQE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Z0R-6y-kH9"/>
+                    <constraint firstItem="WdA-1y-LQE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="arG-oB-QTr"/>
+                    <constraint firstItem="WdA-1y-LQE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="50" id="cly-0a-2Cd"/>
+                    <constraint firstAttribute="trailing" secondItem="WdA-1y-LQE" secondAttribute="trailing" constant="20" id="lTs-cT-Wwi"/>
+                    <constraint firstAttribute="bottom" secondItem="WdA-1y-LQE" secondAttribute="bottom" constant="17" id="sXe-2n-ZQp"/>
+                    <constraint firstItem="WdA-1y-LQE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="z5E-zo-GyZ"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="7Nt-Dk-7FD"/>
+                        <exclude reference="lTs-cT-Wwi"/>
+                        <exclude reference="Z0R-6y-kH9"/>
+                        <exclude reference="cly-0a-2Cd"/>
+                        <exclude reference="W7c-b0-1KL"/>
+                        <exclude reference="sXe-2n-ZQp"/>
+                        <exclude reference="arG-oB-QTr"/>
+                        <exclude reference="z5E-zo-GyZ"/>
+                    </mask>
+                </variation>
+                <variation key="heightClass=regular-widthClass=compact">
+                    <mask key="constraints">
+                        <include reference="lTs-cT-Wwi"/>
+                        <include reference="Z0R-6y-kH9"/>
+                        <include reference="W7c-b0-1KL"/>
+                        <include reference="arG-oB-QTr"/>
+                    </mask>
+                </variation>
+                <variation key="heightClass=regular-widthClass=regular">
+                    <mask key="constraints">
+                        <include reference="7Nt-Dk-7FD"/>
+                        <include reference="cly-0a-2Cd"/>
+                        <include reference="sXe-2n-ZQp"/>
+                        <include reference="z5E-zo-GyZ"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="sideMenuImageView" destination="qxM-Bm-6jA" id="Q1O-Xs-hLr"/>
+                <outlet property="sideMenuTitleLabel" destination="zzV-XF-Lnk" id="Fmk-je-fzL"/>
+            </connections>
+            <point key="canvasLocation" x="100.76335877862596" y="10.91549295774648"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="rightArrow" width="128" height="128"/>
+        <namedColor name="blueLabelColor">
+            <color red="0.12200000137090683" green="0.30199998617172241" blue="0.55299997329711914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

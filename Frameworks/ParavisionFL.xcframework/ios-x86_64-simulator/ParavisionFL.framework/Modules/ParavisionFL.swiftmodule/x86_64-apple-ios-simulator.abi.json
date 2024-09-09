@@ -1,0 +1,4262 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PNLiveness",
+        "printedName": "PNLiveness",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "livenessProbability",
+            "printedName": "livenessProbability",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12ParavisionFL10PNLivenessV19livenessProbabilitySfvp",
+            "mangledName": "$s12ParavisionFL10PNLivenessV19livenessProbabilitySfvp",
+            "moduleName": "ParavisionFL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12ParavisionFL10PNLivenessV19livenessProbabilitySfvg",
+                "mangledName": "$s12ParavisionFL10PNLivenessV19livenessProbabilitySfvg",
+                "moduleName": "ParavisionFL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fakenessProbability",
+            "printedName": "fakenessProbability",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12ParavisionFL10PNLivenessV19fakenessProbabilitySfvp",
+            "mangledName": "$s12ParavisionFL10PNLivenessV19fakenessProbabilitySfvp",
+            "moduleName": "ParavisionFL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12ParavisionFL10PNLivenessV19fakenessProbabilitySfvg",
+                "mangledName": "$s12ParavisionFL10PNLivenessV19fakenessProbabilitySfvg",
+                "moduleName": "ParavisionFL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12ParavisionFL10PNLivenessV",
+        "mangledName": "$s12ParavisionFL10PNLivenessV",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "corefl",
+        "printedName": "corefl",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL"
+      },
+      {
+        "kind": "Import",
+        "name": "corefd",
+        "printedName": "corefd",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "corefl",
+        "printedName": "corefl",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PNLivenessEstimator",
+        "printedName": "PNLivenessEstimator",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ParavisionFL.PNLivenessEstimator?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PNLivenessEstimator",
+                    "printedName": "ParavisionFL.PNLivenessEstimator",
+                    "usr": "s:12ParavisionFL19PNLivenessEstimatorC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12ParavisionFL19PNLivenessEstimatorCACSgycfc",
+            "mangledName": "$s12ParavisionFL19PNLivenessEstimatorCACSgycfc",
+            "moduleName": "ParavisionFL",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Var",
+            "name": "livenessModelVersion",
+            "printedName": "livenessModelVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12ParavisionFL19PNLivenessEstimatorC20livenessModelVersionSSvpZ",
+            "mangledName": "$s12ParavisionFL19PNLivenessEstimatorC20livenessModelVersionSSvpZ",
+            "moduleName": "ParavisionFL",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12ParavisionFL19PNLivenessEstimatorC20livenessModelVersionSSvgZ",
+                "mangledName": "$s12ParavisionFL19PNLivenessEstimatorC20livenessModelVersionSSvgZ",
+                "moduleName": "ParavisionFL",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "checkValidness",
+            "printedName": "checkValidness(image:buffer:data:settings:boundingBoxes:qualityAndAcceptability:landmarks:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[ParavisionFL.PNLivenessValidness]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PNLivenessValidness",
+                    "printedName": "ParavisionFL.PNLivenessValidness",
+                    "usr": "s:12ParavisionFL19PNLivenessValidnessV"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreMedia.CMSampleBuffer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CMSampleBuffer",
+                    "printedName": "CoreMedia.CMSampleBuffer",
+                    "usr": "c:@T@CMSampleBufferRef"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ParavisionFL.PNLivenessValidnessSettings?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PNLivenessValidnessSettings",
+                    "printedName": "ParavisionFL.PNLivenessValidnessSettings",
+                    "usr": "s:12ParavisionFL27PNLivenessValidnessSettingsV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[CoreFoundation.CGRect]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[CoreFoundation.CGRect]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGRect",
+                        "printedName": "CoreFoundation.CGRect",
+                        "usr": "c:@S@CGRect"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[(Swift.Float, Swift.Float)]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[(Swift.Float, Swift.Float)]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Float, Swift.Float)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Float",
+                            "printedName": "Swift.Float",
+                            "usr": "s:Sf"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Float",
+                            "printedName": "Swift.Float",
+                            "usr": "s:Sf"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[([CoreFoundation.CGPoint], Swift.Double)]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[([CoreFoundation.CGPoint], Swift.Double)]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "([CoreFoundation.CGPoint], Swift.Double)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[CoreFoundation.CGPoint]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "CGPoint",
+                                "printedName": "CoreFoundation.CGPoint",
+                                "usr": "c:@S@CGPoint"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12ParavisionFL19PNLivenessEstimatorC14checkValidness5image6buffer4data8settings13boundingBoxes23qualityAndAcceptability9landmarksSayAA0cF0VGSo7UIImageCSg_So17CMSampleBufferRefaSg10Foundation4DataVSgAA0cF8SettingsVSgSaySo6CGRectVGSgSaySf_SftGSgSaySaySo7CGPointVG_SdtGSgtKF",
+            "mangledName": "$s12ParavisionFL19PNLivenessEstimatorC14checkValidness5image6buffer4data8settings13boundingBoxes23qualityAndAcceptability9landmarksSayAA0cF0VGSo7UIImageCSg_So17CMSampleBufferRefaSg10Foundation4DataVSgAA0cF8SettingsVSgSaySo6CGRectVGSgSaySf_SftGSgSaySaySo7CGPointVG_SdtGSgtKF",
+            "moduleName": "ParavisionFL",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getLiveness",
+            "printedName": "getLiveness(image:buffer:data:boundingBoxes:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[ParavisionFL.PNLiveness]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PNLiveness",
+                    "printedName": "ParavisionFL.PNLiveness",
+                    "usr": "s:12ParavisionFL10PNLivenessV"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreMedia.CMSampleBuffer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CMSampleBuffer",
+                    "printedName": "CoreMedia.CMSampleBuffer",
+                    "usr": "c:@T@CMSampleBufferRef"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[CoreFoundation.CGRect]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[CoreFoundation.CGRect]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGRect",
+                        "printedName": "CoreFoundation.CGRect",
+                        "usr": "c:@S@CGRect"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12ParavisionFL19PNLivenessEstimatorC11getLiveness5image6buffer4data13boundingBoxesSayAA0C0VGSo7UIImageCSg_So17CMSampleBufferRefaSg10Foundation4DataVSgSaySo6CGRectVGSgtKF",
+            "mangledName": "$s12ParavisionFL19PNLivenessEstimatorC11getLiveness5image6buffer4data13boundingBoxesSayAA0C0VGSo7UIImageCSg_So17CMSampleBufferRefaSg10Foundation4DataVSgSaySo6CGRectVGSgtKF",
+            "moduleName": "ParavisionFL",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "timeLoggerListener",
+            "printedName": "timeLoggerListener",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ParavisionFL.FLTimeLoggerListener?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FLTimeLoggerListener",
+                    "printedName": "ParavisionFL.FLTimeLoggerListener",
+                    "usr": "s:12ParavisionFL20FLTimeLoggerListenerP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12ParavisionFL19PNLivenessEstimatorC18timeLoggerListenerAA06FLTimefG0_pSgvp",
+            "mangledName": "$s12ParavisionFL19PNLivenessEstimatorC18timeLoggerListenerAA06FLTimefG0_pSgvp",
+            "moduleName": "ParavisionFL",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ParavisionFL.FLTimeLoggerListener?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FLTimeLoggerListener",
+                        "printedName": "ParavisionFL.FLTimeLoggerListener",
+                        "usr": "s:12ParavisionFL20FLTimeLoggerListenerP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12ParavisionFL19PNLivenessEstimatorC18timeLoggerListenerAA06FLTimefG0_pSgvg",
+                "mangledName": "$s12ParavisionFL19PNLivenessEstimatorC18timeLoggerListenerAA06FLTimefG0_pSgvg",
+                "moduleName": "ParavisionFL",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ParavisionFL.FLTimeLoggerListener?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FLTimeLoggerListener",
+                        "printedName": "ParavisionFL.FLTimeLoggerListener",
+                        "usr": "s:12ParavisionFL20FLTimeLoggerListenerP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12ParavisionFL19PNLivenessEstimatorC18timeLoggerListenerAA06FLTimefG0_pSgvs",
+                "mangledName": "$s12ParavisionFL19PNLivenessEstimatorC18timeLoggerListenerAA06FLTimefG0_pSgvs",
+                "moduleName": "ParavisionFL",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12ParavisionFL19PNLivenessEstimatorC18timeLoggerListenerAA06FLTimefG0_pSgvM",
+                "mangledName": "$s12ParavisionFL19PNLivenessEstimatorC18timeLoggerListenerAA06FLTimefG0_pSgvM",
+                "moduleName": "ParavisionFL",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:12ParavisionFL19PNLivenessEstimatorC",
+        "mangledName": "$s12ParavisionFL19PNLivenessEstimatorC",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreMedia",
+        "printedName": "CoreMedia",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL"
+      },
+      {
+        "kind": "Import",
+        "name": "VideoToolbox",
+        "printedName": "VideoToolbox",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL"
+      },
+      {
+        "kind": "Import",
+        "name": "corefd",
+        "printedName": "corefd",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL"
+      },
+      {
+        "kind": "Import",
+        "name": "corefd",
+        "printedName": "corefd",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "corefl",
+        "printedName": "corefl",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PNLivenessValidnessSettings",
+        "printedName": "PNLivenessValidnessSettings",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(minFaceQuality:minFaceAcceptability:minFaceFrontality:maxFaceMaskProb:imageIlluminationControl:minFaceHeightPct:imageBoundaryWidthPct:imageBoundaryHeightPct:minSharpness:failFast:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PNLivenessValidnessSettings",
+                "printedName": "ParavisionFL.PNLivenessValidnessSettings",
+                "usr": "s:12ParavisionFL27PNLivenessValidnessSettingsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "hasDefaultArg": true,
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "hasDefaultArg": true,
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "hasDefaultArg": true,
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "hasDefaultArg": true,
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "hasDefaultArg": true,
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "hasDefaultArg": true,
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "hasDefaultArg": true,
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12ParavisionFL27PNLivenessValidnessSettingsV14minFaceQuality0fG13Acceptability0fG10Frontality03maxG8MaskProb24imageIlluminationControl0fG9HeightPct0n13BoundaryWidthR00nsqR00F9Sharpness8failFastACSf_SfSiSfSiS4fSbtcfc",
+            "mangledName": "$s12ParavisionFL27PNLivenessValidnessSettingsV14minFaceQuality0fG13Acceptability0fG10Frontality03maxG8MaskProb24imageIlluminationControl0fG9HeightPct0n13BoundaryWidthR00nsqR00F9Sharpness8failFastACSf_SfSiSfSiS4fSbtcfc",
+            "moduleName": "ParavisionFL",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "minFaceQuality",
+            "printedName": "minFaceQuality",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12ParavisionFL27PNLivenessValidnessSettingsV14minFaceQualitySfvp",
+            "mangledName": "$s12ParavisionFL27PNLivenessValidnessSettingsV14minFaceQualitySfvp",
+            "moduleName": "ParavisionFL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12ParavisionFL27PNLivenessValidnessSettingsV14minFaceQualitySfvg",
+                "mangledName": "$s12ParavisionFL27PNLivenessValidnessSettingsV14minFaceQualitySfvg",
+                "moduleName": "ParavisionFL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "minFaceAcceptability",
+            "printedName": "minFaceAcceptability",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12ParavisionFL27PNLivenessValidnessSettingsV20minFaceAcceptabilitySfvp",
+            "mangledName": "$s12ParavisionFL27PNLivenessValidnessSettingsV20minFaceAcceptabilitySfvp",
+            "moduleName": "ParavisionFL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12ParavisionFL27PNLivenessValidnessSettingsV20minFaceAcceptabilitySfvg",
+                "mangledName": "$s12ParavisionFL27PNLivenessValidnessSettingsV20minFaceAcceptabilitySfvg",
+                "moduleName": "ParavisionFL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "minFaceFrontality",
+            "printedName": "minFaceFrontality",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12ParavisionFL27PNLivenessValidnessSettingsV17minFaceFrontalitySivp",
+            "mangledName": "$s12ParavisionFL27PNLivenessValidnessSettingsV17minFaceFrontalitySivp",
+            "moduleName": "ParavisionFL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12ParavisionFL27PNLivenessValidnessSettingsV17minFaceFrontalitySivg",
+                "mangledName": "$s12ParavisionFL27PNLivenessValidnessSettingsV17minFaceFrontalitySivg",
+                "moduleName": "ParavisionFL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "maxFaceMaskProb",
+            "printedName": "maxFaceMaskProb",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12ParavisionFL27PNLivenessValidnessSettingsV15maxFaceMaskProbSfvp",
+            "mangledName": "$s12ParavisionFL27PNLivenessValidnessSettingsV15maxFaceMaskProbSfvp",
+            "moduleName": "ParavisionFL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12ParavisionFL27PNLivenessValidnessSettingsV15maxFaceMaskProbSfvg",
+                "mangledName": "$s12ParavisionFL27PNLivenessValidnessSettingsV15maxFaceMaskProbSfvg",
+                "moduleName": "ParavisionFL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "imageIlluminationControl",
+            "printedName": "imageIlluminationControl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12ParavisionFL27PNLivenessValidnessSettingsV24imageIlluminationControlSivp",
+            "mangledName": "$s12ParavisionFL27PNLivenessValidnessSettingsV24imageIlluminationControlSivp",
+            "moduleName": "ParavisionFL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12ParavisionFL27PNLivenessValidnessSettingsV24imageIlluminationControlSivg",
+                "mangledName": "$s12ParavisionFL27PNLivenessValidnessSettingsV24imageIlluminationControlSivg",
+                "moduleName": "ParavisionFL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "minFaceHeightPct",
+            "printedName": "minFaceHeightPct",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12ParavisionFL27PNLivenessValidnessSettingsV16minFaceHeightPctSfvp",
+            "mangledName": "$s12ParavisionFL27PNLivenessValidnessSettingsV16minFaceHeightPctSfvp",
+            "moduleName": "ParavisionFL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12ParavisionFL27PNLivenessValidnessSettingsV16minFaceHeightPctSfvg",
+                "mangledName": "$s12ParavisionFL27PNLivenessValidnessSettingsV16minFaceHeightPctSfvg",
+                "moduleName": "ParavisionFL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "imageBoundaryWidthPct",
+            "printedName": "imageBoundaryWidthPct",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12ParavisionFL27PNLivenessValidnessSettingsV21imageBoundaryWidthPctSfvp",
+            "mangledName": "$s12ParavisionFL27PNLivenessValidnessSettingsV21imageBoundaryWidthPctSfvp",
+            "moduleName": "ParavisionFL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12ParavisionFL27PNLivenessValidnessSettingsV21imageBoundaryWidthPctSfvg",
+                "mangledName": "$s12ParavisionFL27PNLivenessValidnessSettingsV21imageBoundaryWidthPctSfvg",
+                "moduleName": "ParavisionFL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "imageBoundaryHeightPct",
+            "printedName": "imageBoundaryHeightPct",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12ParavisionFL27PNLivenessValidnessSettingsV22imageBoundaryHeightPctSfvp",
+            "mangledName": "$s12ParavisionFL27PNLivenessValidnessSettingsV22imageBoundaryHeightPctSfvp",
+            "moduleName": "ParavisionFL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12ParavisionFL27PNLivenessValidnessSettingsV22imageBoundaryHeightPctSfvg",
+                "mangledName": "$s12ParavisionFL27PNLivenessValidnessSettingsV22imageBoundaryHeightPctSfvg",
+                "moduleName": "ParavisionFL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "minSharpness",
+            "printedName": "minSharpness",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12ParavisionFL27PNLivenessValidnessSettingsV12minSharpnessSfvp",
+            "mangledName": "$s12ParavisionFL27PNLivenessValidnessSettingsV12minSharpnessSfvp",
+            "moduleName": "ParavisionFL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12ParavisionFL27PNLivenessValidnessSettingsV12minSharpnessSfvg",
+                "mangledName": "$s12ParavisionFL27PNLivenessValidnessSettingsV12minSharpnessSfvg",
+                "moduleName": "ParavisionFL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "failFast",
+            "printedName": "failFast",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12ParavisionFL27PNLivenessValidnessSettingsV8failFastSbvp",
+            "mangledName": "$s12ParavisionFL27PNLivenessValidnessSettingsV8failFastSbvp",
+            "moduleName": "ParavisionFL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12ParavisionFL27PNLivenessValidnessSettingsV8failFastSbvg",
+                "mangledName": "$s12ParavisionFL27PNLivenessValidnessSettingsV8failFastSbvg",
+                "moduleName": "ParavisionFL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12ParavisionFL27PNLivenessValidnessSettingsV",
+        "mangledName": "$s12ParavisionFL27PNLivenessValidnessSettingsV",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FLTimeLogger",
+        "printedName": "FLTimeLogger",
+        "declKind": "Class",
+        "usr": "s:12ParavisionFL12FLTimeLoggerC",
+        "mangledName": "$s12ParavisionFL12FLTimeLoggerC",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FLTimeLoggerListener",
+        "printedName": "FLTimeLoggerListener",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onFLExecutionFinished",
+            "printedName": "onFLExecutionFinished(stepsTimes:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.Double]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12ParavisionFL20FLTimeLoggerListenerP21onFLExecutionFinished10stepsTimesySDySSSdG_tF",
+            "mangledName": "$s12ParavisionFL20FLTimeLoggerListenerP21onFLExecutionFinished10stepsTimesySDySSSdG_tF",
+            "moduleName": "ParavisionFL",
+            "genericSig": "<τ_0_0 where τ_0_0 : ParavisionFL.FLTimeLoggerListener>",
+            "sugared_genericSig": "<Self where Self : ParavisionFL.FLTimeLoggerListener>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:12ParavisionFL20FLTimeLoggerListenerP",
+        "mangledName": "$s12ParavisionFL20FLTimeLoggerListenerP",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "corefl",
+        "printedName": "corefl",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL"
+      },
+      {
+        "kind": "Import",
+        "name": "corefd",
+        "printedName": "corefd",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PNLivenessValidnessFeedback",
+        "printedName": "PNLivenessValidnessFeedback",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "UNKNOWN",
+            "printedName": "UNKNOWN",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ParavisionFL.PNLivenessValidnessFeedback.Type) -> ParavisionFL.PNLivenessValidnessFeedback",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PNLivenessValidnessFeedback",
+                    "printedName": "ParavisionFL.PNLivenessValidnessFeedback",
+                    "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ParavisionFL.PNLivenessValidnessFeedback.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PNLivenessValidnessFeedback",
+                        "printedName": "ParavisionFL.PNLivenessValidnessFeedback",
+                        "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO7UNKNOWNyA2CmF",
+            "mangledName": "$s12ParavisionFL27PNLivenessValidnessFeedbackO7UNKNOWNyA2CmF",
+            "moduleName": "ParavisionFL"
+          },
+          {
+            "kind": "Var",
+            "name": "FACE_QUALITY_POOR",
+            "printedName": "FACE_QUALITY_POOR",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ParavisionFL.PNLivenessValidnessFeedback.Type) -> ParavisionFL.PNLivenessValidnessFeedback",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PNLivenessValidnessFeedback",
+                    "printedName": "ParavisionFL.PNLivenessValidnessFeedback",
+                    "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ParavisionFL.PNLivenessValidnessFeedback.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PNLivenessValidnessFeedback",
+                        "printedName": "ParavisionFL.PNLivenessValidnessFeedback",
+                        "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO17FACE_QUALITY_POORyA2CmF",
+            "mangledName": "$s12ParavisionFL27PNLivenessValidnessFeedbackO17FACE_QUALITY_POORyA2CmF",
+            "moduleName": "ParavisionFL"
+          },
+          {
+            "kind": "Var",
+            "name": "FACE_ACCEPTABILITY_POOR",
+            "printedName": "FACE_ACCEPTABILITY_POOR",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ParavisionFL.PNLivenessValidnessFeedback.Type) -> ParavisionFL.PNLivenessValidnessFeedback",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PNLivenessValidnessFeedback",
+                    "printedName": "ParavisionFL.PNLivenessValidnessFeedback",
+                    "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ParavisionFL.PNLivenessValidnessFeedback.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PNLivenessValidnessFeedback",
+                        "printedName": "ParavisionFL.PNLivenessValidnessFeedback",
+                        "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO23FACE_ACCEPTABILITY_POORyA2CmF",
+            "mangledName": "$s12ParavisionFL27PNLivenessValidnessFeedbackO23FACE_ACCEPTABILITY_POORyA2CmF",
+            "moduleName": "ParavisionFL"
+          },
+          {
+            "kind": "Var",
+            "name": "IMG_LIGHTING_DARK",
+            "printedName": "IMG_LIGHTING_DARK",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ParavisionFL.PNLivenessValidnessFeedback.Type) -> ParavisionFL.PNLivenessValidnessFeedback",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PNLivenessValidnessFeedback",
+                    "printedName": "ParavisionFL.PNLivenessValidnessFeedback",
+                    "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ParavisionFL.PNLivenessValidnessFeedback.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PNLivenessValidnessFeedback",
+                        "printedName": "ParavisionFL.PNLivenessValidnessFeedback",
+                        "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO17IMG_LIGHTING_DARKyA2CmF",
+            "mangledName": "$s12ParavisionFL27PNLivenessValidnessFeedbackO17IMG_LIGHTING_DARKyA2CmF",
+            "moduleName": "ParavisionFL"
+          },
+          {
+            "kind": "Var",
+            "name": "IMG_LIGHTING_BRIGHT",
+            "printedName": "IMG_LIGHTING_BRIGHT",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ParavisionFL.PNLivenessValidnessFeedback.Type) -> ParavisionFL.PNLivenessValidnessFeedback",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PNLivenessValidnessFeedback",
+                    "printedName": "ParavisionFL.PNLivenessValidnessFeedback",
+                    "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ParavisionFL.PNLivenessValidnessFeedback.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PNLivenessValidnessFeedback",
+                        "printedName": "ParavisionFL.PNLivenessValidnessFeedback",
+                        "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO19IMG_LIGHTING_BRIGHTyA2CmF",
+            "mangledName": "$s12ParavisionFL27PNLivenessValidnessFeedbackO19IMG_LIGHTING_BRIGHTyA2CmF",
+            "moduleName": "ParavisionFL"
+          },
+          {
+            "kind": "Var",
+            "name": "FACE_SIZE_SMALL",
+            "printedName": "FACE_SIZE_SMALL",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ParavisionFL.PNLivenessValidnessFeedback.Type) -> ParavisionFL.PNLivenessValidnessFeedback",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PNLivenessValidnessFeedback",
+                    "printedName": "ParavisionFL.PNLivenessValidnessFeedback",
+                    "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ParavisionFL.PNLivenessValidnessFeedback.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PNLivenessValidnessFeedback",
+                        "printedName": "ParavisionFL.PNLivenessValidnessFeedback",
+                        "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO15FACE_SIZE_SMALLyA2CmF",
+            "mangledName": "$s12ParavisionFL27PNLivenessValidnessFeedbackO15FACE_SIZE_SMALLyA2CmF",
+            "moduleName": "ParavisionFL"
+          },
+          {
+            "kind": "Var",
+            "name": "FACE_SIZE_LARGE",
+            "printedName": "FACE_SIZE_LARGE",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ParavisionFL.PNLivenessValidnessFeedback.Type) -> ParavisionFL.PNLivenessValidnessFeedback",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PNLivenessValidnessFeedback",
+                    "printedName": "ParavisionFL.PNLivenessValidnessFeedback",
+                    "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ParavisionFL.PNLivenessValidnessFeedback.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PNLivenessValidnessFeedback",
+                        "printedName": "ParavisionFL.PNLivenessValidnessFeedback",
+                        "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO15FACE_SIZE_LARGEyA2CmF",
+            "mangledName": "$s12ParavisionFL27PNLivenessValidnessFeedbackO15FACE_SIZE_LARGEyA2CmF",
+            "moduleName": "ParavisionFL"
+          },
+          {
+            "kind": "Var",
+            "name": "FACE_POS_LEFT",
+            "printedName": "FACE_POS_LEFT",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ParavisionFL.PNLivenessValidnessFeedback.Type) -> ParavisionFL.PNLivenessValidnessFeedback",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PNLivenessValidnessFeedback",
+                    "printedName": "ParavisionFL.PNLivenessValidnessFeedback",
+                    "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ParavisionFL.PNLivenessValidnessFeedback.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PNLivenessValidnessFeedback",
+                        "printedName": "ParavisionFL.PNLivenessValidnessFeedback",
+                        "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO13FACE_POS_LEFTyA2CmF",
+            "mangledName": "$s12ParavisionFL27PNLivenessValidnessFeedbackO13FACE_POS_LEFTyA2CmF",
+            "moduleName": "ParavisionFL"
+          },
+          {
+            "kind": "Var",
+            "name": "FACE_POS_RIGHT",
+            "printedName": "FACE_POS_RIGHT",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ParavisionFL.PNLivenessValidnessFeedback.Type) -> ParavisionFL.PNLivenessValidnessFeedback",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PNLivenessValidnessFeedback",
+                    "printedName": "ParavisionFL.PNLivenessValidnessFeedback",
+                    "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ParavisionFL.PNLivenessValidnessFeedback.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PNLivenessValidnessFeedback",
+                        "printedName": "ParavisionFL.PNLivenessValidnessFeedback",
+                        "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO14FACE_POS_RIGHTyA2CmF",
+            "mangledName": "$s12ParavisionFL27PNLivenessValidnessFeedbackO14FACE_POS_RIGHTyA2CmF",
+            "moduleName": "ParavisionFL"
+          },
+          {
+            "kind": "Var",
+            "name": "FACE_POS_HIGH",
+            "printedName": "FACE_POS_HIGH",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ParavisionFL.PNLivenessValidnessFeedback.Type) -> ParavisionFL.PNLivenessValidnessFeedback",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PNLivenessValidnessFeedback",
+                    "printedName": "ParavisionFL.PNLivenessValidnessFeedback",
+                    "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ParavisionFL.PNLivenessValidnessFeedback.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PNLivenessValidnessFeedback",
+                        "printedName": "ParavisionFL.PNLivenessValidnessFeedback",
+                        "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO13FACE_POS_HIGHyA2CmF",
+            "mangledName": "$s12ParavisionFL27PNLivenessValidnessFeedbackO13FACE_POS_HIGHyA2CmF",
+            "moduleName": "ParavisionFL"
+          },
+          {
+            "kind": "Var",
+            "name": "FACE_POS_LOW",
+            "printedName": "FACE_POS_LOW",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ParavisionFL.PNLivenessValidnessFeedback.Type) -> ParavisionFL.PNLivenessValidnessFeedback",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PNLivenessValidnessFeedback",
+                    "printedName": "ParavisionFL.PNLivenessValidnessFeedback",
+                    "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ParavisionFL.PNLivenessValidnessFeedback.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PNLivenessValidnessFeedback",
+                        "printedName": "ParavisionFL.PNLivenessValidnessFeedback",
+                        "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO12FACE_POS_LOWyA2CmF",
+            "mangledName": "$s12ParavisionFL27PNLivenessValidnessFeedbackO12FACE_POS_LOWyA2CmF",
+            "moduleName": "ParavisionFL"
+          },
+          {
+            "kind": "Var",
+            "name": "FACE_MASK_FOUND",
+            "printedName": "FACE_MASK_FOUND",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ParavisionFL.PNLivenessValidnessFeedback.Type) -> ParavisionFL.PNLivenessValidnessFeedback",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PNLivenessValidnessFeedback",
+                    "printedName": "ParavisionFL.PNLivenessValidnessFeedback",
+                    "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ParavisionFL.PNLivenessValidnessFeedback.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PNLivenessValidnessFeedback",
+                        "printedName": "ParavisionFL.PNLivenessValidnessFeedback",
+                        "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO15FACE_MASK_FOUNDyA2CmF",
+            "mangledName": "$s12ParavisionFL27PNLivenessValidnessFeedbackO15FACE_MASK_FOUNDyA2CmF",
+            "moduleName": "ParavisionFL"
+          },
+          {
+            "kind": "Var",
+            "name": "FACE_FRONTALITY_POOR",
+            "printedName": "FACE_FRONTALITY_POOR",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ParavisionFL.PNLivenessValidnessFeedback.Type) -> ParavisionFL.PNLivenessValidnessFeedback",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PNLivenessValidnessFeedback",
+                    "printedName": "ParavisionFL.PNLivenessValidnessFeedback",
+                    "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ParavisionFL.PNLivenessValidnessFeedback.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PNLivenessValidnessFeedback",
+                        "printedName": "ParavisionFL.PNLivenessValidnessFeedback",
+                        "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO20FACE_FRONTALITY_POORyA2CmF",
+            "mangledName": "$s12ParavisionFL27PNLivenessValidnessFeedbackO20FACE_FRONTALITY_POORyA2CmF",
+            "moduleName": "ParavisionFL"
+          },
+          {
+            "kind": "Var",
+            "name": "FACE_SHARPNESS_POOR",
+            "printedName": "FACE_SHARPNESS_POOR",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ParavisionFL.PNLivenessValidnessFeedback.Type) -> ParavisionFL.PNLivenessValidnessFeedback",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PNLivenessValidnessFeedback",
+                    "printedName": "ParavisionFL.PNLivenessValidnessFeedback",
+                    "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ParavisionFL.PNLivenessValidnessFeedback.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PNLivenessValidnessFeedback",
+                        "printedName": "ParavisionFL.PNLivenessValidnessFeedback",
+                        "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO19FACE_SHARPNESS_POORyA2CmF",
+            "mangledName": "$s12ParavisionFL27PNLivenessValidnessFeedbackO19FACE_SHARPNESS_POORyA2CmF",
+            "moduleName": "ParavisionFL"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ParavisionFL.PNLivenessValidnessFeedback?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PNLivenessValidnessFeedback",
+                    "printedName": "ParavisionFL.PNLivenessValidnessFeedback",
+                    "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO8rawValueACSgSi_tcfc",
+            "mangledName": "$s12ParavisionFL27PNLivenessValidnessFeedbackO8rawValueACSgSi_tcfc",
+            "moduleName": "ParavisionFL",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO8rawValueSivp",
+            "mangledName": "$s12ParavisionFL27PNLivenessValidnessFeedbackO8rawValueSivp",
+            "moduleName": "ParavisionFL",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO8rawValueSivg",
+                "mangledName": "$s12ParavisionFL27PNLivenessValidnessFeedbackO8rawValueSivg",
+                "moduleName": "ParavisionFL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO",
+        "mangledName": "$s12ParavisionFL27PNLivenessValidnessFeedbackO",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PNLivenessValidness",
+        "printedName": "PNLivenessValidness",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "faceQuality",
+            "printedName": "faceQuality",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12ParavisionFL19PNLivenessValidnessV11faceQualitySfvp",
+            "mangledName": "$s12ParavisionFL19PNLivenessValidnessV11faceQualitySfvp",
+            "moduleName": "ParavisionFL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12ParavisionFL19PNLivenessValidnessV11faceQualitySfvg",
+                "mangledName": "$s12ParavisionFL19PNLivenessValidnessV11faceQualitySfvg",
+                "moduleName": "ParavisionFL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "faceAcceptability",
+            "printedName": "faceAcceptability",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12ParavisionFL19PNLivenessValidnessV17faceAcceptabilitySfvp",
+            "mangledName": "$s12ParavisionFL19PNLivenessValidnessV17faceAcceptabilitySfvp",
+            "moduleName": "ParavisionFL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12ParavisionFL19PNLivenessValidnessV17faceAcceptabilitySfvg",
+                "mangledName": "$s12ParavisionFL19PNLivenessValidnessV17faceAcceptabilitySfvg",
+                "moduleName": "ParavisionFL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "faceFrontality",
+            "printedName": "faceFrontality",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12ParavisionFL19PNLivenessValidnessV14faceFrontalitySfvp",
+            "mangledName": "$s12ParavisionFL19PNLivenessValidnessV14faceFrontalitySfvp",
+            "moduleName": "ParavisionFL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12ParavisionFL19PNLivenessValidnessV14faceFrontalitySfvg",
+                "mangledName": "$s12ParavisionFL19PNLivenessValidnessV14faceFrontalitySfvg",
+                "moduleName": "ParavisionFL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "imageAveragePixelValue",
+            "printedName": "imageAveragePixelValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12ParavisionFL19PNLivenessValidnessV22imageAveragePixelValueSivp",
+            "mangledName": "$s12ParavisionFL19PNLivenessValidnessV22imageAveragePixelValueSivp",
+            "moduleName": "ParavisionFL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12ParavisionFL19PNLivenessValidnessV22imageAveragePixelValueSivg",
+                "mangledName": "$s12ParavisionFL19PNLivenessValidnessV22imageAveragePixelValueSivg",
+                "moduleName": "ParavisionFL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "imageBrightPixelPct",
+            "printedName": "imageBrightPixelPct",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12ParavisionFL19PNLivenessValidnessV19imageBrightPixelPctSivp",
+            "mangledName": "$s12ParavisionFL19PNLivenessValidnessV19imageBrightPixelPctSivp",
+            "moduleName": "ParavisionFL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12ParavisionFL19PNLivenessValidnessV19imageBrightPixelPctSivg",
+                "mangledName": "$s12ParavisionFL19PNLivenessValidnessV19imageBrightPixelPctSivg",
+                "moduleName": "ParavisionFL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "imageDarkPixelPct",
+            "printedName": "imageDarkPixelPct",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12ParavisionFL19PNLivenessValidnessV17imageDarkPixelPctSivp",
+            "mangledName": "$s12ParavisionFL19PNLivenessValidnessV17imageDarkPixelPctSivp",
+            "moduleName": "ParavisionFL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12ParavisionFL19PNLivenessValidnessV17imageDarkPixelPctSivg",
+                "mangledName": "$s12ParavisionFL19PNLivenessValidnessV17imageDarkPixelPctSivg",
+                "moduleName": "ParavisionFL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "faceMaskProb",
+            "printedName": "faceMaskProb",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12ParavisionFL19PNLivenessValidnessV12faceMaskProbSfvp",
+            "mangledName": "$s12ParavisionFL19PNLivenessValidnessV12faceMaskProbSfvp",
+            "moduleName": "ParavisionFL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12ParavisionFL19PNLivenessValidnessV12faceMaskProbSfvg",
+                "mangledName": "$s12ParavisionFL19PNLivenessValidnessV12faceMaskProbSfvg",
+                "moduleName": "ParavisionFL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "faceSharpness",
+            "printedName": "faceSharpness",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12ParavisionFL19PNLivenessValidnessV13faceSharpnessSfvp",
+            "mangledName": "$s12ParavisionFL19PNLivenessValidnessV13faceSharpnessSfvp",
+            "moduleName": "ParavisionFL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12ParavisionFL19PNLivenessValidnessV13faceSharpnessSfvg",
+                "mangledName": "$s12ParavisionFL19PNLivenessValidnessV13faceSharpnessSfvg",
+                "moduleName": "ParavisionFL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isValid",
+            "printedName": "isValid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12ParavisionFL19PNLivenessValidnessV7isValidSbvp",
+            "mangledName": "$s12ParavisionFL19PNLivenessValidnessV7isValidSbvp",
+            "moduleName": "ParavisionFL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12ParavisionFL19PNLivenessValidnessV7isValidSbvg",
+                "mangledName": "$s12ParavisionFL19PNLivenessValidnessV7isValidSbvg",
+                "moduleName": "ParavisionFL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "feedbacks",
+            "printedName": "feedbacks",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[ParavisionFL.PNLivenessValidnessFeedback]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PNLivenessValidnessFeedback",
+                    "printedName": "ParavisionFL.PNLivenessValidnessFeedback",
+                    "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12ParavisionFL19PNLivenessValidnessV9feedbacksSayAA0cD8FeedbackOGvp",
+            "mangledName": "$s12ParavisionFL19PNLivenessValidnessV9feedbacksSayAA0cD8FeedbackOGvp",
+            "moduleName": "ParavisionFL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[ParavisionFL.PNLivenessValidnessFeedback]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PNLivenessValidnessFeedback",
+                        "printedName": "ParavisionFL.PNLivenessValidnessFeedback",
+                        "usr": "s:12ParavisionFL27PNLivenessValidnessFeedbackO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12ParavisionFL19PNLivenessValidnessV9feedbacksSayAA0cD8FeedbackOGvg",
+                "mangledName": "$s12ParavisionFL19PNLivenessValidnessV9feedbacksSayAA0cD8FeedbackOGvg",
+                "moduleName": "ParavisionFL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12ParavisionFL19PNLivenessValidnessV",
+        "mangledName": "$s12ParavisionFL19PNLivenessValidnessV",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL"
+      },
+      {
+        "kind": "Import",
+        "name": "corefd",
+        "printedName": "corefd",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL"
+      },
+      {
+        "kind": "Import",
+        "name": "corefd",
+        "printedName": "corefd",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL"
+      },
+      {
+        "kind": "Import",
+        "name": "corefd",
+        "printedName": "corefd",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "corefl",
+        "printedName": "corefl",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "ParavisionFL"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Common\/Types\/FLPNRace.swift",
+      "kind": "IntegerLiteral",
+      "offset": 143,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Common\/Types\/FLPNRace.swift",
+      "kind": "IntegerLiteral",
+      "offset": 166,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Common\/Types\/FLPNRace.swift",
+      "kind": "IntegerLiteral",
+      "offset": 190,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Common\/Types\/FLPNRace.swift",
+      "kind": "IntegerLiteral",
+      "offset": 209,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Common\/Types\/FLPNRace.swift",
+      "kind": "IntegerLiteral",
+      "offset": 143,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Common\/Types\/FLPNRace.swift",
+      "kind": "IntegerLiteral",
+      "offset": 166,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Common\/Types\/FLPNRace.swift",
+      "kind": "IntegerLiteral",
+      "offset": 190,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Common\/Types\/FLPNRace.swift",
+      "kind": "IntegerLiteral",
+      "offset": 209,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Common\/Types\/FLPNRace.swift",
+      "kind": "IntegerLiteral",
+      "offset": 143,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Common\/Types\/FLPNRace.swift",
+      "kind": "IntegerLiteral",
+      "offset": 166,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Common\/Types\/FLPNRace.swift",
+      "kind": "IntegerLiteral",
+      "offset": 190,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Common\/Types\/FLPNRace.swift",
+      "kind": "IntegerLiteral",
+      "offset": 209,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Detection\/FLDetectionPreprocess.swift",
+      "kind": "BooleanLiteral",
+      "offset": 177,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Detection\/FLDetectionPreprocess.swift",
+      "kind": "StringLiteral",
+      "offset": 747,
+      "length": 23,
+      "value": "\"detection preperation\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Common\/Types\/FLPNPoint.swift",
+      "kind": "IntegerLiteral",
+      "offset": 489,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Common\/Types\/FLPNPoint.swift",
+      "kind": "IntegerLiteral",
+      "offset": 495,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Detection\/FLDetectionPostprocess.swift",
+      "kind": "Array",
+      "offset": 311,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Detection\/FLDetectionPostprocess.swift",
+      "kind": "IntegerLiteral",
+      "offset": 529,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Detection\/FLDetectionPostprocess.swift",
+      "kind": "IntegerLiteral",
+      "offset": 599,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Detection\/FLDetectionPostprocess.swift",
+      "kind": "IntegerLiteral",
+      "offset": 673,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Detection\/FLDetectionPostprocess.swift",
+      "kind": "IntegerLiteral",
+      "offset": 747,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Common\/Types\/FLPNBoundingBox.swift",
+      "kind": "FloatLiteral",
+      "offset": 551,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Common\/Types\/FLPNBoundingBox.swift",
+      "kind": "FloatLiteral",
+      "offset": 1960,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Common\/Types\/FLPNBoundingBox.swift",
+      "kind": "FloatLiteral",
+      "offset": 2078,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "Array",
+      "offset": 1822,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2495,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2897,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2997,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3043,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3675,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3875,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3976,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4322,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4409,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4689,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4918,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5052,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5134,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5174,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5212,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6135,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6185,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6239,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "FloatLiteral",
+      "offset": 6252,
+      "length": 5,
+      "value": "100.0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6358,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7069,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7123,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7136,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "FloatLiteral",
+      "offset": 7143,
+      "length": 5,
+      "value": "100.0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7249,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8387,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8576,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8704,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9037,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "StringLiteral",
+      "offset": 10381,
+      "length": 10,
+      "value": "\"Liveness\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "Array",
+      "offset": 10925,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "StringLiteral",
+      "offset": 11541,
+      "length": 5,
+      "value": "\"Pre\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "StringLiteral",
+      "offset": 11846,
+      "length": 11,
+      "value": "\"Inference\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "StringLiteral",
+      "offset": 12235,
+      "length": 6,
+      "value": "\"Post\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "FloatLiteral",
+      "offset": 12760,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "FloatLiteral",
+      "offset": 12805,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 13974,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 14135,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 14197,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "StringLiteral",
+      "offset": 14722,
+      "length": 40,
+      "value": "\"Error initializing BoundingBoxDetector\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "StringLiteral",
+      "offset": 14914,
+      "length": 37,
+      "value": "\"Error initializing QualityEstimator\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "StringLiteral",
+      "offset": 15113,
+      "length": 37,
+      "value": "\"Error initializing LandmarkDetector\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "StringLiteral",
+      "offset": 15304,
+      "length": 33,
+      "value": "\"Error initializing MaskDetector\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "StringLiteral",
+      "offset": 15483,
+      "length": 33,
+      "value": "\"Error initializing RagEstimator\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "Array",
+      "offset": 15611,
+      "length": 379,
+      "value": "[[[0, 0, 0, 0], [255, 255, 255, 255], [100, 100, 100, 100], [100, 100, 100, 100]], [[80, 110, 90, 125], [150, 175, 165, 165], [3, 6, 6, 6], [6, 4, 5, 4]], [[100, 125, 115, 130], [125, 150, 140, 150], [3, 6, 6, 6], [6, 4, 5, 4]]]"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16098,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16126,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16154,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/PNLivenessEstimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16182,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Common\/FLPNImageProxy.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3176,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Common\/FLPNImageProxy.swift",
+      "kind": "Dictionary",
+      "offset": 3279,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Common\/FLPNImageProxy.swift",
+      "kind": "Dictionary",
+      "offset": 4469,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Mask\/FLPNMaskDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 676,
+      "length": 6,
+      "value": "\"Mask\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Mask\/FLPNMaskDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 979,
+      "length": 5,
+      "value": "\"Pre\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Mask\/FLPNMaskDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 1108,
+      "length": 11,
+      "value": "\"Inference\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Mask\/FLPNMaskDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 1253,
+      "length": 6,
+      "value": "\"Post\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Mask\/FLPNMaskDetector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1417,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Mask\/FLPNMaskDetector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1571,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Mask\/FLPNMaskDetector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1633,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidnessSettings.swift",
+      "kind": "FloatLiteral",
+      "offset": 207,
+      "length": 4,
+      "value": "0.70"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidnessSettings.swift",
+      "kind": "FloatLiteral",
+      "offset": 251,
+      "length": 4,
+      "value": "0.15"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidnessSettings.swift",
+      "kind": "IntegerLiteral",
+      "offset": 290,
+      "length": 2,
+      "value": "90"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidnessSettings.swift",
+      "kind": "FloatLiteral",
+      "offset": 327,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidnessSettings.swift",
+      "kind": "IntegerLiteral",
+      "offset": 372,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidnessSettings.swift",
+      "kind": "FloatLiteral",
+      "offset": 410,
+      "length": 4,
+      "value": "0.50"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidnessSettings.swift",
+      "kind": "FloatLiteral",
+      "offset": 455,
+      "length": 3,
+      "value": "0.8"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidnessSettings.swift",
+      "kind": "FloatLiteral",
+      "offset": 500,
+      "length": 3,
+      "value": "0.8"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidnessSettings.swift",
+      "kind": "FloatLiteral",
+      "offset": 535,
+      "length": 3,
+      "value": "1.7"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidnessSettings.swift",
+      "kind": "BooleanLiteral",
+      "offset": 565,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Helpers\/FLTimeLogger.swift",
+      "kind": "BooleanLiteral",
+      "offset": 164,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Helpers\/FLTimeLogger.swift",
+      "kind": "Dictionary",
+      "offset": 507,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Helpers\/FLTimeLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 705,
+      "length": 82,
+      "value": "\"\n============================================================================\n\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Helpers\/FLTimeLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1261,
+      "length": 19,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Helpers\/FLTimeLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1271,
+      "length": 1,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Helpers\/FLTimeLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1279,
+      "length": 9,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Quality\/FLPNQualityEstimator.swift",
+      "kind": "StringLiteral",
+      "offset": 1319,
+      "length": 9,
+      "value": "\"Quality\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Quality\/FLPNQualityEstimator.swift",
+      "kind": "StringLiteral",
+      "offset": 1654,
+      "length": 5,
+      "value": "\"Pre\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Quality\/FLPNQualityEstimator.swift",
+      "kind": "StringLiteral",
+      "offset": 1787,
+      "length": 11,
+      "value": "\"Inference\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Quality\/FLPNQualityEstimator.swift",
+      "kind": "StringLiteral",
+      "offset": 1990,
+      "length": 6,
+      "value": "\"Post\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Quality\/FLPNQualityEstimator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2204,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Quality\/FLPNQualityEstimator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2358,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Quality\/FLPNQualityEstimator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2420,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 180,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 211,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 248,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 279,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 312,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 341,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 370,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 397,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 425,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 452,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 478,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 508,
+      "length": 2,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 543,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 577,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 180,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 211,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 248,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 279,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 312,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 341,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 370,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 397,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 425,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 452,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 478,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 508,
+      "length": 2,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 543,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 577,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 180,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 211,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 248,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 279,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 312,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 341,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 370,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 397,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 425,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 452,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 478,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 508,
+      "length": 2,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 543,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Public\/Types\/PNLivenessValidness.swift",
+      "kind": "IntegerLiteral",
+      "offset": 577,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Landmarks\/FLPNLandmarkDetector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1166,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Landmarks\/FLPNLandmarkDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 1279,
+      "length": 10,
+      "value": "\"Landmark\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Landmarks\/FLPNLandmarkDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 1590,
+      "length": 5,
+      "value": "\"Pre\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Landmarks\/FLPNLandmarkDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 1747,
+      "length": 11,
+      "value": "\"Inference\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Landmarks\/FLPNLandmarkDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 2049,
+      "length": 6,
+      "value": "\"Post\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Landmarks\/FLPNLandmarkDetector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2213,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Landmarks\/FLPNLandmarkDetector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2367,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Landmarks\/FLPNLandmarkDetector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2429,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Common\/Types\/FLPNResizingMode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 245,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Common\/Types\/FLPNResizingMode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 297,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Common\/Types\/FLPNResizingMode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 347,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Common\/Types\/FLPNResizingMode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 411,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Common\/Types\/FLPNResizingMode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 245,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Common\/Types\/FLPNResizingMode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 297,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Common\/Types\/FLPNResizingMode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 347,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Common\/Types\/FLPNResizingMode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 411,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Common\/Types\/FLPNResizingMode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 245,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Common\/Types\/FLPNResizingMode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 297,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Common\/Types\/FLPNResizingMode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 347,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Common\/Types\/FLPNResizingMode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 411,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Landmarks\/FLLandmarkPostprocess.swift",
+      "kind": "IntegerLiteral",
+      "offset": 485,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Landmarks\/FLLandmarkPostprocess.swift",
+      "kind": "IntegerLiteral",
+      "offset": 622,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Landmarks\/FLLandmarkPostprocess.swift",
+      "kind": "IntegerLiteral",
+      "offset": 689,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Landmarks\/FLLandmarkPostprocess.swift",
+      "kind": "IntegerLiteral",
+      "offset": 797,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Landmarks\/FLLandmarkPostprocess.swift",
+      "kind": "IntegerLiteral",
+      "offset": 864,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Landmarks\/FLLandmarkPostprocess.swift",
+      "kind": "IntegerLiteral",
+      "offset": 969,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Landmarks\/FLLandmarkPostprocess.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1036,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Landmarks\/FLLandmarkPostprocess.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1147,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Landmarks\/FLLandmarkPostprocess.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1214,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Landmarks\/FLLandmarkPostprocess.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1324,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Landmarks\/FLLandmarkPostprocess.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1391,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Detection\/FLPNBoundingBoxDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 1125,
+      "length": 11,
+      "value": "\"Detection\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Detection\/FLPNBoundingBoxDetector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1349,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Detection\/FLPNBoundingBoxDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 1443,
+      "length": 5,
+      "value": "\"Pre\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Detection\/FLPNBoundingBoxDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 1563,
+      "length": 11,
+      "value": "\"Inference\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Detection\/FLPNBoundingBoxDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 1718,
+      "length": 6,
+      "value": "\"Post\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Detection\/FLPNBoundingBoxDetector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1906,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Detection\/FLPNBoundingBoxDetector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2060,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Detection\/FLPNBoundingBoxDetector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2122,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Detection\/FLPNBoundingBoxDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 2257,
+      "length": 3,
+      "value": "0.9"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Race\/FLPNRaceEstimator.swift",
+      "kind": "StringLiteral",
+      "offset": 748,
+      "length": 5,
+      "value": "\"RAG\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Race\/FLPNRaceEstimator.swift",
+      "kind": "StringLiteral",
+      "offset": 1066,
+      "length": 5,
+      "value": "\"Pre\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Race\/FLPNRaceEstimator.swift",
+      "kind": "StringLiteral",
+      "offset": 1193,
+      "length": 11,
+      "value": "\"Inference\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Race\/FLPNRaceEstimator.swift",
+      "kind": "StringLiteral",
+      "offset": 1338,
+      "length": 6,
+      "value": "\"Post\""
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Race\/FLPNRaceEstimator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1490,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Race\/FLPNRaceEstimator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1644,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/marcinkapelko\/Projekty\/paravision\/ios\/ios-sdk\/fl-sdk\/fl-sdk\/Private\/Race\/FLPNRaceEstimator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1706,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}
