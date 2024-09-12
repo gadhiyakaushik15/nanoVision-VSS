@@ -25,7 +25,9 @@ class DayLocationViewController: UIViewController {
         self.setLogo()
         self.setDayDropDown()
         self.setLocationDropDown()
-        self.fetchData()
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.15)  {
+            self.fetchData()
+        }
     }
     
     override func viewDidLayoutSubviews() {
