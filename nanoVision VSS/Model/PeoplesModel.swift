@@ -15,7 +15,7 @@ struct PeoplesModel: Codable {
     let additionaldetails: String?
     let listid: [String]?
     let isactive: Bool?
-    let embeddedimage: String?
+    let embeddedimage: [Float]?
     let eventID: Int?
     let locationid: Int?
     let isdelete: Bool?

@@ -31,7 +31,6 @@ class SplashViewController: UIViewController {
     func showStartScreen() {
         DispatchQueue.main.async() {
             if UserDefaultsServices.shared.isLogin() {
-                OfflineDevicesDetails.shared.devicesDetails = UserDefaultsServices.shared.getDevicesDetails()
                 LocalDataService.shared.syncCompleted = {
                     DispatchQueue.main.async() {
                         Utilities.shared.dismissSVProgressHUD()
@@ -72,6 +71,11 @@ class SplashViewController: UIViewController {
                             }
                         }
                     }
+                }
+                OfflineDevicesDetails.shared.devicesDetails = UserDefaultsServices.shared.getDevicesDetails()
+                UserDefaultsServices.shared.removeLastSyncTimeStamp()
+                if APIManager.isConnectedToInternet() {
+                    LocalDataService().deletePeopleCSV()
                 }
                 Utilities.shared.showSVProgressHUD(message: Message.PleaseWaitSyncInProcess)
                 LocalDataService.shared.getDeviceStatus()

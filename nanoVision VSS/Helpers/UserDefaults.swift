@@ -26,6 +26,7 @@ class UserDefaultsServices {
         case isTapScanFailure
         case selectedDay
         case selectedLocation
+        case lastSyncTimeStamp
     }
     
     //MARK: shared instance
@@ -211,5 +212,21 @@ class UserDefaultsServices {
         } else {
             return ""
         }
+    }
+    
+    //MARK: Set And Get Last Sync TimeStamp
+    func saveLastSyncTimeStamp(value: String) {
+        self.userDefaults.setValue(value, forKey: UserDefaultsKeys.lastSyncTimeStamp.rawValue)
+    }
+    func getLastSyncTimeStamp() -> String {
+        if  let data = self.userDefaults.value(forKey: UserDefaultsKeys.lastSyncTimeStamp.rawValue), let lastSyncTimeStamp = data as? String, lastSyncTimeStamp != "" {
+            return lastSyncTimeStamp
+        } else {
+            return Constants.DefaultLastSyncTimeStamp
+        }
+    }
+    func removeLastSyncTimeStamp() {
+        self.userDefaults.removeObject(forKey: UserDefaultsKeys.lastSyncTimeStamp.rawValue)
+        self.userDefaults.synchronize()
     }
 }

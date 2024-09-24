@@ -18,7 +18,7 @@ struct GetVisitorModel: Codable {
 struct VisitorResult: Codable {
     let firstname, lastname, email, phone: String?
     let visitorID: Int?
-    let visitorImage: String?
+    let visitorImage: [Float]?
 
     enum CodingKeys: String, CodingKey {
         case firstname, lastname, email, phone

@@ -69,6 +69,8 @@ class Utilities {
             }
         }
         LocalDataService.shared.stopTimer()
+        UserDefaultsServices.shared.removeLastSyncTimeStamp()
+        LocalDataService().deletePeopleCSV()
         LocalDataService.shared.createLogs(isSync: false)
         UserDefaultsServices.shared.userDefaults.removePersistentDomain(forName: Bundle.main.bundleIdentifier ?? "")
         UserDefaultsServices.shared.userDefaults.synchronize()
@@ -106,6 +108,14 @@ class Utilities {
             dateFormatter.amSymbol = "am"
             dateFormatter.pmSymbol = "pm"
         }
+        let dateToBeSaved = dateFormatter.string(from: date)
+        return dateToBeSaved
+    }
+    
+    func convertDateToString(date : Date, requiredFormat: String) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+        dateFormatter.dateFormat = requiredFormat
         let dateToBeSaved = dateFormatter.string(from: date)
         return dateToBeSaved
     }

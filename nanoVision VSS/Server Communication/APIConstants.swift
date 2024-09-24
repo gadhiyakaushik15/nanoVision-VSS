@@ -18,7 +18,7 @@ struct API {
     static let login = baseURL + "/api/v1/auth/login"
     static let refreshToken = baseURL + "/api/v1/auth/refresh_token"
     static let getDeviceStatus = baseURL + "/api/v1/account/getdevicestatus"
-    static let peopleData = baseURL + "/api/v2/account/people_data"
+    static let peopleData = baseURL + "/api/v3/account/people_data"
     static let getLogs = baseURL + "/api/v1/account/get_logs"
     static let createLogs = baseURL + "/api/v1/account/create_logs"
     static let visitorEntry = baseURL + "/api/v1/account/visitor_entry"

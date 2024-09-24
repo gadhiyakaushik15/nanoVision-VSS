@@ -275,7 +275,9 @@ extension VisitorDetailsViewController: UITextFieldDelegate {
                     if let data = data, let result = data.result, let visitor = result.first {
                         textField.resignFirstResponder()
                         if let visitorImage = visitor.visitorImage, self.embeddings != "" {
-                            if ParavisionServices.shared.identify(embeddingsOne: visitorImage, embeddingsTwo: self.embeddings) {
+                            let embeddingsStringArray = visitorImage.compactMap {"\($0)"}
+                            let embeddingsString = embeddingsStringArray.joined(separator: ",")
+                            if ParavisionServices.shared.identify(embeddingsOne: embeddingsString, embeddingsTwo: self.embeddings) {
                                 self.visitor = visitor
                                 self.dataBind()
                             } else {
@@ -304,7 +306,9 @@ extension VisitorDetailsViewController: UITextFieldDelegate {
                     VisitorViewModel().getVisitor(email: email, isLoader: false) { data in
                         if let data = data, let result = data.result, let visitor = result.first {
                             if let visitorImage = visitor.visitorImage, self.embeddings != "" {
-                                if ParavisionServices.shared.identify(embeddingsOne: visitorImage, embeddingsTwo: self.embeddings) {
+                                let embeddingsStringArray = visitorImage.compactMap {"\($0)"}
+                                let embeddingsString = embeddingsStringArray.joined(separator: ",")
+                                if ParavisionServices.shared.identify(embeddingsOne: embeddingsString, embeddingsTwo: self.embeddings) {
                                     self.visitor = visitor
                                     self.dataBind()
                                 } else {

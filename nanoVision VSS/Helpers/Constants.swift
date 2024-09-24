@@ -13,6 +13,7 @@ struct Constants {
     static let ZipFileName = "people_data.zip"
     static let PeopleDataFolderName = "people_data"
     static let CsvFileName = "data.csv"
+    static let PeopleCsvFileName = "peopledata.csv"
     static let DeviceType = "iOS"
     static let MatchScoreThreshold: Int = 700 // 0 to 1000
     static let TermsAndConditionsUrl = "http://52.66.166.39:1337/t&c"
@@ -22,6 +23,7 @@ struct Constants {
     static let NextScanDelayMaximum: Float = 10.0
     static let AppStoreUrl = "https://apps.apple.com/app/nanovision-face-ai/id6502285726"
     static let ViableSoftApiKey = "fe6d935c-2f7d-4f1c-8850-1a5290b3f81e"
+    static let DefaultLastSyncTimeStamp = "1990-02-05 17:02:33.615"
 }
 
 struct MQTT {

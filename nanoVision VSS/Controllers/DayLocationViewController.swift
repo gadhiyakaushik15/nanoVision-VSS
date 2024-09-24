@@ -77,6 +77,13 @@ class DayLocationViewController: UIViewController {
                     }
                 }
                 self.dayDropDownTextField.optionArray = optionArray
+            } else {
+                let selectedDay =  UserDefaultsServices.shared.getSelectedDay()
+                if selectedDay != "" {
+                    self.dayData = ListModel(listId: 0, listImage: nil, listName: selectedDay)
+                    self.dayDropDownTextField.text = selectedDay
+                    self.dayDropDownTextField.selectedIndex = 0
+                }
             }
             completion?()
         }
@@ -96,6 +103,13 @@ class DayLocationViewController: UIViewController {
                     }
                 }
                 self.locationDropDownTextField.optionArray = optionArray
+            } else {
+                let selectedLocation =  UserDefaultsServices.shared.getSelectedLocation()
+                if selectedLocation != "" {
+                    self.locationData = ListModel(listId: 0, listImage: nil, listName: selectedLocation)
+                    self.locationDropDownTextField.text = selectedLocation
+                    self.locationDropDownTextField.selectedIndex = 0
+                }
             }
             completion?()
         }

@@ -73,9 +73,7 @@ final class ParavisionServices {
                     let peoples = OfflinePeoples.shared.peoples
                     for var people in  peoples {
                         if let embeddingsData = people.embeddedimage {
-                            let embeddingsArray = embeddingsData.components(separatedBy: ",")
-                            let embeddingsFloatArray = embeddingsArray.compactMap { Float($0)}
-                            let identity = PNEmbeddings(vector: embeddingsFloatArray)
+                            let identity = PNEmbeddings(vector: embeddingsData)
                             let matchScore = identity.getMatchScore(mostProminent)
                             if matchScore >= Constants.MatchScoreThreshold {
                                 people.matchScore = matchScore
@@ -107,9 +105,7 @@ final class ParavisionServices {
                     let peoples = OfflinePeoples.shared.peoples
                     for var people in  peoples {
                         if let embeddingsData = people.embeddedimage {
-                            let embeddingsArray = embeddingsData.components(separatedBy: ",")
-                            let embeddingsFloatArray = embeddingsArray.compactMap { Float($0)}
-                            let identity = PNEmbeddings(vector: embeddingsFloatArray)
+                            let identity = PNEmbeddings(vector: embeddingsData)
                             let matchScore = identity.getMatchScore(mostProminent)
                             if matchScore >= Constants.MatchScoreThreshold {
                                 people.matchScore = matchScore

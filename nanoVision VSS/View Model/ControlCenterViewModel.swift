@@ -11,8 +11,7 @@ import Alamofire
 class ControlCenterViewModel: NSObject {
     func getPeopleData(deviceMac: String, isLoader: Bool, completion:@escaping(PeopleDataModel?) -> Void) {
         let headers: HTTPHeaders = [HeaderValue.Authorization: "Bearer \(UserDefaultsServices.shared.getAccessToken())"]
-        let param = ["devicemac": deviceMac] as! [String: Any]
-        
+        let param = ["devicemac": deviceMac, "timestamp": "\(UserDefaultsServices.shared.getLastSyncTimeStamp())"] as! [String: Any]  
 //        debugPrint(API.peopleData)
 //        debugPrint(headers)
 //        debugPrint(param)
