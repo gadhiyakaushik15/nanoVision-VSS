@@ -24,6 +24,7 @@ struct Constants {
     static let AppStoreUrl = "https://apps.apple.com/app/nanovision-face-ai/id6502285726"
     static let ViableSoftApiKey = "fe6d935c-2f7d-4f1c-8850-1a5290b3f81e"
     static let DefaultLastSyncTimeStamp = "1990-02-05 17:02:33.615"
+    static let LogsSyncTime = 10 // Auto Logs Sync time in Minutes.
 }
 
 struct MQTT {

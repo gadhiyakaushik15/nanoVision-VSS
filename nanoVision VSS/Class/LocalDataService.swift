@@ -202,16 +202,37 @@ final class LocalDataService {
             let documentsPath = try FileManager.default.url(for: .applicationSupportDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
             let csvUrl = documentsPath.appendingPathComponent("\(Constants.PeopleDataFolderName)/\(Constants.CsvFileName)")
             let peopleCsvUrl = documentsPath.appendingPathComponent("\(Constants.PeopleDataFolderName)/\(Constants.PeopleCsvFileName)")
+            
+            
+            let peopleId = ColumnID("peopleid", Int.self)
+            let firstName = ColumnID("firstname", String.self)
+            let middleName = ColumnID("middlename", String.self)
+            let lastName = ColumnID("lastname", String.self)
+            let email = ColumnID("email", String.self)
+            let phone = ColumnID("phone", String.self)
+            let additionalDetails = ColumnID("additionaldetails", String.self)
+            let listId = ColumnID("listid", String.self)
+            let isActive = ColumnID("isactive", Bool.self)
+            let embeddedImage = ColumnID("embeddedimage", String.self)
+            let eventId = ColumnID("event_id", Int.self)
+            let locationId = ColumnID("locationid", Int.self)
+            let isDelete = ColumnID("isdelete", Bool.self)
+            let welcomeMsg = ColumnID("welcomemsg", String.self)
+            let qrCode = ColumnID("qr_code", String.self)
+            let userType = ColumnID("user_type", String.self)
+            let lastModifiedDate = ColumnID("lastmodifieddate", String.self)
+            let uniqueId = ColumnID("unique_id", String.self)
+            
             if FileManager.default.fileExists(atPath: csvUrl.path) {
                 var peoples = [PeoplesModel]()
-                let result = try DataFrame(contentsOfCSVFile: csvUrl)
+                let result = try DataFrame(contentsOfCSVFile: csvUrl, columns: [peopleId.name, firstName.name, middleName.name, lastName.name, email.name, phone.name, additionalDetails.name, listId.name, isActive.name, embeddedImage.name, eventId.name, locationId.name, isDelete.name, welcomeMsg.name, qrCode.name, userType.name, lastModifiedDate.name, uniqueId.name], types: [peopleId.name: .integer, firstName.name: .string, middleName.name: .string, lastName.name: .string, email.name: .string, phone.name: .string, additionalDetails.name: .string, listId.name: .string, isActive.name: .boolean, embeddedImage.name: .string, eventId.name: .integer, locationId.name: .integer, isDelete.name: .boolean, welcomeMsg.name: .string, qrCode.name: .string, userType.name: .string, lastModifiedDate.name: .string, uniqueId.name: .string])
                 if FileManager.default.fileExists(atPath: peopleCsvUrl.path) {
                     if UserDefaultsServices.shared.getLastSyncTimeStamp() == Constants.DefaultLastSyncTimeStamp {
                         self.deletePeopleCSV()
                         try result.writeCSV(to: peopleCsvUrl)
                     } else {
                         peoples = OfflinePeoples.shared.peoples
-                        var peopleResult = try DataFrame(contentsOfCSVFile: peopleCsvUrl)
+                        var peopleResult = try DataFrame(contentsOfCSVFile: peopleCsvUrl, columns: [peopleId.name, firstName.name, middleName.name, lastName.name, email.name, phone.name, additionalDetails.name, listId.name, isActive.name, embeddedImage.name, eventId.name, locationId.name, isDelete.name, welcomeMsg.name, qrCode.name, userType.name, lastModifiedDate.name, uniqueId.name], types: [peopleId.name: .integer, firstName.name: .string, middleName.name: .string, lastName.name: .string, email.name: .string, phone.name: .string, additionalDetails.name: .string, listId.name: .string, isActive.name: .boolean, embeddedImage.name: .string, eventId.name: .integer, locationId.name: .integer, isDelete.name: .boolean, welcomeMsg.name: .string, qrCode.name: .string, userType.name: .string, lastModifiedDate.name: .string, uniqueId.name: .string])
                         peopleResult.append(result)
                         self.deletePeopleCSV()
                         try peopleResult.writeCSV(to: peopleCsvUrl)
@@ -320,7 +341,7 @@ final class LocalDataService {
             } else {
                 var peoples = [PeoplesModel]()
                 if FileManager.default.fileExists(atPath: peopleCsvUrl.path) {
-                    let peopleResult = try DataFrame(contentsOfCSVFile: peopleCsvUrl)
+                    let peopleResult = try DataFrame(contentsOfCSVFile: peopleCsvUrl, columns: [peopleId.name, firstName.name, middleName.name, lastName.name, email.name, phone.name, additionalDetails.name, listId.name, isActive.name, embeddedImage.name, eventId.name, locationId.name, isDelete.name, welcomeMsg.name, qrCode.name, userType.name, lastModifiedDate.name, uniqueId.name], types: [peopleId.name: .integer, firstName.name: .string, middleName.name: .string, lastName.name: .string, email.name: .string, phone.name: .string, additionalDetails.name: .string, listId.name: .string, isActive.name: .boolean, embeddedImage.name: .string, eventId.name: .integer, locationId.name: .integer, isDelete.name: .boolean, welcomeMsg.name: .string, qrCode.name: .string, userType.name: .string, lastModifiedDate.name: .string, uniqueId.name: .string])
                     for row in peopleResult.rows {
                         if row.count >= 18 {
                             var peopleId: Int?
@@ -428,14 +449,18 @@ final class LocalDataService {
     }
     
     func syncCompletedMethod() {
-        if self.isSyncLogs {
+        if let lastLogSyncTimeStr = UserDefaultsServices.shared.getLogsLastSyncDate(), let lastLogSyncTime = Utilities.shared.convertStringToNSDateFormat(date: lastLogSyncTimeStr, currentFormat: "dd/MM/yyyy HH:mm:ss"), let difference = Calendar.current.dateComponents([.minute], from: lastLogSyncTime, to: Date()).minute, difference >= Constants.LogsSyncTime {
             self.createLogs()
         } else {
-            if let syncCompleted = self.syncCompleted {
-                self.isSyncPeoples = false
-                let syncTime = Utilities.shared.convertNSDateToStringFormat(date: Date(), requiredFormat: "dd/MM/yyyy HH:mm:ss")
-                UserDefaultsServices.shared.savePeoplesLastSyncDate(date: syncTime)
-                syncCompleted()
+            if self.isSyncLogs || UserDefaultsServices.shared.getLogsLastSyncDate() == nil {
+                self.createLogs()
+            } else {
+                if let syncCompleted = self.syncCompleted {
+                    self.isSyncPeoples = false
+                    let syncTime = Utilities.shared.convertNSDateToStringFormat(date: Date(), requiredFormat: "dd/MM/yyyy HH:mm:ss")
+                    UserDefaultsServices.shared.savePeoplesLastSyncDate(date: syncTime)
+                    syncCompleted()
+                }
             }
         }
     }
@@ -570,6 +595,7 @@ final class LocalDataService {
                     self.isSyncLogs = false
                     let syncTime = Utilities.shared.convertNSDateToStringFormat(date: Date(), requiredFormat: "dd/MM/yyyy HH:mm:ss")
                     UserDefaultsServices.shared.savePeoplesLastSyncDate(date: syncTime)
+                    UserDefaultsServices.shared.saveLogsLastSyncDate(date: syncTime)
                     syncCompleted()
                 }
             }
