@@ -16,8 +16,8 @@ struct Constants {
     static let PeopleCsvFileName = "peopledata.csv"
     static let DeviceType = "iOS"
     static let MatchScoreThreshold: Int = 700 // 0 to 1000
-    static let TermsAndConditionsUrl = "http://52.66.166.39:1337/t&c"
-    static let PrivacyPolicyUrl = "http://52.66.166.39:1337/privacy"
+    static let TermsAndConditionsUrl = "\(baseURL)/t&c"
+    static let PrivacyPolicyUrl = "\(baseURL)/privacy"
     static let NextScanDelayDefault: Float = 2.0
     static let NextScanDelayMinimum: Float = 1.0
     static let NextScanDelayMaximum: Float = 10.0
