@@ -143,17 +143,10 @@ final class LocalDataService {
                 let zipFilePath = documentsPath.appendingPathComponent(Constants.ZipFileName).path
                 let csvFolderPath = documentsPath.appendingPathComponent(Constants.PeopleDataFolderName).path
                 if FileManager.default.fileExists(atPath: zipFilePath) {
-                    self.deleteZip()
+                    self.deleteFiles()
                 }
                 FileManager.default.createFile(atPath: zipFilePath, contents: base64Data)
-//                try SSZipArchive.unzipFile(atPath: zipFilePath, toDestination: csvFolderPath, overwrite: true, password: nil)
-                SSZipArchive.unzipFile(atPath: zipFilePath, toDestination: csvFolderPath, overwrite: true, password: nil) { _, _, _, _ in
-                    
-                } completionHandler: { path, succeeded, error in
-                    if succeeded {
-                        self.deleteZip()
-                    }
-                }
+                try SSZipArchive.unzipFile(atPath: zipFilePath, toDestination: csvFolderPath, overwrite: true, password: nil)
             } catch let failedError {
                 debugPrint("Failed to write the file data due to \(failedError.localizedDescription)")
             }
@@ -161,21 +154,15 @@ final class LocalDataService {
         self.fetchPeoples()
     }
     
-    func deleteZip() {
+    func deleteFiles() {
         do {
             let documentsPath = try FileManager.default.url(for: .applicationSupportDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+            
             let zipFilePath = documentsPath.appendingPathComponent(Constants.ZipFileName).path
             if FileManager.default.fileExists(atPath: zipFilePath) {
                 try FileManager.default.removeItem(atPath: zipFilePath)
             }
-        } catch let failedError {
-            debugPrint("Failed to delete the file data due to \(failedError.localizedDescription)")
-        }
-    }
-    
-    func deleteCSV() {
-        do {
-            let documentsPath = try FileManager.default.url(for: .applicationSupportDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+            
             let csvUrl = documentsPath.appendingPathComponent("\(Constants.PeopleDataFolderName)/\(Constants.CsvFileName)").path
             if FileManager.default.fileExists(atPath: csvUrl) {
                 try FileManager.default.removeItem(atPath: csvUrl)
@@ -313,7 +300,6 @@ final class LocalDataService {
                 debugPrint("Peoples New Count = \(OfflinePeoples.shared.peoples.count)")
                 UserDefaultsServices.shared.saveLastSyncTimeStamp(value: self.lastSyncTimeStamp)
             }
-            self.deleteCSV()
         } catch let failedError {
             debugPrint("Failed to write the file data due to \(failedError.localizedDescription)")
         }

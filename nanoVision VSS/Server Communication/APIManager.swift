@@ -26,7 +26,7 @@ final class APIManager {
             if isLoader {
                 Utilities.shared.showSVProgressHUD()
             }
-            AF.request(url, method: requestData.method, parameters: requestData.parameters, encoding: requestData.encoding, headers: requestData.headers) {$0.timeoutInterval = 1800}
+            AF.request(url, method: requestData.method, parameters: requestData.parameters, encoding: requestData.encoding, headers: requestData.headers)
                 .validate(statusCode: 200..<500)
                 .responseJSON {
                     response in
