@@ -70,7 +70,7 @@ class Utilities {
         }
         LocalDataService.shared.stopTimer()
         UserDefaultsServices.shared.removeLastSyncTimeStamp()
-        LocalDataService().deletePeopleCSV()
+        LocalDataService().deleteCSV()
         LocalDataService.shared.createLogs(isSync: false)
         UserDefaultsServices.shared.userDefaults.removePersistentDomain(forName: Bundle.main.bundleIdentifier ?? "")
         UserDefaultsServices.shared.userDefaults.synchronize()

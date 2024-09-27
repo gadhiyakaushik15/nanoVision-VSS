@@ -74,9 +74,7 @@ class SplashViewController: UIViewController {
                 }
                 OfflineDevicesDetails.shared.devicesDetails = UserDefaultsServices.shared.getDevicesDetails()
                 UserDefaultsServices.shared.removeLastSyncTimeStamp()
-                if APIManager.isConnectedToInternet() {
-                    LocalDataService().deletePeopleCSV()
-                }
+                LocalDataService().deleteCSV()
                 Utilities.shared.showSVProgressHUD(message: Message.PleaseWaitSyncInProcess)
                 LocalDataService.shared.getDeviceStatus()
             } else {
