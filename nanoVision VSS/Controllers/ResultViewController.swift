@@ -30,7 +30,7 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var statusView: UIView!
     @IBOutlet weak var nameLabel: UILabel!
     
-    var data = [PeoplesModel]()
+    var data = [Peoples]()
     var imageBase64: Data?
     var type: ParavisionType = .faceValidness
     var validness: PNLivenessValidness?
@@ -171,9 +171,9 @@ class ResultViewController: UIViewController {
         } else if self.type == .faceLiveness {
             if let devicesDetails = OfflineDevicesDetails.shared.devicesDetails, let eventIdDetails = devicesDetails.eventidDetails, let eventIdDetail = eventIdDetails.first, let eventId = eventIdDetail.eventid, self.data.count > 0 {
                 if let matched = self.data.max(by: { first, second in
-                    if let peopleEventId = second.eventID, eventId == peopleEventId {
+                    if eventId == second.eventID {
                         return true
-                    } else if let peopleEventId = first.eventID, eventId == peopleEventId {
+                    } else if eventId == first.eventID {
                         return false
                     } else {
                         if (first.matchScore ?? 0) < (second.matchScore ?? 0) {
@@ -186,9 +186,7 @@ class ResultViewController: UIViewController {
                     if let matchScore = matched.matchScore {
                         logMatchScore = matchScore
                     }
-                    if let peopleId = matched.peopleid {
-                        logPeopleId = peopleId
-                    }
+                    logPeopleId = Int(matched.peopleid)
                     if let uniqueId = matched.uniqueId {
                         logUniqueId = uniqueId
                     }
@@ -236,9 +234,9 @@ class ResultViewController: UIViewController {
                     self.nameLabel.text = message
                     if let eventId = eventIdDetail.eventid, self.data.count > 0 {
                         if let matched = self.data.max(by: { first, second in
-                            if let peopleEventId = second.eventID, eventId == peopleEventId {
+                            if eventId == second.eventID {
                                 return true
-                            } else if let peopleEventId = first.eventID, eventId == peopleEventId {
+                            } else if eventId == first.eventID {
                                 return false
                             } else {
                                 if (first.matchScore ?? 0) < (second.matchScore ?? 0) {
@@ -251,9 +249,7 @@ class ResultViewController: UIViewController {
                             if let matchScore = matched.matchScore {
                                 logMatchScore = matchScore
                             }
-                            if let peopleId = matched.peopleid {
-                                logPeopleId = peopleId
-                            }
+                            logPeopleId = Int(matched.peopleid)
                             if let uniqueId = matched.uniqueId {
                                 logUniqueId = uniqueId
                             }
@@ -276,9 +272,9 @@ class ResultViewController: UIViewController {
                     self.nameLabel.text = message
                     if let eventId = eventIdDetail.eventid, self.data.count > 0 {
                         if let matched = self.data.max(by: { first, second in
-                            if let peopleEventId = second.eventID, eventId == peopleEventId {
+                            if eventId == second.eventID {
                                 return true
-                            } else if let peopleEventId = first.eventID, eventId == peopleEventId {
+                            } else if eventId == first.eventID {
                                 return false
                             } else {
                                 if (first.matchScore ?? 0) < (second.matchScore ?? 0) {
@@ -291,9 +287,7 @@ class ResultViewController: UIViewController {
                             if let matchScore = matched.matchScore {
                                 logMatchScore = matchScore
                             }
-                            if let peopleId = matched.peopleid {
-                                logPeopleId = peopleId
-                            }
+                            logPeopleId = Int(matched.peopleid)
                             if let uniqueId = matched.uniqueId {
                                 logUniqueId = uniqueId
                             }
@@ -307,9 +301,9 @@ class ResultViewController: UIViewController {
                 } else {
                     if let eventId = eventIdDetail.eventid, self.data.count > 0 {
                         if let matched = self.data.max(by: { first, second in
-                            if let peopleEventId = second.eventID, eventId == peopleEventId {
+                            if eventId == second.eventID {
                                 return true
-                            } else if let peopleEventId = first.eventID, eventId == peopleEventId {
+                            } else if eventId == first.eventID {
                                 return false
                             } else {
                                 if (first.matchScore ?? 0) < (second.matchScore ?? 0) {
@@ -319,7 +313,7 @@ class ResultViewController: UIViewController {
                                 }
                             }
                         }) {
-                            if let peopleEventId = matched.eventID, (eventId == peopleEventId && (matched.isactive ?? true)) {
+                            if eventId == matched.eventID && matched.isactive {
                                 if Utilities.shared.isMQTTEnabled() {
                                     MQTTManager.shared().publish(topic: MQTT.PublisherTopic, message: MQTT.OnCommand)
                                 }
@@ -348,9 +342,7 @@ class ResultViewController: UIViewController {
                             if let matchScore = matched.matchScore {
                                 logMatchScore = matchScore
                             }
-                            if let peopleId = matched.peopleid {
-                                logPeopleId = peopleId
-                            }
+                            logPeopleId = Int(matched.peopleid)
                             if let uniqueId = matched.uniqueId {
                                 logUniqueId = uniqueId
                             }

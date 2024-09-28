@@ -19,4 +19,24 @@
         <attribute name="scantype" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="usertype" optional="YES" attributeType="String"/>
     </entity>
+    <entity name="Peoples" representedClassName=".Peoples" syncable="YES">
+        <attribute name="additionaldetails" optional="YES" attributeType="String"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="embeddedimage" optional="YES" attributeType="Transformable" customClassName="[Float]"/>
+        <attribute name="eventID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="firstname" optional="YES" attributeType="String"/>
+        <attribute name="isactive" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isdelete" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="lastmodifieddate" optional="YES" attributeType="String"/>
+        <attribute name="lastname" optional="YES" attributeType="String"/>
+        <attribute name="listid" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+        <attribute name="locationid" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="middlename" optional="YES" attributeType="String"/>
+        <attribute name="peopleid" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="phone" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="qrcode" optional="YES" attributeType="String"/>
+        <attribute name="uniqueId" optional="YES" attributeType="String"/>
+        <attribute name="usertype" optional="YES" attributeType="String"/>
+        <attribute name="welcomemsg" optional="YES" attributeType="String"/>
+    </entity>
 </model>

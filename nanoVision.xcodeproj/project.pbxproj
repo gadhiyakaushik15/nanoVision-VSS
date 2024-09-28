@@ -15,6 +15,8 @@
 		B10757EA2BCF93B200B35D94 /* Logs+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10757E82BCF93B200B35D94 /* Logs+CoreDataClass.swift */; };
 		B10757ED2BCF9EDC00B35D94 /* LogsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10757EC2BCF9EDB00B35D94 /* LogsViewModel.swift */; };
 		B10757EF2BD0037700B35D94 /* CreateLogsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10757EE2BD0037700B35D94 /* CreateLogsModel.swift */; };
+		B1143E5D2CA87AA4007F0587 /* Peoples+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1143E5B2CA87AA4007F0587 /* Peoples+CoreDataClass.swift */; };
+		B1143E5E2CA87AA4007F0587 /* Peoples+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1143E5C2CA87AA4007F0587 /* Peoples+CoreDataProperties.swift */; };
 		B13434AD2BD765CF0015A235 /* ControlCenterHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13434AB2BD765CF0015A235 /* ControlCenterHeaderView.swift */; };
 		B13434AE2BD765CF0015A235 /* ControlCenterHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B13434AC2BD765CF0015A235 /* ControlCenterHeaderView.xib */; };
 		B1364B572C11F4BB00193C0B /* VisitorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1364B562C11F4BB00193C0B /* VisitorViewModel.swift */; };
@@ -140,6 +142,8 @@
 		B10757E82BCF93B200B35D94 /* Logs+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logs+CoreDataClass.swift"; sourceTree = "<group>"; };
 		B10757EC2BCF9EDB00B35D94 /* LogsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsViewModel.swift; sourceTree = "<group>"; };
 		B10757EE2BD0037700B35D94 /* CreateLogsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateLogsModel.swift; sourceTree = "<group>"; };
+		B1143E5B2CA87AA4007F0587 /* Peoples+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Peoples+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B1143E5C2CA87AA4007F0587 /* Peoples+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Peoples+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B13434AB2BD765CF0015A235 /* ControlCenterHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlCenterHeaderView.swift; sourceTree = "<group>"; };
 		B13434AC2BD765CF0015A235 /* ControlCenterHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ControlCenterHeaderView.xib; sourceTree = "<group>"; };
 		B1364B562C11F4BB00193C0B /* VisitorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorViewModel.swift; sourceTree = "<group>"; };
@@ -268,6 +272,8 @@
 		B10757E72BCF921B00B35D94 /* Coredata Model */ = {
 			isa = PBXGroup;
 			children = (
+				B1143E5C2CA87AA4007F0587 /* Peoples+CoreDataProperties.swift */,
+				B1143E5B2CA87AA4007F0587 /* Peoples+CoreDataClass.swift */,
 				B169A5C62C13227000D5AE4F /* Logs+CoreDataProperties.swift */,
 				B10757E82BCF93B200B35D94 /* Logs+CoreDataClass.swift */,
 			);
@@ -664,6 +670,7 @@
 				B13434AD2BD765CF0015A235 /* ControlCenterHeaderView.swift in Sources */,
 				B10757EF2BD0037700B35D94 /* CreateLogsModel.swift in Sources */,
 				B1E329492BC4336F006081FC /* Singleton.swift in Sources */,
+				B1143E5D2CA87AA4007F0587 /* Peoples+CoreDataClass.swift in Sources */,
 				B10757ED2BCF9EDC00B35D94 /* LogsViewModel.swift in Sources */,
 				B173EA792C186FBE00A60BC6 /* VisitorSuccessViewController.swift in Sources */,
 				B17EA1002BC026D700ABE750 /* DeviceStatusModel.swift in Sources */,
@@ -676,6 +683,7 @@
 				B1DF29352BE8D31B0042331D /* WebViewViewController.swift in Sources */,
 				B1EE06112C09A5F2008D6F8F /* ListViewTableViewCell.swift in Sources */,
 				B197F20C2C8E0F2B005DBF84 /* ViableSoftModel.swift in Sources */,
+				B1143E5E2CA87AA4007F0587 /* Peoples+CoreDataProperties.swift in Sources */,
 				B1CE08D42BBD744000119509 /* AppDelegate.swift in Sources */,
 				B10757EA2BCF93B200B35D94 /* Logs+CoreDataClass.swift in Sources */,
 				B1E329322BC3B736006081FC /* CameraViewController.swift in Sources */,

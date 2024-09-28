@@ -10,7 +10,7 @@ import Foundation
 class OfflinePeoples {
     static let shared = OfflinePeoples()
     private init(){}
-    var peoples: [PeoplesModel] = []
+    var peoples: [Peoples] = []
 }
 
 class OfflineDevicesDetails {

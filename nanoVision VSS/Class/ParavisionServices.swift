@@ -64,14 +64,14 @@ final class ParavisionServices {
         }
     }
     
-    func identify(image: UIImage) -> [PeoplesModel]? {
+    func identify(image: UIImage) -> [Peoples]? {
         do {
             if let embeddings = self.embeddingEstimator {
                 let embeddingsArray = try embeddings.getEmbeddings(image: image)
                 if let mostProminent = embeddingsArray.first {
-                    var matchedPeople: [PeoplesModel] = []
+                    var matchedPeople: [Peoples] = []
                     let peoples = OfflinePeoples.shared.peoples
-                    for var people in  peoples {
+                    for people in  peoples {
                         if let embeddingsData = people.embeddedimage {
                             let identity = PNEmbeddings(vector: embeddingsData)
                             let matchScore = identity.getMatchScore(mostProminent)
@@ -93,7 +93,7 @@ final class ParavisionServices {
         }
     }
     
-    func createEmbeddings(image: UIImage) -> (String?, [PeoplesModel]?) {
+    func createEmbeddings(image: UIImage) -> (String?, [Peoples]?) {
         do {
             if let embeddings = self.embeddingEstimator {
                 let embeddingsArray = try embeddings.getEmbeddings(image: image)
@@ -101,9 +101,9 @@ final class ParavisionServices {
                     let embeddingsStringArray = mostProminent.vector.compactMap {"\($0)"}
                     let embeddingsString = embeddingsStringArray.joined(separator: ",")
                     
-                    var matchedPeople: [PeoplesModel] = []
+                    var matchedPeople: [Peoples] = []
                     let peoples = OfflinePeoples.shared.peoples
-                    for var people in  peoples {
+                    for people in  peoples {
                         if let embeddingsData = people.embeddedimage {
                             let identity = PNEmbeddings(vector: embeddingsData)
                             let matchScore = identity.getMatchScore(mostProminent)

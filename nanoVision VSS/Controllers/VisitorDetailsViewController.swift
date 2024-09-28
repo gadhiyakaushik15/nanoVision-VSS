@@ -123,7 +123,7 @@ class VisitorDetailsViewController: UIViewController {
                         fullName = fullName + " " + lastName
                     }
                 }
-                optionArray.append(ListModel(listId: people.peopleid, listImage: nil, listName: fullName))
+                optionArray.append(ListModel(listId: Int(people.peopleid), listImage: nil, listName: fullName))
             }
         }
         self.whomToMeetDropDownTextField.optionArray = optionArray
@@ -254,7 +254,7 @@ class VisitorDetailsViewController: UIViewController {
 }
 
 extension VisitorDetailsViewController: ListViewDelegate {
-    func getListData(people: PeoplesModel) {
+    func getListData(people: Peoples) {
         self.whomToMeetTextField.text = "\(people.firstname ?? "") \(people.lastname ?? "")"
     }
 }

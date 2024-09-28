@@ -8,7 +8,7 @@
 import UIKit
 
 protocol ListViewDelegate {
-    func getListData(people: PeoplesModel)
+    func getListData(people: Peoples)
 }
 
 class ListViewViewController: UIViewController {
@@ -22,7 +22,7 @@ class ListViewViewController: UIViewController {
     var isFirsTime = true
     var isSearching: Bool = false
     var peoples =  OfflinePeoples.shared.peoples
-    var searchPeoples = [PeoplesModel]()
+    var searchPeoples = [Peoples]()
     var delegate: ListViewDelegate?
     
     override func viewDidLoad() {
@@ -89,7 +89,7 @@ class ListViewViewController: UIViewController {
 
 extension ListViewViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        var tempPeople = [PeoplesModel]()
+        var tempPeople = [Peoples]()
         if self.isSearching {
             tempPeople = self.searchPeoples
         } else {
@@ -111,7 +111,7 @@ extension ListViewViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var tempPeople = [PeoplesModel]()
+        var tempPeople = [Peoples]()
         if self.isSearching {
             tempPeople = self.searchPeoples
         } else {
@@ -120,7 +120,7 @@ extension ListViewViewController: UITableViewDataSource, UITableViewDelegate {
         if tempPeople.count > 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "ListViewCell", for: indexPath as IndexPath) as! ListViewTableViewCell
             
-            var peopleData: PeoplesModel?
+            var peopleData: Peoples?
             if self.isSearching {
                 peopleData = self.searchPeoples[indexPath.row]
             } else {
@@ -149,7 +149,7 @@ extension ListViewViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        var tempPeople = [PeoplesModel]()
+        var tempPeople = [Peoples]()
         if self.isSearching {
             tempPeople = self.searchPeoples
         } else {

@@ -291,8 +291,8 @@ class SelfieCameraViewController: UIViewController {
                 if let embeddings = data.0 {
                     if let peoples = data.1, let people = peoples.first {
                         var phoneNumber: String?
-                        if let phone = people.phone {
-                            phoneNumber = String(phone)
+                        if people.phone != 0 {
+                            phoneNumber = String(people.phone)
                         }
                         if let userType = people.usertype, userType.lowercased() == UserType.Visitor {
                             let visitor = VisitorResult(firstname: people.firstname, lastname: people.lastname, email: people.email, phone: phoneNumber, visitorID: 0, visitorImage: people.embeddedimage)

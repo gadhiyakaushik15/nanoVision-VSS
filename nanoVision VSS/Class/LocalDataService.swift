@@ -151,7 +151,7 @@ final class LocalDataService {
                 debugPrint("Failed to write the file data due to \(failedError.localizedDescription)")
             }
         }
-        self.fetchPeoples()
+        self.readPeoples()
     }
     
     func deleteFiles() {
@@ -172,6 +172,168 @@ final class LocalDataService {
         }
     }
     
+    func readPeoples() {
+        do {
+            let documentsPath = try FileManager.default.url(for: .applicationSupportDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+            let csvUrl = documentsPath.appendingPathComponent("\(Constants.PeopleDataFolderName)/\(Constants.CsvFileName)")
+            if FileManager.default.fileExists(atPath: csvUrl.path) {
+                let result = try DataFrame(contentsOfCSVFile: csvUrl)
+                var peoples = [PeoplesModel]()
+                
+                for row in result.rows {
+                    if row.count >= 18 {
+                        var peopleId: Int?
+                        if let value = row[0] as? Int {
+                            peopleId = value
+                        }
+                        
+                        var firstName: String?
+                        if let value = row[1] as? String {
+                            firstName = value
+                        }
+                        
+                        var middleName: String?
+                        if let value = row[2] as? String {
+                            middleName = value
+                        }
+                        
+                        var lastName: String?
+                        if let value = row[3] as? String {
+                            lastName = value
+                        }
+                        
+                        var email: String?
+                        if let value = row[4] as? String {
+                            email = value
+                        }
+                        
+                        var phone: Int?
+                        if let value = row[5] as? Int {
+                            phone = value
+                        } else if let value = row[5] as? String, let intPhone = Int(value) {
+                            phone = intPhone
+                        }
+                        
+                        var additionalDetails: String?
+                        if let value = row[6] as? String {
+                            additionalDetails = value
+                        }
+                        
+                        var listIdString: String = ""
+                        if let value = row[7] as? String {
+                            listIdString = value
+                        }
+                        listIdString = listIdString.replacingOccurrences(of: "[", with: "")
+                        listIdString = listIdString.replacingOccurrences(of: "]", with: "")
+                        let listIdStringArray = listIdString.components(separatedBy: ",")
+                        
+                        let isActive = ((row[8] as? Bool) ?? true)
+                        
+                        var embeddedImage: [Float]?
+                        if let value = row[9] as? String {
+                            embeddedImage = value.split(separator: ",").compactMap { Float($0)}
+                        }
+                        
+                        var eventId: Int?
+                        if let value = row[10] as? Int {
+                            eventId = value
+                        }
+                        
+                        var locationId: Int?
+                        if let value = row[11] as? Int {
+                            locationId = value
+                        }
+                        
+                        let isDelete = ((row[12] as? Bool) ?? false)
+                        
+                        var welcomeMsg: String?
+                        if let value = row[13] as? String {
+                            welcomeMsg = value
+                        }
+                        
+                        var qrcode: String?
+                        if let value = row[14] as? String {
+                            qrcode = value
+                        }
+                        
+                        var userType: String?
+                        if let value = row[15] as? String {
+                            userType = value
+                        }
+                        
+                        var lastModifiedDate: String?
+                        if let value = row[16] as? String {
+                            lastModifiedDate = value
+                        }
+                        
+                        var uniqueId: String?
+                        if let value = row[17] as? String {
+                            uniqueId = value
+                        }
+                        
+                        peoples.append(PeoplesModel(peopleid: peopleId, firstname: firstName, middlename: middleName, lastname: lastName, email: email, phone: phone, additionaldetails: additionalDetails, listid: listIdStringArray, isactive: isActive, embeddedimage: embeddedImage, eventID: eventId, locationid: locationId, isdelete: isDelete, welcomemsg: welcomeMsg, qrcode: qrcode, usertype: userType, lastmodifieddate: lastModifiedDate, uniqueId: uniqueId))
+                    }
+                }
+                self.savePeoples(peoples: peoples)
+                self.deleteFiles()
+            } else {
+                self.fetchPeoples()
+            }
+        } catch let error {
+            debugPrint(error)
+            self.fetchPeoples()
+        }
+    }
+    
+    func savePeoples(peoples: [PeoplesModel]) {
+        appDelegate.enqueue { manageObjContext in
+            do {
+                if let codableContext = CodingUserInfoKey.init(rawValue: "context") {
+                    let decoder = JSONDecoder()
+                    decoder.userInfo[codableContext] = manageObjContext
+                    let data = try JSONEncoder().encode(peoples)
+                    _ = try decoder.decode([Peoples].self, from: data)
+                    appDelegate.saveContext(manageObjContext)
+                }
+            } catch let error {
+                debugPrint("Error ->\(error.localizedDescription)")
+            }
+            self.fetchPeoples()
+        }
+    }
+    
+    func fetchPeoples()  {
+        let manageObjContext = appDelegate.persistentContainer.viewContext
+        let fetchRequest = Peoples.fetchRequest()
+        fetchRequest.returnsObjectsAsFaults = false
+        do {
+            let peoples = try manageObjContext.fetch(fetchRequest)
+            OfflinePeoples.shared.peoples = peoples
+            debugPrint("Number of saved peoples = \(OfflinePeoples.shared.peoples.count)")
+        } catch let error {
+            debugPrint(error)
+        }
+        self.syncCompletedMethod()
+    }
+    
+    func syncCompletedMethod() {
+        if let lastLogSyncTimeStr = UserDefaultsServices.shared.getLogsLastSyncDate(), let lastLogSyncTime = Utilities.shared.convertStringToNSDateFormat(date: lastLogSyncTimeStr, currentFormat: "dd/MM/yyyy HH:mm:ss"), let difference = Calendar.current.dateComponents([.minute], from: lastLogSyncTime, to: Date()).minute, difference >= Constants.LogsSyncTime {
+            self.createLogs()
+        } else {
+            if self.isSyncLogs || UserDefaultsServices.shared.getLogsLastSyncDate() == nil {
+                self.createLogs()
+            } else {
+                if let syncCompleted = self.syncCompleted {
+                    self.isSyncPeoples = false
+                    let syncTime = Utilities.shared.convertNSDateToStringFormat(date: Date(), requiredFormat: "dd/MM/yyyy HH:mm:ss")
+                    UserDefaultsServices.shared.savePeoplesLastSyncDate(date: syncTime)
+                    syncCompleted()
+                }
+            }
+        }
+    }
+    
+    /*
     func deletePeopleFiles() {
         do {
             let documentsPath = try FileManager.default.url(for: .applicationSupportDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
@@ -468,23 +630,7 @@ final class LocalDataService {
             debugPrint("Local data fetch error due to \(failedError.localizedDescription)")
         }
     }
-    
-    func syncCompletedMethod() {
-        if let lastLogSyncTimeStr = UserDefaultsServices.shared.getLogsLastSyncDate(), let lastLogSyncTime = Utilities.shared.convertStringToNSDateFormat(date: lastLogSyncTimeStr, currentFormat: "dd/MM/yyyy HH:mm:ss"), let difference = Calendar.current.dateComponents([.minute], from: lastLogSyncTime, to: Date()).minute, difference >= Constants.LogsSyncTime {
-            self.createLogs()
-        } else {
-            if self.isSyncLogs || UserDefaultsServices.shared.getLogsLastSyncDate() == nil {
-                self.createLogs()
-            } else {
-                if let syncCompleted = self.syncCompleted {
-                    self.isSyncPeoples = false
-                    let syncTime = Utilities.shared.convertNSDateToStringFormat(date: Date(), requiredFormat: "dd/MM/yyyy HH:mm:ss")
-                    UserDefaultsServices.shared.savePeoplesLastSyncDate(date: syncTime)
-                    syncCompleted()
-                }
-            }
-        }
-    }
+     */
     
     func saveLogs(logs: [LogsResult]) {
         appDelegate.enqueue { manageObjContext in

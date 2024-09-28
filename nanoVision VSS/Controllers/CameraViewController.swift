@@ -341,7 +341,7 @@ class CameraViewController: UIViewController {
     }
     
     //MARK: - Present Result Controller
-    private func presentResultView(type: ParavisionType, image: UIImage, peoples: [PeoplesModel]?, validness: PNLivenessValidness?, liveness: PNLiveness?, qrCode: String?) {
+    private func presentResultView(type: ParavisionType, image: UIImage, peoples: [Peoples]?, validness: PNLivenessValidness?, liveness: PNLiveness?, qrCode: String?) {
         DispatchQueue.main.async {
             if let controller = self.getViewController(storyboard: Storyboard.result, id: "ResultViewController") as? ResultViewController, self.presentedViewController == nil  {
                 controller.data = peoples ?? []
