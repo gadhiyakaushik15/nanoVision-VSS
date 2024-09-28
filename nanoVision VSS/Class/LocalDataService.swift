@@ -122,7 +122,7 @@ final class LocalDataService {
                         if peopleInformation != "" {
                             self.storePeopleCSV(with: peopleInformation)
                         } else {
-                            self.syncCompletedMethod()
+                            self.fetchPeoples()
                         }
                     } else {
                         self.fetchPeoples()
@@ -172,139 +172,300 @@ final class LocalDataService {
         }
     }
     
-    func fetchPeoples() {
+    func deletePeopleFiles() {
         do {
             let documentsPath = try FileManager.default.url(for: .applicationSupportDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
-            let csvUrl = documentsPath.appendingPathComponent("\(Constants.PeopleDataFolderName)/\(Constants.CsvFileName)")
-            
-//                let peopleId = ColumnID("peopleid", Int.self)
-//                let firstName = ColumnID("firstname", String.self)
-//                let middleName = ColumnID("middlename", String.self)
-//                let lastName = ColumnID("lastname", String.self)
-//                let email = ColumnID("email", String.self)
-//                let phone = ColumnID("phone", String.self)
-//                let additionalDetails = ColumnID("additionaldetails", String.self)
-//                let listId = ColumnID("listid", String.self)
-//                let isActive = ColumnID("isactive", Bool.self)
-//                let embeddedImage = ColumnID("embeddedimage", String.self)
-//                let eventId = ColumnID("event_id", Int.self)
-//                let locationId = ColumnID("locationid", Int.self)
-//                let isDelete = ColumnID("isdelete", Bool.self)
-//                let welcomeMsg = ColumnID("welcomemsg", String.self)
-//                let qrCode = ColumnID("qr_code", String.self)
-//                let userType = ColumnID("user_type", String.self)
-//                let lastModifiedDate = ColumnID("lastmodifieddate", String.self)
-//                let uniqueId = ColumnID("unique_id", String.self)
-            
-            if FileManager.default.fileExists(atPath: csvUrl.path) {
-                var peoples = OfflinePeoples.shared.peoples
-                let result = try DataFrame(contentsOfCSVFile: csvUrl)
-//                    let result = try DataFrame(contentsOfCSVFile: csvUrl, columns: [peopleId.name, firstName.name, middleName.name, lastName.name, email.name, phone.name, additionalDetails.name, listId.name, isActive.name, embeddedImage.name, eventId.name, locationId.name, isDelete.name, welcomeMsg.name, qrCode.name, userType.name, lastModifiedDate.name, uniqueId.name], types: [peopleId.name: .integer, firstName.name: .string, middleName.name: .string, lastName.name: .string, email.name: .string, phone.name: .string, additionalDetails.name: .string, listId.name: .string, isActive.name: .boolean, embeddedImage.name: .string, eventId.name: .integer, locationId.name: .integer, isDelete.name: .boolean, welcomeMsg.name: .string, qrCode.name: .string, userType.name: .string, lastModifiedDate.name: .string, uniqueId.name: .string])
-                
-                for row in result.rows {
-                    if row.count >= 18 {
-                        var peopleId: Int?
-                        if let value = row[0] as? Int {
-                            peopleId = value
-                        }
-                        
-                        var firstName: String?
-                        if let value = row[1] as? String {
-                            firstName = value
-                        }
-                        
-                        var middleName: String?
-                        if let value = row[2] as? String {
-                            middleName = value
-                        }
-                        
-                        var lastName: String?
-                        if let value = row[3] as? String {
-                            lastName = value
-                        }
-                        
-                        var email: String?
-                        if let value = row[4] as? String {
-                            email = value
-                        }
-                        
-                        var phone: Int?
-                        if let value = row[5] as? Int {
-                            phone = value
-                        } else if let value = row[5] as? String, let intPhone = Int(value) {
-                            phone = intPhone
-                        }
-                        
-                        var additionalDetails: String?
-                        if let value = row[6] as? String {
-                            additionalDetails = value
-                        }
-                        
-                        var listIdString: String = ""
-                        if let value = row[7] as? String {
-                            listIdString = value
-                        }
-                        listIdString = listIdString.replacingOccurrences(of: "[", with: "")
-                        listIdString = listIdString.replacingOccurrences(of: "]", with: "")
-                        let listIdStringArray = listIdString.components(separatedBy: ",")
-                        
-                        let isActive = ((row[8] as? Bool) ?? true)
-                        
-                        var embeddedImage: [Float]?
-                        if let value = row[9] as? String {
-                            embeddedImage = value.split(separator: ",").compactMap { Float($0)}
-                        }
-                        
-                        var eventId: Int?
-                        if let value = row[10] as? Int {
-                            eventId = value
-                        }
-                        
-                        var locationId: Int?
-                        if let value = row[11] as? Int {
-                            locationId = value
-                        }
-                        
-                        let isDelete = ((row[12] as? Bool) ?? false)
-                        
-                        var welcomeMsg: String?
-                        if let value = row[13] as? String {
-                            welcomeMsg = value
-                        }
-                        
-                        var qrcode: String?
-                        if let value = row[14] as? String {
-                            qrcode = value
-                        }
-                        
-                        var userType: String?
-                        if let value = row[15] as? String {
-                            userType = value
-                        }
-                        
-                        var lastModifiedDate: String?
-                        if let value = row[16] as? String {
-                            lastModifiedDate = value
-                        }
-                        
-                        var uniqueId: String?
-                        if let value = row[17] as? String {
-                            uniqueId = value
-                        }
-                        
-                        peoples.append(PeoplesModel(peopleid: peopleId, firstname: firstName, middlename: middleName, lastname: lastName, email: email, phone: phone, additionaldetails: additionalDetails, listid: listIdStringArray, isactive: isActive, embeddedimage: embeddedImage, eventID: eventId, locationid: locationId, isdelete: isDelete, welcomemsg: welcomeMsg, qrcode: qrcode, usertype: userType, lastmodifieddate: lastModifiedDate, uniqueId: uniqueId))
-                    }
-                }
-                debugPrint("Peoples Old Count = \(OfflinePeoples.shared.peoples.count)")
-                OfflinePeoples.shared.peoples = peoples
-                debugPrint("Peoples New Count = \(OfflinePeoples.shared.peoples.count)")
-                UserDefaultsServices.shared.saveLastSyncTimeStamp(value: self.lastSyncTimeStamp)
+            let csvUrl = documentsPath.appendingPathComponent("\(Constants.PeopleDataFolderName)/\(Constants.PeopleCsvFileName)").path
+            if FileManager.default.fileExists(atPath: csvUrl) {
+                try FileManager.default.removeItem(atPath: csvUrl)
             }
         } catch let failedError {
-            debugPrint("Failed to write the file data due to \(failedError.localizedDescription)")
+            debugPrint("Failed to delete the file data due to \(failedError.localizedDescription)")
         }
-        DispatchQueue.main.async {
-            self.syncCompletedMethod()
+    }
+    
+    func fetchPeoples() {
+        DispatchQueue.global(qos: .userInteractive).async {
+            do {
+                let documentsPath = try FileManager.default.url(for: .applicationSupportDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+                let csvUrl = documentsPath.appendingPathComponent("\(Constants.PeopleDataFolderName)/\(Constants.CsvFileName)")
+                let peopleCsvUrl = documentsPath.appendingPathComponent("\(Constants.PeopleDataFolderName)/\(Constants.PeopleCsvFileName)")
+                
+                if FileManager.default.fileExists(atPath: peopleCsvUrl.path) {
+                    if OfflinePeoples.shared.peoples.count == 0 {
+                        self.fetchLocalPeoples()
+                    }
+                }
+                
+                let peopleId = ColumnID("peopleid", Int.self)
+                let firstName = ColumnID("firstname", String.self)
+                let middleName = ColumnID("middlename", String.self)
+                let lastName = ColumnID("lastname", String.self)
+                let email = ColumnID("email", String.self)
+                let phone = ColumnID("phone", String.self)
+                let additionalDetails = ColumnID("additionaldetails", String.self)
+                let listId = ColumnID("listid", String.self)
+                let isActive = ColumnID("isactive", Bool.self)
+                let embeddedImage = ColumnID("embeddedimage", String.self)
+                let eventId = ColumnID("event_id", Int.self)
+                let locationId = ColumnID("locationid", Int.self)
+                let isDelete = ColumnID("isdelete", Bool.self)
+                let welcomeMsg = ColumnID("welcomemsg", String.self)
+                let qrCode = ColumnID("qr_code", String.self)
+                let userType = ColumnID("user_type", String.self)
+                let lastModifiedDate = ColumnID("lastmodifieddate", String.self)
+                let uniqueId = ColumnID("unique_id", String.self)
+                
+                if FileManager.default.fileExists(atPath: csvUrl.path) {
+                    //                let result = try DataFrame(contentsOfCSVFile: csvUrl)
+                    let result = try DataFrame(contentsOfCSVFile: csvUrl, columns: [peopleId.name, firstName.name, middleName.name, lastName.name, email.name, phone.name, additionalDetails.name, listId.name, isActive.name, embeddedImage.name, eventId.name, locationId.name, isDelete.name, welcomeMsg.name, qrCode.name, userType.name, lastModifiedDate.name, uniqueId.name], types: [peopleId.name: .integer, firstName.name: .string, middleName.name: .string, lastName.name: .string, email.name: .string, phone.name: .string, additionalDetails.name: .string, listId.name: .string, isActive.name: .boolean, embeddedImage.name: .string, eventId.name: .integer, locationId.name: .integer, isDelete.name: .boolean, welcomeMsg.name: .string, qrCode.name: .string, userType.name: .string, lastModifiedDate.name: .string, uniqueId.name: .string])
+                    
+                    if FileManager.default.fileExists(atPath: peopleCsvUrl.path) {
+                        var resultPeople = try DataFrame(contentsOfCSVFile: peopleCsvUrl, columns: [peopleId.name, firstName.name, middleName.name, lastName.name, email.name, phone.name, additionalDetails.name, listId.name, isActive.name, embeddedImage.name, eventId.name, locationId.name, isDelete.name, welcomeMsg.name, qrCode.name, userType.name, lastModifiedDate.name, uniqueId.name], types: [peopleId.name: .integer, firstName.name: .string, middleName.name: .string, lastName.name: .string, email.name: .string, phone.name: .string, additionalDetails.name: .string, listId.name: .string, isActive.name: .boolean, embeddedImage.name: .string, eventId.name: .integer, locationId.name: .integer, isDelete.name: .boolean, welcomeMsg.name: .string, qrCode.name: .string, userType.name: .string, lastModifiedDate.name: .string, uniqueId.name: .string])
+                        
+                        resultPeople.append(result)
+                        try resultPeople.writeCSV(to: peopleCsvUrl)
+                    } else {
+                        try FileManager.default.copyItem(at: csvUrl, to: peopleCsvUrl)
+                    }
+                    var peoples = OfflinePeoples.shared.peoples
+                    
+                    for row in result.rows {
+                        if row.count >= 18 {
+                            var peopleId: Int?
+                            if let value = row[0] as? Int {
+                                peopleId = value
+                            }
+                            
+                            var firstName: String?
+                            if let value = row[1] as? String {
+                                firstName = value
+                            }
+                            
+                            var middleName: String?
+                            if let value = row[2] as? String {
+                                middleName = value
+                            }
+                            
+                            var lastName: String?
+                            if let value = row[3] as? String {
+                                lastName = value
+                            }
+                            
+                            var email: String?
+                            if let value = row[4] as? String {
+                                email = value
+                            }
+                            
+                            var phone: Int?
+                            if let value = row[5] as? Int {
+                                phone = value
+                            } else if let value = row[5] as? String, let intPhone = Int(value) {
+                                phone = intPhone
+                            }
+                            
+                            var additionalDetails: String?
+                            if let value = row[6] as? String {
+                                additionalDetails = value
+                            }
+                            
+                            var listIdString: String = ""
+                            if let value = row[7] as? String {
+                                listIdString = value
+                            }
+                            listIdString = listIdString.replacingOccurrences(of: "[", with: "")
+                            listIdString = listIdString.replacingOccurrences(of: "]", with: "")
+                            let listIdStringArray = listIdString.components(separatedBy: ",")
+                            
+                            let isActive = ((row[8] as? Bool) ?? true)
+                            
+                            var embeddedImage: [Float]?
+                            if let value = row[9] as? String {
+                                embeddedImage = value.split(separator: ",").compactMap { Float($0)}
+                            }
+                            
+                            var eventId: Int?
+                            if let value = row[10] as? Int {
+                                eventId = value
+                            }
+                            
+                            var locationId: Int?
+                            if let value = row[11] as? Int {
+                                locationId = value
+                            }
+                            
+                            let isDelete = ((row[12] as? Bool) ?? false)
+                            
+                            var welcomeMsg: String?
+                            if let value = row[13] as? String {
+                                welcomeMsg = value
+                            }
+                            
+                            var qrcode: String?
+                            if let value = row[14] as? String {
+                                qrcode = value
+                            }
+                            
+                            var userType: String?
+                            if let value = row[15] as? String {
+                                userType = value
+                            }
+                            
+                            var lastModifiedDate: String?
+                            if let value = row[16] as? String {
+                                lastModifiedDate = value
+                            }
+                            
+                            var uniqueId: String?
+                            if let value = row[17] as? String {
+                                uniqueId = value
+                            }
+                            
+                            peoples.append(PeoplesModel(peopleid: peopleId, firstname: firstName, middlename: middleName, lastname: lastName, email: email, phone: phone, additionaldetails: additionalDetails, listid: listIdStringArray, isactive: isActive, embeddedimage: embeddedImage, eventID: eventId, locationid: locationId, isdelete: isDelete, welcomemsg: welcomeMsg, qrcode: qrcode, usertype: userType, lastmodifieddate: lastModifiedDate, uniqueId: uniqueId))
+                        }
+                    }
+                    
+                    debugPrint("Peoples Old Count = \(OfflinePeoples.shared.peoples.count)")
+                    OfflinePeoples.shared.peoples = peoples
+                    debugPrint("Peoples New Count = \(OfflinePeoples.shared.peoples.count)")
+                    UserDefaultsServices.shared.saveLastSyncTimeStamp(value: self.lastSyncTimeStamp)
+                    self.deleteFiles()
+                }
+            } catch let failedError {
+                debugPrint("Data fetch error due to \(failedError.localizedDescription)")
+            }
+            DispatchQueue.main.async {
+                self.syncCompletedMethod()
+            }
+        }
+    }
+    
+    func fetchLocalPeoples() {
+        do {
+            let documentsPath = try FileManager.default.url(for: .applicationSupportDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+            let peopleCsvUrl = documentsPath.appendingPathComponent("\(Constants.PeopleDataFolderName)/\(Constants.PeopleCsvFileName)")
+            var peoples = OfflinePeoples.shared.peoples
+            
+            let peopleId = ColumnID("peopleid", Int.self)
+            let firstName = ColumnID("firstname", String.self)
+            let middleName = ColumnID("middlename", String.self)
+            let lastName = ColumnID("lastname", String.self)
+            let email = ColumnID("email", String.self)
+            let phone = ColumnID("phone", String.self)
+            let additionalDetails = ColumnID("additionaldetails", String.self)
+            let listId = ColumnID("listid", String.self)
+            let isActive = ColumnID("isactive", Bool.self)
+            let embeddedImage = ColumnID("embeddedimage", String.self)
+            let eventId = ColumnID("event_id", Int.self)
+            let locationId = ColumnID("locationid", Int.self)
+            let isDelete = ColumnID("isdelete", Bool.self)
+            let welcomeMsg = ColumnID("welcomemsg", String.self)
+            let qrCode = ColumnID("qr_code", String.self)
+            let userType = ColumnID("user_type", String.self)
+            let lastModifiedDate = ColumnID("lastmodifieddate", String.self)
+            let uniqueId = ColumnID("unique_id", String.self)
+            
+            let result = try DataFrame(contentsOfCSVFile: peopleCsvUrl, columns: [peopleId.name, firstName.name, middleName.name, lastName.name, email.name, phone.name, additionalDetails.name, listId.name, isActive.name, embeddedImage.name, eventId.name, locationId.name, isDelete.name, welcomeMsg.name, qrCode.name, userType.name, lastModifiedDate.name, uniqueId.name], types: [peopleId.name: .integer, firstName.name: .string, middleName.name: .string, lastName.name: .string, email.name: .string, phone.name: .string, additionalDetails.name: .string, listId.name: .string, isActive.name: .boolean, embeddedImage.name: .string, eventId.name: .integer, locationId.name: .integer, isDelete.name: .boolean, welcomeMsg.name: .string, qrCode.name: .string, userType.name: .string, lastModifiedDate.name: .string, uniqueId.name: .string])
+            for row in result.rows {
+                if row.count >= 18 {
+                    var peopleId: Int?
+                    if let value = row[0] as? Int {
+                        peopleId = value
+                    }
+                    
+                    var firstName: String?
+                    if let value = row[1] as? String {
+                        firstName = value
+                    }
+                    
+                    var middleName: String?
+                    if let value = row[2] as? String {
+                        middleName = value
+                    }
+                    
+                    var lastName: String?
+                    if let value = row[3] as? String {
+                        lastName = value
+                    }
+                    
+                    var email: String?
+                    if let value = row[4] as? String {
+                        email = value
+                    }
+                    
+                    var phone: Int?
+                    if let value = row[5] as? Int {
+                        phone = value
+                    } else if let value = row[5] as? String, let intPhone = Int(value) {
+                        phone = intPhone
+                    }
+                    
+                    var additionalDetails: String?
+                    if let value = row[6] as? String {
+                        additionalDetails = value
+                    }
+                    
+                    var listIdString: String = ""
+                    if let value = row[7] as? String {
+                        listIdString = value
+                    }
+                    listIdString = listIdString.replacingOccurrences(of: "[", with: "")
+                    listIdString = listIdString.replacingOccurrences(of: "]", with: "")
+                    let listIdStringArray = listIdString.components(separatedBy: ",")
+                    
+                    let isActive = ((row[8] as? Bool) ?? true)
+                    
+                    var embeddedImage: [Float]?
+                    if let value = row[9] as? String {
+                        embeddedImage = value.split(separator: ",").compactMap { Float($0)}
+                    }
+                    
+                    var eventId: Int?
+                    if let value = row[10] as? Int {
+                        eventId = value
+                    }
+                    
+                    var locationId: Int?
+                    if let value = row[11] as? Int {
+                        locationId = value
+                    }
+                    
+                    let isDelete = ((row[12] as? Bool) ?? false)
+                    
+                    var welcomeMsg: String?
+                    if let value = row[13] as? String {
+                        welcomeMsg = value
+                    }
+                    
+                    var qrcode: String?
+                    if let value = row[14] as? String {
+                        qrcode = value
+                    }
+                    
+                    var userType: String?
+                    if let value = row[15] as? String {
+                        userType = value
+                    }
+                    
+                    var lastModifiedDate: String?
+                    if let value = row[16] as? String {
+                        lastModifiedDate = value
+                    }
+                    
+                    var uniqueId: String?
+                    if let value = row[17] as? String {
+                        uniqueId = value
+                    }
+                    
+                    peoples.append(PeoplesModel(peopleid: peopleId, firstname: firstName, middlename: middleName, lastname: lastName, email: email, phone: phone, additionaldetails: additionalDetails, listid: listIdStringArray, isactive: isActive, embeddedimage: embeddedImage, eventID: eventId, locationid: locationId, isdelete: isDelete, welcomemsg: welcomeMsg, qrcode: qrcode, usertype: userType, lastmodifieddate: lastModifiedDate, uniqueId: uniqueId))
+                }
+            }
+            
+            debugPrint("Peoples Old Count = \(OfflinePeoples.shared.peoples.count)")
+            OfflinePeoples.shared.peoples = peoples
+            debugPrint("Peoples New Count = \(OfflinePeoples.shared.peoples.count)")
+        } catch let failedError {
+            debugPrint("Local data fetch error due to \(failedError.localizedDescription)")
         }
     }
     

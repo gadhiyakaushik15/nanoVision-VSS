@@ -13,6 +13,7 @@ struct Constants {
     static let ZipFileName = "people_data.zip"
     static let PeopleDataFolderName = "people_data"
     static let CsvFileName = "data.csv"
+    static let PeopleCsvFileName = "peoples_data.csv"
     static let DeviceType = "iOS"
     static let MatchScoreThreshold: Int = 700 // 0 to 1000
     static let TermsAndConditionsUrl = "\(baseURL)/t&c"
