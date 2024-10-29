@@ -274,7 +274,11 @@ final class LocalDataService {
                         peoples.append(PeoplesModel(peopleid: peopleId, firstname: firstName, middlename: middleName, lastname: lastName, email: email, phone: phone, additionaldetails: additionalDetails, listid: listIdStringArray, isactive: isActive, embeddedimage: embeddedImage, eventID: eventId, locationid: locationId, isdelete: isDelete, welcomemsg: welcomeMsg, qrcode: qrcode, usertype: userType, lastmodifieddate: lastModifiedDate, uniqueId: uniqueId))
                     }
                 }
+                if Constants.DefaultLastSyncTimeStamp == UserDefaultsServices.shared.getLastSyncTimeStamp() {
+                    self.deletePeoples()
+                }
                 self.savePeoples(peoples: peoples)
+                UserDefaultsServices.shared.saveLastSyncTimeStamp(value: self.lastSyncTimeStamp)
                 self.deleteFiles()
             } else {
                 self.fetchPeoples()
@@ -299,6 +303,18 @@ final class LocalDataService {
                 debugPrint("Error ->\(error.localizedDescription)")
             }
             self.fetchPeoples()
+        }
+    }
+    
+    func deletePeoples() {
+        appDelegate.enqueue { manageObjContext in
+            do {
+                let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Peoples")
+                let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+                try manageObjContext.execute(deleteRequest)
+            } catch let error {
+                debugPrint("Error ->\(error.localizedDescription)")
+            }
         }
     }
     
@@ -327,7 +343,9 @@ final class LocalDataService {
                     self.isSyncPeoples = false
                     let syncTime = Utilities.shared.convertNSDateToStringFormat(date: Date(), requiredFormat: "dd/MM/yyyy HH:mm:ss")
                     UserDefaultsServices.shared.savePeoplesLastSyncDate(date: syncTime)
-                    syncCompleted()
+                    DispatchQueue.main.async() {
+                        syncCompleted()
+                    }
                 }
             }
         }
@@ -763,7 +781,9 @@ final class LocalDataService {
                     let syncTime = Utilities.shared.convertNSDateToStringFormat(date: Date(), requiredFormat: "dd/MM/yyyy HH:mm:ss")
                     UserDefaultsServices.shared.savePeoplesLastSyncDate(date: syncTime)
                     UserDefaultsServices.shared.saveLogsLastSyncDate(date: syncTime)
-                    syncCompleted()
+                    DispatchQueue.main.async() {
+                        syncCompleted()
+                    }
                 }
             }
         }
