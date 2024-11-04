@@ -25,8 +25,9 @@ class DayLocationViewController: UIViewController {
         self.setLogo()
         self.setDayDropDown()
         self.setLocationDropDown()
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.15)  {
-            self.fetchData()
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.1)  {
+            Utilities.shared.showSVProgressHUD()
+            self.getDay()
         }
     }
     
@@ -44,26 +45,7 @@ class DayLocationViewController: UIViewController {
         self.logoImageView.image = Utilities.shared.getAppLogo()
     }
     
-    func fetchData() {
-        Utilities.shared.showSVProgressHUD()
-        let dispatchGroup = DispatchGroup()
-        
-        dispatchGroup.enter()
-        self.getDay {
-            dispatchGroup.leave()
-        }
-        
-        dispatchGroup.enter()
-        self.getLocation {
-            dispatchGroup.leave()
-        }
-        
-        dispatchGroup.notify(queue: .main) {
-            Utilities.shared.dismissSVProgressHUD()
-        }
-    }
-
-    func getDay(completion:(() -> Void)?) {
+    func getDay() {
         ViableSoftModel().getDays(isLoader: false) { data in
             if let dataArray = data {
                 var optionArray = [ListModel]()
@@ -85,11 +67,11 @@ class DayLocationViewController: UIViewController {
                     self.dayDropDownTextField.selectedIndex = 0
                 }
             }
-            completion?()
         }
+        self.getLocation()
     }
     
-    func getLocation(completion:(() -> Void)?) {
+    func getLocation() {
         ViableSoftModel().getLocationTable(isLoader: false) { data in
             if let dataArray = data {
                 var optionArray = [ListModel]()
@@ -111,7 +93,7 @@ class DayLocationViewController: UIViewController {
                     self.locationDropDownTextField.selectedIndex = 0
                 }
             }
-            completion?()
+            Utilities.shared.dismissSVProgressHUD()
         }
     }
     
