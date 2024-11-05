@@ -118,6 +118,7 @@ class ControlCenterViewController: UIViewController {
         
         var sectionTwo = [ControlCenter]()
         sectionTwo.append(ControlCenter(type: .isValue, title: Message.SelectedEvent, value: self.eventValue, subValue: self.eventExpired, switchOn: nil, sliderTitle: nil, sliderValue: nil,sliderMeasureTitle: nil, sliderMaximumValue: nil, sliderMinimumValue: nil, tips: nil))
+        sectionTwo.append(ControlCenter(type: .isNavigation, title: Message.HallEntryExistGateScanning, value: nil, subValue: nibName, switchOn: nil, sliderTitle: nil, sliderValue: nil,sliderMeasureTitle: nil, sliderMaximumValue: nil, sliderMinimumValue: nil, tips: nil))
         self.controlCenterArray.append(sectionTwo)
         
         var sectionThree = [ControlCenter]()
@@ -391,7 +392,15 @@ extension ControlCenterViewController: UITableViewDataSource, UITableViewDelegat
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.section == 2 {
+        if indexPath.section == 1 {
+            if indexPath.row == 1 {
+                if let controller = self.getViewController(storyboard: Storyboard.dayLocation, id: "DayLocationViewController") as? DayLocationViewController {
+                    controller.isFromControlCenter = true
+                    controller.modalTransitionStyle = .coverVertical
+                    self.present(controller, animated: true)
+                }
+            }
+        } else if indexPath.section == 2 {
             if indexPath.row == 0 {
                 if let controller = self.getViewController(storyboard: Storyboard.logs, id: "LogsViewController") as? LogsViewController {
                     self.present(controller, animated: true)

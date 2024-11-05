@@ -72,32 +72,6 @@ extension UIImage {
         }
         self.init(cgImage: cgImage)
     }
-//    
-//    func compressTo(mb: Int) -> UIImage? {
-//        let sizeInBytes = mb * 1024 * 1024
-//        var needCompress = true
-//        var imgData: Data?
-//        var compressingValue: CGFloat = 1.0
-//        while needCompress {
-//            if let data: Data = self.jpegData(compressionQuality: compressingValue) {
-//                if data.count <= sizeInBytes {
-//                    needCompress = false
-//                    imgData = data
-//                } else {
-//                    if compressingValue <= 0 {
-//                        compressingValue = 1.0
-//                    } else {
-//                        compressingValue -= 0.1
-//                    }
-//                }
-//            }
-//        }
-//        
-//        if let data = imgData {
-//            return UIImage(data: data)
-//        }
-//        return nil
-//    }
     
     func toBase64String() -> String {
         return "data:image/png;base64,\(self.pngData()?.base64EncodedString() ?? "")"

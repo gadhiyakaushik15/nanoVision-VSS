@@ -8,7 +8,7 @@
 import Foundation
 
 struct Constants {
-    static let AutoSyncTime = 2.0 // Auto Sync time in Seconds.
+    static let AutoSyncTime = 30.0 // Auto Sync time in Seconds.
     static let LivenessThreshold: Float = 0.5 // 0 to 1
     static let ZipFileName = "people_data.zip"
     static let PeopleDataFolderName = "people_data"
@@ -157,5 +157,6 @@ struct Message {
     static let VisitorVerificationMessage = "This phone number is already associated with another visitor in our system. Please use a different phone number."
     static let VisitorRegistrationSuccessfully = "Your visitor pass is generated successfully!\n\nPress 'Start Scanning' button to scan your face for authentication."
     static let VisitorVerificationEmailMessage = "This email id is already associated with another visitor in our system. Please use a different email id."
+    static let HallEntryExistGateScanning = "Hall Entry / Exist Gate Scanning"
 
 }

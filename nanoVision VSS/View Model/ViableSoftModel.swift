@@ -54,7 +54,7 @@ class ViableSoftModel: NSObject {
         }
     }
     
-    func authenticationSaveData(uniqueId: String, isSuccess: String, locationGate: String, day: String, isLoader: Bool) {
+    func authenticationSaveData(uniqueId: String, isSuccess: String, locationGate: String, day: String, isLoader: Bool, completion : ((_ status : Bool, _ message: String) -> Void)?) {
         
         let headers: HTTPHeaders = [HeaderValue.ApiKey: Constants.ViableSoftApiKey, HeaderValue.ContentType: HeaderValue.ContentValue]
         
@@ -76,9 +76,9 @@ class ViableSoftModel: NSObject {
         let requestHelper = RequestHelper(url: API.authenticationSaveData, method: .post, encoding: body, headers: headers)
         APIManager.sharedInstance.request(with: requestHelper, isLoader: isLoader) { response in
             if response.error == nil {
-               debugPrint("Authentication Data Saved - \(uniqueId) - \(isSuccess)")
+                completion?(true, "Authentication Data Saved - \(uniqueId) - \(isSuccess)")
             } else {
-                debugPrint("\(String(describing: response.error?.localizedDescription))")
+                completion?(false, "\(String(describing: response.error?.localizedDescription))")
             }
         }
     }

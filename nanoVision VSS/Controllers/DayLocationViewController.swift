@@ -18,6 +18,7 @@ class DayLocationViewController: UIViewController {
     var dayData: ListModel?
     var locationData: ListModel?
     var isFromDeviceStatus = false
+    var isFromControlCenter = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -150,6 +151,8 @@ class DayLocationViewController: UIViewController {
                     controller.isInit = true
                     self.present(controller, animated: true)
                 }
+            } else if self.isFromControlCenter {
+                self.dismiss(animated: true)
             } else {
                 if let controller = self.getViewController(storyboard: Storyboard.camera, id: "CameraViewController") as? CameraViewController {
                     controller.modalTransitionStyle = .crossDissolve

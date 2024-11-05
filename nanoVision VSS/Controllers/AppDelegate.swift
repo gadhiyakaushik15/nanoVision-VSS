@@ -181,10 +181,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         debugPrint("App Log Id = \(appLogId)")
     }
-    
-    // MARK: - Authentication Save Data
-    func authenticationSaveData(uniqueId: String, isSuccess: String, locationGate: String, day: String) {
-        ViableSoftModel().authenticationSaveData(uniqueId: uniqueId, isSuccess: isSuccess, locationGate: locationGate, day: day, isLoader: false)
-    }
 }
 
