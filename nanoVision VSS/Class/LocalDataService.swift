@@ -231,7 +231,7 @@ final class LocalDataService {
                         
                         var embeddedImage: [Float]?
                         if let value = row[9] as? String {
-                            embeddedImage = value.split(separator: ",").compactMap { Float($0)}
+                            embeddedImage = value.split(separator: ",").map { Float($0) ?? 0.0}
                         }
                         
                         var eventId: Int?
