@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_72" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController storyboardIdentifier="DeviceStatusViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="YdK-nD-stg" customClass="DeviceStatusViewController" customModule="nanoVision" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8XB-rM-1jP">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MzF-5e-iFt">
-                                <rect key="frame" x="0.0" y="59" width="430" height="70"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="70"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nanoVisionNavigationLogo" translatesAutoresizingMaskIntoConstraints="NO" id="KFn-Dt-vtK">
                                         <rect key="frame" x="10" y="0.0" width="100" height="56.666666666666664"/>
@@ -45,7 +45,7 @@
                                         </variation>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pending Approvals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="J56-R4-XfS">
-                                        <rect key="frame" x="120" y="0.0" width="190" height="56.666666666666664"/>
+                                        <rect key="frame" x="120" y="0.0" width="153" height="56.666666666666664"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                         <color key="textColor" name="blueLabelColor"/>
                                         <nil key="highlightedColor"/>
@@ -57,7 +57,7 @@
                                         </variation>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vvh-YD-jS8">
-                                        <rect key="frame" x="320" y="0.0" width="100" height="56.666666666666664"/>
+                                        <rect key="frame" x="283" y="0.0" width="100" height="56.666666666666664"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="230" id="KUL-fC-acD"/>
                                             <constraint firstAttribute="width" constant="100" id="bTN-S5-lKv"/>
@@ -80,7 +80,7 @@
                                         </variation>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ckh-u5-J4R">
-                                        <rect key="frame" x="0.0" y="66.666666666666671" width="430" height="1.3333333333333286"/>
+                                        <rect key="frame" x="0.0" y="66.666666666666671" width="393" height="1.3333333333333286"/>
                                         <color key="backgroundColor" name="lightGrayBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1.5" id="iUb-lV-WuU"/>
@@ -137,8 +137,8 @@
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="jRh-MS-Tcd"/>
                                         <exclude reference="Uc4-Sq-PCq"/>
+                                        <exclude reference="jRh-MS-Tcd"/>
                                         <exclude reference="51S-zx-LrU"/>
                                         <exclude reference="XBo-tF-EX6"/>
                                         <exclude reference="YkN-7g-0Cp"/>
@@ -151,18 +151,18 @@
                                         <exclude reference="gza-ok-dYm"/>
                                         <exclude reference="WH7-9X-dFY"/>
                                         <exclude reference="jHS-V4-ZRK"/>
-                                        <exclude reference="wpw-pk-oiG"/>
                                         <exclude reference="mVZ-hC-fvN"/>
-                                        <exclude reference="ubC-mw-vOn"/>
+                                        <exclude reference="wpw-pk-oiG"/>
                                         <exclude reference="PPt-0b-A3e"/>
+                                        <exclude reference="ubC-mw-vOn"/>
                                         <exclude reference="F7e-Ww-0Ca"/>
                                         <exclude reference="dnj-Q8-0qt"/>
                                         <exclude reference="8H4-rz-bcQ"/>
                                         <exclude reference="mcq-pc-u3N"/>
                                         <exclude reference="7k5-jj-3nH"/>
                                         <exclude reference="UzY-aZ-MZd"/>
-                                        <exclude reference="bAs-Up-OMj"/>
                                         <exclude reference="T00-92-QMy"/>
+                                        <exclude reference="bAs-Up-OMj"/>
                                         <exclude reference="SnI-Ln-2dr"/>
                                         <exclude reference="dwH-eP-V0A"/>
                                     </mask>
@@ -205,14 +205,14 @@
                                 </variation>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="2c5-DG-T04">
-                                <rect key="frame" x="0.0" y="139" width="430" height="683.33333333333337"/>
+                                <rect key="frame" x="0.0" y="139" width="393" height="603.33333333333337"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="DG7-Cn-jGH">
-                                    <rect key="frame" x="0.0" y="0.0" width="430" height="250"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="250"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Your device registration request is currently awaiting approval from your system administrator." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="xnw-CN-Jeg">
-                                            <rect key="frame" x="40" y="20" width="350" height="54"/>
+                                            <rect key="frame" x="40" y="20" width="313" height="54"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                             <color key="textColor" name="blueLabelColor"/>
                                             <nil key="highlightedColor"/>
@@ -224,7 +224,7 @@
                                             </variation>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please await approval before beginning to use the app." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mg7-jj-isR">
-                                            <rect key="frame" x="40" y="164" width="350" height="36"/>
+                                            <rect key="frame" x="40" y="164" width="313" height="36"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                             <color key="textColor" name="blueLabelColor"/>
                                             <nil key="highlightedColor"/>
@@ -295,11 +295,11 @@
                                     </variation>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="KhR-Y2-kn7">
-                                        <rect key="frame" x="0.0" y="300" width="430" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SpaceCell" id="KhR-Y2-kn7">
+                                        <rect key="frame" x="0.0" y="300" width="393" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KhR-Y2-kn7" id="NM1-yq-k67">
-                                            <rect key="frame" x="0.0" y="0.0" width="430" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -310,7 +310,7 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MK0-zu-H7z">
-                                <rect key="frame" x="225" y="827.33333333333337" width="165" height="45"/>
+                                <rect key="frame" x="206.66666666666663" y="747.33333333333337" width="146.33333333333337" height="45"/>
                                 <color key="backgroundColor" name="blueBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="emY-9D-wnq"/>
@@ -344,7 +344,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mac Address:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICj-W6-KN7">
-                                <rect key="frame" x="20" y="882.33333333333337" width="390" height="15.666666666666629"/>
+                                <rect key="frame" x="20" y="802.33333333333337" width="353" height="15.666666666666629"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
                                 <color key="textColor" name="blueLabelColor"/>
                                 <nil key="highlightedColor"/>
@@ -356,7 +356,7 @@
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLs-tf-0my">
-                                <rect key="frame" x="40" y="827.33333333333337" width="165" height="45"/>
+                                <rect key="frame" x="40" y="747.33333333333337" width="146.66666666666666" height="45"/>
                                 <color key="backgroundColor" name="blueBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="oJr-4b-NgA"/>
@@ -429,24 +429,24 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="Jxo-M6-aqj"/>
+                                <exclude reference="mnU-JN-U7v"/>
+                                <exclude reference="7Js-rE-Lo1"/>
+                                <exclude reference="y8x-K2-rO4"/>
+                                <exclude reference="dff-ja-xrc"/>
+                                <exclude reference="g72-mw-osz"/>
+                                <exclude reference="5a4-AL-P1K"/>
+                                <exclude reference="m1i-ho-sBT"/>
                                 <exclude reference="sOX-Qi-8zt"/>
                                 <exclude reference="lz5-sH-GKV"/>
                                 <exclude reference="vSc-iz-Rd4"/>
                                 <exclude reference="vn6-Vp-BAc"/>
-                                <exclude reference="iRl-7F-63a"/>
                                 <exclude reference="Y46-y6-vWO"/>
-                                <exclude reference="Jxo-M6-aqj"/>
-                                <exclude reference="mnU-JN-U7v"/>
-                                <exclude reference="dff-ja-xrc"/>
-                                <exclude reference="g72-mw-osz"/>
-                                <exclude reference="7Js-rE-Lo1"/>
-                                <exclude reference="y8x-K2-rO4"/>
-                                <exclude reference="5a4-AL-P1K"/>
-                                <exclude reference="m1i-ho-sBT"/>
+                                <exclude reference="iRl-7F-63a"/>
                                 <exclude reference="Kal-TF-DB5"/>
                                 <exclude reference="dTm-64-JsP"/>
-                                <exclude reference="ROx-r5-rAf"/>
                                 <exclude reference="NFV-Sj-gpt"/>
+                                <exclude reference="ROx-r5-rAf"/>
                                 <exclude reference="Pg0-oD-xLb"/>
                                 <exclude reference="p6b-UJ-MUb"/>
                                 <exclude reference="1yj-mN-8KF"/>
@@ -466,13 +466,13 @@
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="constraints">
+                                <include reference="mnU-JN-U7v"/>
+                                <include reference="7Js-rE-Lo1"/>
+                                <include reference="dff-ja-xrc"/>
+                                <include reference="m1i-ho-sBT"/>
                                 <include reference="sOX-Qi-8zt"/>
                                 <include reference="vn6-Vp-BAc"/>
                                 <include reference="Y46-y6-vWO"/>
-                                <include reference="mnU-JN-U7v"/>
-                                <include reference="dff-ja-xrc"/>
-                                <include reference="7Js-rE-Lo1"/>
-                                <include reference="m1i-ho-sBT"/>
                                 <include reference="Kal-TF-DB5"/>
                                 <include reference="NFV-Sj-gpt"/>
                                 <include reference="p6b-UJ-MUb"/>
@@ -487,13 +487,13 @@
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
                             <mask key="constraints">
+                                <include reference="Jxo-M6-aqj"/>
+                                <include reference="y8x-K2-rO4"/>
+                                <include reference="g72-mw-osz"/>
+                                <include reference="5a4-AL-P1K"/>
                                 <include reference="lz5-sH-GKV"/>
                                 <include reference="vSc-iz-Rd4"/>
                                 <include reference="iRl-7F-63a"/>
-                                <include reference="Jxo-M6-aqj"/>
-                                <include reference="g72-mw-osz"/>
-                                <include reference="y8x-K2-rO4"/>
-                                <include reference="5a4-AL-P1K"/>
                                 <include reference="dTm-64-JsP"/>
                                 <include reference="ROx-r5-rAf"/>
                                 <include reference="Pg0-oD-xLb"/>

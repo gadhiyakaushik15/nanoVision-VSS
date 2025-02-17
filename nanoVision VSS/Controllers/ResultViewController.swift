@@ -34,7 +34,19 @@ class ResultViewController: UIViewController {
     var backgroundColor: UIColor = .clear
     var textAlignment: NSTextAlignment = .natural
     var text = ""
-    var scanType: ScanType?
+    var scanType: ScanType = .success
+    var logUniqueId = ""
+    var imageBase64: Data?
+    var message = ""
+    var logPeopleId = 0
+    var logPeopleName = ""
+    var logMatchScore = 0
+    var apiResponse = ""
+    var listId = ""
+    var logEventId: Int?
+    var logEventName = ""
+    var logDeviceId: Int?
+    var logUserType = ""
     var isPresented = false
     
     override func viewDidLoad() {
@@ -71,20 +83,61 @@ class ResultViewController: UIViewController {
         self.logoImageView.image = Utilities.shared.getAppLogo()
     }
     
+    func callAuthenticationSaveDataAPI() {
+        let isSuccess = (self.scanType == .success ? "1" : "0")
+        let locationGate =  UserDefaultsServices.shared.getSelectedLocation()
+        let day =  UserDefaultsServices.shared.getSelectedDay()
+        ViableSoftModel().authenticationSaveData(uniqueId: self.logUniqueId, isSuccess: isSuccess, locationGate: locationGate, day: day, isLoader: false) { status, message  in
+            debugPrint(message)
+            self.autoDismiss()
+            if status {
+                appDelegate.saveLogs(imageBase64: self.imageBase64, message: self.message.condenseWhitespace(), peopleId: self.logPeopleId, peopleName: self.logPeopleName, matchScore: self.logMatchScore, apiResponse: self.apiResponse, listId: self.listId, eventId: self.logEventId, deviceId: self.logDeviceId, eventName: self.logEventName, scanType: self.scanType, userType: self.logUserType)
+                DispatchQueue.main.async {
+                    if self.scanType == .success {
+                        self.imageView.isHidden = false
+                        let imageData = NSData(contentsOf: Bundle.main.url(forResource: "successGIF", withExtension: "gif")!)
+                        let successGif = UIImage.gif(data: imageData! as Data)
+                        self.imageView.image = successGif
+                    } else {
+                        self.imageView.isHidden = true
+                    }
+                }
+            } else {
+                if self.scanType == .success {
+                    self.imageView.isHidden = false
+                    let imageData = NSData(contentsOf: Bundle.main.url(forResource: "tryAgainGIF", withExtension: "gif")!)
+                    let tryAgainGIF = UIImage.gif(data: imageData! as Data)
+                    self.imageView.image = tryAgainGIF
+                } else {
+                    self.imageView.isHidden = true
+                }
+            }
+        }
+    }
+    
     func SetMessageUI() {
-        if self.scanType == .success {
+        if self.logUniqueId != "" {
             self.imageView.isHidden = false
-            let imageData = NSData(contentsOf: Bundle.main.url(forResource: "successGIF", withExtension: "gif")!)
-            let successGif = UIImage.gif(data: imageData! as Data)
-            self.imageView.image = successGif
+            let imageData = NSData(contentsOf: Bundle.main.url(forResource: "pleaseWaitGIF", withExtension: "gif")!)
+            let pleaseWaitGIF = UIImage.gif(data: imageData! as Data)
+            self.imageView.image = pleaseWaitGIF
+            self.callAuthenticationSaveDataAPI()
         } else {
-            self.imageView.isHidden = true
+            appDelegate.saveLogs(imageBase64: self.imageBase64, message: self.message.condenseWhitespace(), peopleId: self.logPeopleId, peopleName: self.logPeopleName, matchScore: self.logMatchScore, apiResponse: self.apiResponse, listId: self.listId, eventId: self.logEventId, deviceId: self.logDeviceId, eventName: self.logEventName, scanType: self.scanType, userType: self.logUserType)
+            if self.scanType == .success {
+                self.imageView.isHidden = false
+                let imageData = NSData(contentsOf: Bundle.main.url(forResource: "successGIF", withExtension: "gif")!)
+                let successGif = UIImage.gif(data: imageData! as Data)
+                self.imageView.image = successGif
+            } else {
+                self.imageView.isHidden = true
+            }
+            self.autoDismiss()
         }
         self.statusView.backgroundColor = self.backgroundColor
         self.nameLabel.textAlignment = self.textAlignment
         self.nameLabel.text = self.text
         self.playScanSound()
-        self.autoDismiss()
     }
     
     func playScanSound() {
@@ -94,8 +147,6 @@ class ResultViewController: UIViewController {
             case .success:
                 scanSound = ScanSound(name: "successSound", type: "mp3")
             case .livenessFailed, .futureEvent, .expiredEvent, .unauthorized:
-                scanSound = ScanSound(name: "failedSound", type: "mp3")
-            case .none:
                 scanSound = ScanSound(name: "failedSound", type: "mp3")
             }
             if let scanSound = scanSound {
@@ -134,15 +185,13 @@ class ResultViewController: UIViewController {
     }
     
     @IBAction func dismissAction(_ sender: Any) {
-        if let scanType = self.scanType {
-            if scanType == .success {
-                if UserDefaultsServices.shared.isTapScanSuccess() {
-                    self.dismiss(animated: true)
-                }
-            } else {
-                if UserDefaultsServices.shared.isTapScanFailure() {
-                    self.dismiss(animated: true)
-                }
+        if self.scanType == .success {
+            if UserDefaultsServices.shared.isTapScanSuccess() {
+                self.dismiss(animated: true)
+            }
+        } else {
+            if UserDefaultsServices.shared.isTapScanFailure() {
+                self.dismiss(animated: true)
             }
         }
     }

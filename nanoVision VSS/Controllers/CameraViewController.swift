@@ -660,37 +660,25 @@ class CameraViewController: UIViewController {
             imageBase64 = compressData
         }
         
-        if logUniqueId != "" {
-            let isSuccess = (scanType == .success ? "1" : "0")
-            let locationGate =  UserDefaultsServices.shared.getSelectedLocation()
-            let day =  UserDefaultsServices.shared.getSelectedDay()
-            ViableSoftModel().authenticationSaveData(uniqueId: logUniqueId, isSuccess: isSuccess, locationGate: locationGate, day: day, isLoader: false) { status, message  in
-                debugPrint(message)
-                if status {
-                    appDelegate.saveLogs(imageBase64: imageBase64, message: message.condenseWhitespace(), peopleId: logPeopleId, peopleName: logPeopleName, matchScore: logMatchScore, apiResponse: apiResponse, listId: listId, eventId: logEventId, deviceId: logDeviceId, eventName: logEventName, scanType: scanType, userType: logUserType)
-                    DispatchQueue.main.async {
-                        if let controller = self.getViewController(storyboard: Storyboard.result, id: "ResultViewController") as? ResultViewController, self.presentedViewController == nil  {
-                            controller.backgroundColor = backgroundColor
-                            controller.textAlignment = textAlignment
-                            controller.text = text
-                            controller.scanType = scanType
-                            self.present(controller, animated: true)
-                        }
-                    }
-                } else {
-                    self.isProcessing = false
-                }
-            }
-        } else {
-            appDelegate.saveLogs(imageBase64: imageBase64, message: message.condenseWhitespace(), peopleId: logPeopleId, peopleName: logPeopleName, matchScore: logMatchScore, apiResponse: apiResponse, listId: listId, eventId: logEventId, deviceId: logDeviceId, eventName: logEventName, scanType: scanType, userType: logUserType)
-            DispatchQueue.main.async {
-                if let controller = self.getViewController(storyboard: Storyboard.result, id: "ResultViewController") as? ResultViewController, self.presentedViewController == nil  {
-                    controller.backgroundColor = backgroundColor
-                    controller.textAlignment = textAlignment
-                    controller.text = text
-                    controller.scanType = scanType
-                    self.present(controller, animated: true)
-                }
+        DispatchQueue.main.async {
+            if let controller = self.getViewController(storyboard: Storyboard.result, id: "ResultViewController") as? ResultViewController, self.presentedViewController == nil  {
+                controller.backgroundColor = backgroundColor
+                controller.textAlignment = textAlignment
+                controller.text = text
+                controller.scanType = scanType
+                controller.logUniqueId = logUniqueId
+                controller.imageBase64 = imageBase64
+                controller.message = message
+                controller.logPeopleId = logPeopleId
+                controller.logPeopleName = logPeopleName
+                controller.logMatchScore = logMatchScore
+                controller.apiResponse = apiResponse
+                controller.listId = listId
+                controller.logEventId = logEventId
+                controller.logEventName = logEventName
+                controller.logDeviceId = logDeviceId
+                controller.logUserType = logUserType
+                self.present(controller, animated: true)
             }
         }
     }

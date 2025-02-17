@@ -58,6 +58,8 @@
 		B19B1FDD2C00B58E004F4906 /* successSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B19B1FDB2C00B58E004F4906 /* successSound.mp3 */; };
 		B19B1FDF2C00B58E004F4906 /* failedSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B19B1FDC2C00B58E004F4906 /* failedSound.mp3 */; };
 		B1B7FDEF2BFB0B1E00FF5C22 /* ScanSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B7FDEE2BFB0B1E00FF5C22 /* ScanSound.swift */; };
+		B1B926432D63A72500E8E59F /* pleaseWaitGIF.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1B926422D63A72500E8E59F /* pleaseWaitGIF.gif */; };
+		B1B926452D63B21F00E8E59F /* tryAgainGIF.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1B926442D63B21F00E8E59F /* tryAgainGIF.gif */; };
 		B1BED8B72BE4C32D00DF08AE /* NoDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BED8B52BE4C32D00DF08AE /* NoDataTableViewCell.swift */; };
 		B1BED8B82BE4C32D00DF08AE /* NoDataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1BED8B62BE4C32D00DF08AE /* NoDataTableViewCell.xib */; };
 		B1CADF712BC6B5950086AA92 /* ControlCenterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CADF702BC6B5950086AA92 /* ControlCenterViewModel.swift */; };
@@ -185,6 +187,8 @@
 		B19B1FDB2C00B58E004F4906 /* successSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = successSound.mp3; sourceTree = "<group>"; };
 		B19B1FDC2C00B58E004F4906 /* failedSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = failedSound.mp3; sourceTree = "<group>"; };
 		B1B7FDEE2BFB0B1E00FF5C22 /* ScanSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanSound.swift; sourceTree = "<group>"; };
+		B1B926422D63A72500E8E59F /* pleaseWaitGIF.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = pleaseWaitGIF.gif; sourceTree = "<group>"; };
+		B1B926442D63B21F00E8E59F /* tryAgainGIF.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tryAgainGIF.gif; sourceTree = "<group>"; };
 		B1BED8B52BE4C32D00DF08AE /* NoDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDataTableViewCell.swift; sourceTree = "<group>"; };
 		B1BED8B62BE4C32D00DF08AE /* NoDataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoDataTableViewCell.xib; sourceTree = "<group>"; };
 		B1CADF702BC6B5950086AA92 /* ControlCenterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlCenterViewModel.swift; sourceTree = "<group>"; };
@@ -287,7 +291,9 @@
 		B11732122CDA546600625FB4 /* ScanGIF */ = {
 			isa = PBXGroup;
 			children = (
+				B1B926422D63A72500E8E59F /* pleaseWaitGIF.gif */,
 				B11732132CDA54B800625FB4 /* successGIF.gif */,
+				B1B926442D63B21F00E8E59F /* tryAgainGIF.gif */,
 			);
 			path = ScanGIF;
 			sourceTree = "<group>";
@@ -557,7 +563,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 1610;
 				TargetAttributes = {
 					B1CE08CF2BBD744000119509 = {
 						CreatedOnToolsVersion = 15.2;
@@ -588,6 +594,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1020ECF2BE0B35000344382 /* LogsTableViewCell.xib in Resources */,
+				B1B926452D63B21F00E8E59F /* tryAgainGIF.gif in Resources */,
 				B1E8FECF2BC11B5A004FDD5A /* Login.storyboard in Resources */,
 				B197F20E2C8E1E16005DBF84 /* DayLocation.storyboard in Resources */,
 				B18DE5E72C08B67900CF11B2 /* VisitorDetails.storyboard in Resources */,
@@ -613,6 +620,7 @@
 				B1CE08DB2BBD744000119509 /* Splash.storyboard in Resources */,
 				B1CE02C52C059BEE00694F0A /* SideMenu.storyboard in Resources */,
 				B18DE5E42C08542100CF11B2 /* SelfieCamera.storyboard in Resources */,
+				B1B926432D63A72500E8E59F /* pleaseWaitGIF.gif in Resources */,
 				B1EE060A2C0991AC008D6F8F /* ListView.storyboard in Resources */,
 				B1E329342BC3B75E006081FC /* Camera.storyboard in Resources */,
 				B1DF29332BE8D26B0042331D /* WebView.storyboard in Resources */,
@@ -886,7 +894,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20;
+				CURRENT_PROJECT_VERSION = 21;
 				DEVELOPMENT_TEAM = FSH7HTL44B;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				EXCLUDED_ARCHS = "";
@@ -905,7 +913,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -931,7 +939,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20;
+				CURRENT_PROJECT_VERSION = 21;
 				DEVELOPMENT_TEAM = FSH7HTL44B;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				EXCLUDED_ARCHS = "";
@@ -949,7 +957,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
