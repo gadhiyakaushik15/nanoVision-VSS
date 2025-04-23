@@ -64,6 +64,109 @@ final class ParavisionServices {
         }
     }
     
+    func identify(image: UIImage, completion: @escaping ([Peoples]?) -> Void) {
+        DispatchQueue.global(qos: .userInitiated).async {
+            var matchedPeople: [Peoples] = []
+
+            do {
+                guard let embeddings = self.embeddingEstimator else {
+                    DispatchQueue.main.async { completion(nil) }
+                    return
+                }
+
+                let embeddingsArray = try embeddings.getEmbeddings(image: image)
+                guard let mostProminent = embeddingsArray.first else {
+                    DispatchQueue.main.async { completion(nil) }
+                    return
+                }
+
+                let peoples = OfflinePeoples.shared.peoples
+                let lock = NSLock() // protect concurrent array writes
+
+                DispatchQueue.concurrentPerform(iterations: peoples.count) { index in
+                    let people = peoples[index]
+                    if let embeddingsData = people.embeddedimage {
+                        let identity = PNEmbeddings(vector: embeddingsData)
+                        let matchScore = identity.getMatchScore(mostProminent)
+                        if matchScore >= Constants.MatchScoreThreshold {
+                            lock.lock()
+                            people.matchScore = matchScore
+                            matchedPeople.append(people)
+                            lock.unlock()
+                        }
+                    }
+                }
+
+                DispatchQueue.main.async {
+                    completion(matchedPeople)
+                }
+
+            } catch {
+                DispatchQueue.main.async {
+                    completion(nil)
+                }
+            }
+        }
+    }
+    
+    func identifyWithBreak(image: UIImage, completion: @escaping ([Peoples]?) -> Void) {
+        DispatchQueue.global(qos: .userInitiated).async {
+            var matchedPeople: [Peoples] = []
+            let group = DispatchGroup()
+            let lock = NSLock()
+            var stop = false
+
+            do {
+                guard let embeddings = self.embeddingEstimator else {
+                    DispatchQueue.main.async { completion(nil) }
+                    return
+                }
+
+                let embeddingsArray = try embeddings.getEmbeddings(image: image)
+                guard let mostProminent = embeddingsArray.first else {
+                    DispatchQueue.main.async { completion(nil) }
+                    return
+                }
+
+                let peoples = OfflinePeoples.shared.peoples
+                let queue = DispatchQueue(label: "com.matching.concurrent", attributes: .concurrent)
+
+                for people in peoples {
+                    if stop { break } // Early exit if match is already found
+
+                    group.enter()
+                    queue.async {
+                        defer { group.leave() }
+
+                        if let embeddingsData = people.embeddedimage {
+                            let identity = PNEmbeddings(vector: embeddingsData)
+                            let matchScore = identity.getMatchScore(mostProminent)
+
+                            if matchScore >= Constants.MatchScoreThreshold {
+                                lock.lock()
+                                people.matchScore = matchScore
+                                matchedPeople.append(people)
+                                stop = true
+                                lock.unlock()
+                            }
+                        }
+                    }
+                }
+
+                group.wait() // Wait for all tasks to complete or get stopped
+
+                DispatchQueue.main.async {
+                    completion(matchedPeople)
+                }
+
+            } catch {
+                DispatchQueue.main.async {
+                    completion(nil)
+                }
+            }
+        }
+    }
+
     func identify(image: UIImage) -> [Peoples]? {
         do {
             if let embeddings = self.embeddingEstimator {

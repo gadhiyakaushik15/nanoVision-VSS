@@ -23,9 +23,9 @@ struct Environments {
     static var BaseURL : String {
         switch currentEnvironmentType {
         case .UAT:
-            return "https://middleware-3141a3337450.herokuapp.com"
+            return "https://nanovision-api-6def2c5fef34.herokuapp.com"
         case .PROD:
-            return "https://middleware-3141a3337450.herokuapp.com"
+            return "https://nanovision-api-6def2c5fef34.herokuapp.com"
         }
     }
     

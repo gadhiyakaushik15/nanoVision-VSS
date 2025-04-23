@@ -374,10 +374,10 @@
 				B1E8FEDC2BC11EF0004FDD5A /* SyncStatsViewController.swift */,
 				B1E329312BC3B736006081FC /* CameraViewController.swift */,
 				B1E329372BC3B79F006081FC /* ResultViewController.swift */,
+				B1CE02C72C059C2900694F0A /* SideMenuViewController.swift */,
 				B1E329392BC3B7DF006081FC /* LogsViewController.swift */,
 				B1E3293F2BC3B832006081FC /* LogsFiltersViewController.swift */,
 				B1DF29342BE8D31B0042331D /* WebViewViewController.swift */,
-				B1CE02C72C059C2900694F0A /* SideMenuViewController.swift */,
 				B18DE5DE2C0853E000CF11B2 /* SelfieCameraViewController.swift */,
 				B18DE5E92C08B6D400CF11B2 /* VisitorDetailsViewController.swift */,
 				B173EA782C186FBE00A60BC6 /* VisitorSuccessViewController.swift */,
@@ -563,7 +563,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1610;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					B1CE08CF2BBD744000119509 = {
 						CreatedOnToolsVersion = 15.2;
@@ -894,7 +894,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 23;
+				CURRENT_PROJECT_VERSION = 24;
 				DEVELOPMENT_TEAM = FSH7HTL44B;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				EXCLUDED_ARCHS = "";
@@ -939,7 +939,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 23;
+				CURRENT_PROJECT_VERSION = 24;
 				DEVELOPMENT_TEAM = FSH7HTL44B;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				EXCLUDED_ARCHS = "";

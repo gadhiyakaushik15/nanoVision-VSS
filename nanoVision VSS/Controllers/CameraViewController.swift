@@ -338,6 +338,26 @@ class CameraViewController: UIViewController {
         } else {
             self.isProcessing = false
         }
+        
+//        if let paravisionServices = self.paravisionServices {
+//            paravisionServices.identify(image: image) { data in
+//                if let people = data {
+//                    if let liveness = liveness {
+//                        if liveness.livenessProbability >= Constants.LivenessThreshold {
+//                            self.presentResultView(type: .faceRecognition, image: image, peoples: people, validness: validness, liveness: liveness, qrCode: nil)
+//                        } else {
+//                            self.presentResultView(type: .faceLiveness, image: image, peoples: people, validness: validness, liveness: liveness, qrCode: nil)
+//                        }
+//                    } else {
+//                        self.presentResultView(type: .faceRecognition, image: image, peoples: people, validness: validness, liveness: liveness, qrCode: nil)
+//                    }
+//                } else {
+//                    self.isProcessing = false
+//                }
+//            }
+//        } else {
+//            self.isProcessing = false
+//        }
     }
     
     //MARK: - Present Result Controller

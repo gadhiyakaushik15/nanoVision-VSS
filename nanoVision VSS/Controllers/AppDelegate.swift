@@ -63,12 +63,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     //MARK: - Update UI Config
     func updateUIConfig(){
-        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.isEnabled = true
         IQKeyboardManager.shared.resignOnTouchOutside =  false
         if Utilities.shared.isPadDevice() {
-            IQKeyboardManager.shared.keyboardDistanceFromTextField = 200
+            IQKeyboardManager.shared.keyboardDistance = 200
         } else {
-            IQKeyboardManager.shared.keyboardDistanceFromTextField = 100
+            IQKeyboardManager.shared.keyboardDistance = 100
         }
     }
     
