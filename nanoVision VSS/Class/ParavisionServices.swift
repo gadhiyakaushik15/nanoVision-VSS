@@ -181,6 +181,7 @@ final class ParavisionServices {
                             if matchScore >= Constants.MatchScoreThreshold {
                                 people.matchScore = matchScore
                                 matchedPeople.append(people)
+                                break
                             }
                         }
                     }

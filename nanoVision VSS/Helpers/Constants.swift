@@ -22,7 +22,7 @@ struct Constants {
     static let NextScanDelayMinimum: Float = 1.0
     static let NextScanDelayMaximum: Float = 10.0
     static let AppStoreUrl = "https://apps.apple.com/app/nanovision-face-ai/id6502285726"
-    static let ViableSoftApiKey = "9fe5bb56-f890-474f-91cd-4960cd2e4011"
+    static let ViableSoftApiKey = "c172e919-39be-4be0-b2dc-069c575557b0"
     static let DefaultLastSyncTimeStamp = "1990-02-05 17:02:33.615"
     static let LogsSyncTime = 10 // Auto Logs Sync time in Minutes.
 }

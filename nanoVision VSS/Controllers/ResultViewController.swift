@@ -420,15 +420,14 @@ class ResultViewController: UIViewController {
                 }
             }
         } else {
-            appDelegate.saveLogs(imageBase64: self.imageBase64, message: message.condenseWhitespace(), peopleId: logPeopleId, peopleName: logPeopleName, matchScore: logMatchScore, apiResponse: apiResponse, listId: listId, eventId: logEventId, deviceId: logDeviceId, eventName: logEventName, scanType: self.scanType ?? .success, userType: logUserType)
-            if self.scanType == .success {
-                self.imageView.isHidden = false
-                let imageData = NSData(contentsOf: Bundle.main.url(forResource: "successGIF", withExtension: "gif")!)
-                let successGif = UIImage.gif(data: imageData! as Data)
-                self.imageView.image = successGif
-            } else {
-                self.imageView.isHidden = true
-            }
+            scanType = .unauthorized
+            backgroundColor = .failedScanColor ?? .clear
+            message = Message.UnauthorisedPerson
+            textAlignment = .center
+            text = message
+            
+            appDelegate.saveLogs(imageBase64: self.imageBase64, message: message.condenseWhitespace(), peopleId: logPeopleId, peopleName: logPeopleName, matchScore: logMatchScore, apiResponse: apiResponse, listId: listId, eventId: logEventId, deviceId: logDeviceId, eventName: logEventName, scanType: self.scanType ?? .unauthorized, userType: logUserType)
+            self.imageView.isHidden = true
             self.autoDismiss()
         }
         self.statusView.backgroundColor = backgroundColor

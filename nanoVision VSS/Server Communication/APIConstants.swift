@@ -24,9 +24,9 @@ struct API {
     static let visitorEntry = baseURL + "/api/v1/account/visitor_entry"
     static let getVisitor = baseURL + "/api/v1/account/get_visitor"
     
-    static let authenticationSaveData = viableSoftBaseURL + "/satte2025FebAPIVD/api/v1/face/AuthenticationsaveData"
-    static let day = viableSoftBaseURL + "/satte2025FebAPIVD/api/v1/face/day"
-    static let locationTable = viableSoftBaseURL + "/satte2025FebAPIVD/api/v1/face/locationtable"
+    static let authenticationSaveData = viableSoftBaseURL + "/IEIA2025mayDelFaceVD/api/v1/face/AuthenticationsaveData"
+    static let day = viableSoftBaseURL + "/IEIA2025mayDelFaceVD/api/v1/face/day"
+    static let locationTable = viableSoftBaseURL + "/IEIA2025mayDelFaceVD/api/v1/face/locationtable"
 
 }
 //=============end Struct========================
