@@ -19,6 +19,7 @@
 		B1143E5E2CA87AA4007F0587 /* Peoples+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1143E5C2CA87AA4007F0587 /* Peoples+CoreDataProperties.swift */; };
 		B11732112CDA241900625FB4 /* GIFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11732102CDA241900625FB4 /* GIFImage.swift */; };
 		B11732142CDA54B800625FB4 /* successGIF.gif in Resources */ = {isa = PBXBuildFile; fileRef = B11732132CDA54B800625FB4 /* successGIF.gif */; };
+		B123928A2DFC69ED00026750 /* Logs+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12392892DFC69ED00026750 /* Logs+CoreDataProperties.swift */; };
 		B13434AD2BD765CF0015A235 /* ControlCenterHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13434AB2BD765CF0015A235 /* ControlCenterHeaderView.swift */; };
 		B13434AE2BD765CF0015A235 /* ControlCenterHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B13434AC2BD765CF0015A235 /* ControlCenterHeaderView.xib */; };
 		B1364B572C11F4BB00193C0B /* VisitorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1364B562C11F4BB00193C0B /* VisitorViewModel.swift */; };
@@ -27,7 +28,6 @@
 		B13667D42C37837D00562435 /* DeviceStatusTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B13667D22C37837D00562435 /* DeviceStatusTableViewCell.xib */; };
 		B14C57D02BE3D5650016D15B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14C57CF2BE3D5650016D15B /* Colors.swift */; };
 		B15650AF2BF4C054002C3ACC /* VersionCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15650AE2BF4C054002C3ACC /* VersionCheck.swift */; };
-		B169A5C72C13227000D5AE4F /* Logs+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B169A5C62C13227000D5AE4F /* Logs+CoreDataProperties.swift */; };
 		B173EA772C186BA200A60BC6 /* VisitorSuccess.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B173EA762C186BA200A60BC6 /* VisitorSuccess.storyboard */; };
 		B173EA792C186FBE00A60BC6 /* VisitorSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173EA782C186FBE00A60BC6 /* VisitorSuccessViewController.swift */; };
 		B173EA7B2C1874E300A60BC6 /* GetVisitorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173EA7A2C1874E300A60BC6 /* GetVisitorModel.swift */; };
@@ -150,6 +150,7 @@
 		B1143E5C2CA87AA4007F0587 /* Peoples+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Peoples+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B11732102CDA241900625FB4 /* GIFImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIFImage.swift; sourceTree = "<group>"; };
 		B11732132CDA54B800625FB4 /* successGIF.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = successGIF.gif; sourceTree = "<group>"; };
+		B12392892DFC69ED00026750 /* Logs+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logs+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B13434AB2BD765CF0015A235 /* ControlCenterHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlCenterHeaderView.swift; sourceTree = "<group>"; };
 		B13434AC2BD765CF0015A235 /* ControlCenterHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ControlCenterHeaderView.xib; sourceTree = "<group>"; };
 		B1364B562C11F4BB00193C0B /* VisitorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorViewModel.swift; sourceTree = "<group>"; };
@@ -158,7 +159,6 @@
 		B13667D22C37837D00562435 /* DeviceStatusTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeviceStatusTableViewCell.xib; sourceTree = "<group>"; };
 		B14C57CF2BE3D5650016D15B /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		B15650AE2BF4C054002C3ACC /* VersionCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionCheck.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		B169A5C62C13227000D5AE4F /* Logs+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Logs+CoreDataProperties.swift"; path = "/Users/kaushik/Documents/Ankur/nanoVision/nanoVision/nanoVision/Coredata Model/Logs+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
 		B173EA762C186BA200A60BC6 /* VisitorSuccess.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VisitorSuccess.storyboard; sourceTree = "<group>"; };
 		B173EA782C186FBE00A60BC6 /* VisitorSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorSuccessViewController.swift; sourceTree = "<group>"; };
 		B173EA7A2C1874E300A60BC6 /* GetVisitorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetVisitorModel.swift; sourceTree = "<group>"; };
@@ -280,9 +280,9 @@
 		B10757E72BCF921B00B35D94 /* Coredata Model */ = {
 			isa = PBXGroup;
 			children = (
+				B12392892DFC69ED00026750 /* Logs+CoreDataProperties.swift */,
 				B1143E5C2CA87AA4007F0587 /* Peoples+CoreDataProperties.swift */,
 				B1143E5B2CA87AA4007F0587 /* Peoples+CoreDataClass.swift */,
-				B169A5C62C13227000D5AE4F /* Logs+CoreDataProperties.swift */,
 				B10757E82BCF93B200B35D94 /* Logs+CoreDataClass.swift */,
 			);
 			path = "Coredata Model";
@@ -700,6 +700,7 @@
 				B173EA7B2C1874E300A60BC6 /* GetVisitorModel.swift in Sources */,
 				B1E329442BC43162006081FC /* PeopleDataModel.swift in Sources */,
 				B1E329382BC3B79F006081FC /* ResultViewController.swift in Sources */,
+				B123928A2DFC69ED00026750 /* Logs+CoreDataProperties.swift in Sources */,
 				B197F2122C8E93B3005DBF84 /* DayModel.swift in Sources */,
 				B1FB25CE2C10547000A316B1 /* DropDown.swift in Sources */,
 				B17EA0FC2BBFCE7100ABE750 /* DeviceStatusViewController.swift in Sources */,
@@ -724,7 +725,6 @@
 				B1364B592C11F62800193C0B /* VisitorEntryModel.swift in Sources */,
 				B17EA0E82BBED81C00ABE750 /* LoginViewController.swift in Sources */,
 				B1CE02CC2C07620900694F0A /* SideMenuTableViewCell.swift in Sources */,
-				B169A5C72C13227000D5AE4F /* Logs+CoreDataProperties.swift in Sources */,
 				B1DF298D2BE9E7260042331D /* LogsModel.swift in Sources */,
 				B17EA0F32BBF1EBC00ABE750 /* Utilities.swift in Sources */,
 				B1E8FEDD2BC11EF0004FDD5A /* SyncStatsViewController.swift in Sources */,
